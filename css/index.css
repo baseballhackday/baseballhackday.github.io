@@ -18,8 +18,8 @@ body {
 }
 
 #top-stripe {
-  background-color: #eae39e;
-	padding-top: 80px;
+  background-color: #eae2a2;
+	padding: 40px 0 60px;
 }
 
 .centered {
@@ -28,6 +28,10 @@ body {
 
 .row {
   margin-top: 40px;
+}
+
+.top-row {
+  margin-bottom: 180px;
 }
 
 h1 {
@@ -46,21 +50,22 @@ p {
   font-size: 18px;
 }
 
-.top-row {
-  margin-bottom: 180px;
+.btn-large {
+  font-size: 20px;
 }
 
-.btn-large {
-  font-size: 24px;
+.btn-left {
+  margin-right: 22px;
 }
 
 .btn-bbhd {
 	color: #eeeddb;
   background-color: #4f422f;
-  border-color: #4f422f;
-	border-radius: 8px;
+	border: none;
+	border-radius: 18px;
 	font-family: serif;
-	padding: 0 32px;
+	padding: 10px 40px;
+	text-transform: uppercase;
 }
 
 .btn-bbhd:hover,
@@ -89,6 +94,11 @@ fieldset[disabled] .btn-bbhd.active {
 
 #header-logo {
 	display: block;
-	margin: 0 auto;
+	margin: 0 auto 40px;
   max-width: 300px;
+}
+
+.subtitle {
+  margin-top: 10px;
+	margin-bottom: 30px;
 }
