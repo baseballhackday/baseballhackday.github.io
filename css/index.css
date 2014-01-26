@@ -1,26 +1,104 @@
 /**
  * Custom styles for the index page
  */
+@font-face {
+  font-family: 'ostrich_sans';
+  src: url('../fonts/ostrich-regular-webfont.eot');
+  src: url('../fonts/ostrich-regular-webfont.eot?#iefix') format('embedded-opentype'),
+       url('../fonts/ostrich-regular-webfont.woff') format('woff'),
+       url('../fonts/ostrich-regular-webfont.ttf') format('truetype'),
+       url('../fonts/ostrich-regular-webfont.svg#ostrich_sansmedium') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
 body {
-  background-color: #eee;
-  color: #2c0d00;
-}
-
-.jumbotron {
   background-color: #fff;
-  border-bottom: 8px solid #bdab00;
+	color: #8b885f;
 }
 
-.jumbotron h1 {
-  margin-top: 76px;
+#top-stripe {
+  background-color: #eae2a2;
+	padding: 40px 0 60px;
+}
+
+.centered {
+  text-align: center;
+}
+
+.row {
+  margin-top: 40px;
+}
+
+.top-row {
+  margin-bottom: 180px;
+}
+
+h1 {
+	color: #44342a;
+	font-family: "adelle";
+	font-size: 48px;
+}
+
+h2 {
+  color: #eeeddb;
+	font-family: 'ostrich_sans';
+	font-size: 48px;
+}
+
+p {
+  font-size: 18px;
+}
+
+.btn-large {
+  font-size: 20px;
+}
+
+.btn-left {
+  margin-right: 22px;
+}
+
+.btn-bbhd {
+	color: #eeeddb;
+  background-color: #4f422f;
+	border: none;
+	border-radius: 18px;
+	font-family: serif;
+	padding: 10px 40px;
+	text-transform: uppercase;
+}
+
+.btn-bbhd:hover,
+.btn-bbhd:focus,
+.btn-bbhd:active,
+.btn-bbhd.active {
+  background-color: #3f3525;
+  border-color: #2f271c;
+}
+
+.btn-bbhd.disabled:hover,
+.btn-bbhd.disabled:focus,
+.btn-bbhd.disabled:active,
+.btn-bbhd.disabled.active,
+.btn-bbhd[disabled]:hover,
+.btn-bbhd[disabled]:focus,
+.btn-bbhd[disabled]:active,
+.btn-bbhd[disabled].active,
+fieldset[disabled] .btn-bbhd:hover,
+fieldset[disabled] .btn-bbhd:focus,
+fieldset[disabled] .btn-bbhd:active,
+fieldset[disabled] .btn-bbhd.active {
+  background-color: #4f422f;
+  border-color: #4f422f;
 }
 
 #header-logo {
-  float: left;
-  margin-right: 30px;
+	display: block;
+	margin: 0 auto 40px;
   max-width: 300px;
 }
 
-.important {
-  font-size: 32px;
+.subtitle {
+  margin-top: 10px;
+	margin-bottom: 30px;
 }
