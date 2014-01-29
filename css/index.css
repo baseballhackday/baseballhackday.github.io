@@ -19,8 +19,46 @@ body {
 
 #top-stripe {
   background-color: #eae2a2;
+  background-image: url(../img/main.jpg);
+  background-repeat: no-repeat;
 	padding: 40px 0 60px;
 }
+
+#top-diagonals {
+  background-image: url(../img/diagonals.png);
+  height: 40px;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+
+#bot-diagonals {
+  background-image: url(../img/diagonals.png);
+  height: 132px;
+  position: absolute;
+  top: 740px;
+  width: 100%;
+}
+
+/* 2x stripes for Retina */
+@media
+only screen and (-webkit-min-device-pixel-ratio: 2),
+only screen and (   min--moz-device-pixel-ratio: 2),
+only screen and (     -o-min-device-pixel-ratio: 2/1),
+only screen and (        min-device-pixel-ratio: 2),
+only screen and (                min-resolution: 192dpi),
+only screen and (                min-resolution: 2dppx) { 
+  #top-diagonals {
+    background-image: url(../img/diagonals@2x.png);
+    background-size: 1600px 132px;
+  }
+
+  #bot-diagonals {
+    background-image: url(../img/diagonals@2x.png);
+    background-size: 1600px 132px;
+  }
+}
+
 
 .centered {
   text-align: center;
@@ -30,8 +68,16 @@ body {
   margin-top: 40px;
 }
 
+.near {
+  margin-top: 0;
+}
+
 .top-row {
-  margin-bottom: 180px;
+  margin-bottom: 270px;
+}
+
+.bot-row {
+  margin-bottom: 100px;
 }
 
 h1 {
