@@ -16,7 +16,9 @@ body {
   background-color: #fff;
 	color: #8b885f;
 }
-
+img {
+     max-width: 100%;
+}
 /* 2x stripes for Retina */
 @media
 only screen and (-webkit-min-device-pixel-ratio: 2),
@@ -87,7 +89,7 @@ p {
   background-color: #4f422f;
 	border: none;
 	border-radius: 18px;
-	font-family: serif;
+	font-family: "adelle", serif;
 	padding: 10px 40px;
 	text-transform: uppercase;
 }
