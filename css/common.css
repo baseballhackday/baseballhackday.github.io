@@ -55,7 +55,7 @@ only screen and (                min-resolution: 2dppx) {
 
 h1 {
 	color: #44342a;
-	font-family: "adelle";
+	font-family: "adelle", serif;
 	font-size: 48px;
 }
 
