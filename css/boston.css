@@ -1,9 +1,9 @@
 /**
- * Custom styles for the index page.
+ * Custom styles for the Boston city page.
  */
 #top-stripe {
   background-color: #eae2a2;
-  background-image: url(../img/main.jpg);
+  background-image: url(../img/boston-bg.jpg);
   background-repeat: no-repeat;
 	padding: 40px 0 60px;
 }
@@ -20,16 +20,10 @@
   background-image: url(../img/diagonals.png);
   height: 132px;
   position: absolute;
-  top: 740px;
+  top: 484px;
   width: 100%;
 }
 
-#header-logo {
-	display: block;
-	margin: 0 auto 40px;
-  max-width: 300px;
-}
-
 .top-row {
-  margin-bottom: 270px;
+  margin-bottom: 280px;
 }

@@ -1,0 +1,127 @@
+/**
+ * Common styles for Baseball Hackday pages.
+ */
+@font-face {
+  font-family: 'ostrich_sans';
+  src: url('../fonts/ostrich-regular-webfont.eot');
+  src: url('../fonts/ostrich-regular-webfont.eot?#iefix') format('embedded-opentype'),
+       url('../fonts/ostrich-regular-webfont.woff') format('woff'),
+       url('../fonts/ostrich-regular-webfont.ttf') format('truetype'),
+       url('../fonts/ostrich-regular-webfont.svg#ostrich_sansmedium') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  background-color: #fff;
+	color: #8b885f;
+}
+
+/* 2x stripes for Retina */
+@media
+only screen and (-webkit-min-device-pixel-ratio: 2),
+only screen and (   min--moz-device-pixel-ratio: 2),
+only screen and (     -o-min-device-pixel-ratio: 2/1),
+only screen and (        min-device-pixel-ratio: 2),
+only screen and (                min-resolution: 192dpi),
+only screen and (                min-resolution: 2dppx) { 
+  #top-diagonals {
+    background-image: url(../img/diagonals@2x.png);
+    background-size: 1600px 132px;
+  }
+
+  #bot-diagonals {
+    background-image: url(../img/diagonals@2x.png);
+    background-size: 1600px 132px;
+  }
+}
+
+
+.centered {
+  text-align: center;
+}
+
+.row {
+  margin-top: 40px;
+}
+
+.near {
+  margin-top: 0;
+}
+
+.bot-row {
+  margin-bottom: 100px;
+}
+
+h1 {
+	color: #44342a;
+	font-family: "adelle";
+	font-size: 48px;
+}
+
+h2 {
+	color: #44342a;
+	font-family: 'ostrich_sans';
+	font-size: 48px;
+}
+
+#top-stripe h2 {
+  color: #eeeddb;
+}
+
+p {
+  font-size: 18px;
+}
+
+.btn-large {
+  font-size: 20px;
+}
+
+.btn-left {
+  margin-right: 22px;
+}
+
+.btn-bbhd {
+	color: #eeeddb;
+	cursor: pointer;
+  background-color: #4f422f;
+	border: none;
+	border-radius: 18px;
+	font-family: serif;
+	padding: 10px 40px;
+	text-transform: uppercase;
+}
+
+.btn-bbhd:hover {
+  color: #eeeddb;
+  text-decoration: none;
+}
+
+.btn-bbhd:hover,
+.btn-bbhd:focus,
+.btn-bbhd:active,
+.btn-bbhd.active {
+  background-color: #3f3525;
+  border-color: #2f271c;
+}
+
+.btn-bbhd.disabled:hover,
+.btn-bbhd.disabled:focus,
+.btn-bbhd.disabled:active,
+.btn-bbhd.disabled.active,
+.btn-bbhd[disabled]:hover,
+.btn-bbhd[disabled]:focus,
+.btn-bbhd[disabled]:active,
+.btn-bbhd[disabled].active,
+fieldset[disabled] .btn-bbhd:hover,
+fieldset[disabled] .btn-bbhd:focus,
+fieldset[disabled] .btn-bbhd:active,
+fieldset[disabled] .btn-bbhd.active {
+  background-color: #4f422f;
+  border-color: #4f422f;
+}
+
+.subtitle {
+  margin-top: 10px;
+	margin-bottom: 30px;
+}
