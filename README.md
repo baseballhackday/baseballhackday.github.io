@@ -16,4 +16,12 @@ in the directory of the project, it will install the github versions of jekyll a
 
 which will serve the site on localhost using the same settings that github uses, at
 
-http://localhost:4000.
+http://localhost:4000
+
+
+# Huge thanks!
+
+* [audiodude](https://github.com/audiodude)
+* [kylefiedler](https://github.com/kylefiedler)
+
+
