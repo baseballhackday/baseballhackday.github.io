@@ -47,12 +47,11 @@ only screen and (                min-resolution: 2dppx) {
 
 h1 {
 	color: #44342a;
-	font-family: "adelle", serif;
+	font-family: "adelle", Rockwell, Courier, Georgia, serif;
 }
-
 h2 {
 	color: #44342a;
-	font-family: 'ostrich_sans';
+	font-family: 'ostrich_sans', sans-serif;
 }
 
 #top-stripe h2 {
