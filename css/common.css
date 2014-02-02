@@ -43,48 +43,26 @@ only screen and (                min-resolution: 2dppx) {
   text-align: center;
 }
 
-.row {
-  margin-top: 40px;
-}
 
-.near {
-  margin-top: 0;
-}
-
-.bot-row {
-  margin-bottom: 100px;
-}
 
 h1 {
 	color: #44342a;
 	font-family: "adelle", serif;
-	font-size: 48px;
 }
 
 h2 {
 	color: #44342a;
 	font-family: 'ostrich_sans';
-	font-size: 48px;
 }
 
 #top-stripe h2 {
   color: #eeeddb;
 }
 
-p {
-  font-size: 18px;
-}
 
-.btn-large {
-  font-size: 20px;
-}
-
-.btn-left {
-  margin-right: 22px;
-}
-
-.btn-bbhd {
-	color: #eeeddb;
+.btn-bbhd { 
+  line-height: 46px; 
+  color: #eeeddb;
 	cursor: pointer;
   background-color: #4f422f;
 	border: none;
@@ -127,3 +105,39 @@ fieldset[disabled] .btn-bbhd.active {
   margin-top: 10px;
 	margin-bottom: 30px;
 }
+
+/* sm break */
+@media (min-width: 768px) {
+  .row {
+    margin-top: 40px;
+  }
+  .near {
+    margin-top: 0;
+  }
+  .bot-row {
+    margin-bottom: 100px;
+  }
+  h1 {
+    font-size: 48px;
+  }
+  h2 {
+    font-size: 48px;
+  }
+  p {
+    font-size: 18px;
+  }
+  .btn-large {
+    font-size: 20px;
+  }
+  .btn-left {
+    margin-right: 22px;
+  }
+
+}
+
+/* md break */
+@media (min-width: 992px) {
+
+}
+
+
