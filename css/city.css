@@ -7,11 +7,11 @@
 }
 
 .city-name {
-	font-size: 72px;
 	font-weight: 800;
 	margin-bottom: 0px;
   margin-top: 60px;
   line-height: 1em;
+	font-size: 54px;
 }
 
 .date {
@@ -31,16 +31,15 @@
 
 .time {
 	font-family: sans-serif;
-	font-size: 16px;
 	font-weight: 200;
 	padding-right: 30px;
 }
 
 .sched-item {
 	font-family: 'ostrich_sans';
-	font-size: 42px;
 	line-height: 1;
 	padding-bottom: .3em;
+	font-size: 32px;
 }
 
 .time {
@@ -56,4 +55,27 @@
 
 .philly .top-row {
   margin-bottom: 230px;
+}
+
+/* sm break */
+@media (min-width: 768px) {
+	
+	.city-name {
+		font-size: 72px;
+	}
+
+	.date {
+		margin-top: 10px;
+	}
+
+	.time {
+		font-size: 16px;
+	}
+
+	.sched-item {
+		font-size: 42px;
+	}
+	.button-pair {
+		margin-top: 20px;
+	}
 }

@@ -55,9 +55,6 @@ only screen and (                min-resolution: 2dppx) {
   margin-top: 0;
 }
 
-.bot-row {
-  margin-bottom: 100px;
-}
 
 h1 {
 	color: #44342a;
@@ -65,7 +62,6 @@ h1 {
 	font-size: 42px;
   font-weight: 200;
 }
-
 h2 {
 	color: #44342a;
 	font-family: 'ostrich_sans', Helvetica, Arial, sans-serif;
@@ -88,6 +84,16 @@ p {
 
 .btn-bbhd {
 	color: #eeeddb;
+	font-family: 'ostrich_sans', sans-serif;
+}
+
+#top-stripe h2 {
+  color: #eeeddb;
+}
+
+
+.btn-bbhd { 
+  color: #eeeddb;
 	cursor: pointer;
   background-color: #4f422f;
 	border: none;
@@ -146,4 +152,38 @@ a:hover {
 
 footer {
   margin-bottom: 2em;
+}
+
+/* sm break */
+@media (min-width: 768px) {
+  .row {
+    margin-top: 40px;
+  }
+  .near {
+    margin-top: 0;
+  }
+  .bot-row {
+    margin-bottom: 100px;
+  }
+  h1 {
+    font-size: 48px;
+  }
+  h2 {
+    font-size: 48px;
+  }
+  p {
+    font-size: 18px;
+  }
+  .btn-large {
+    font-size: 20px;
+  }
+  .btn-left {
+    margin-right: 22px;
+  }
+
+}
+
+/* md break */
+@media (min-width: 992px) {
+
 }
