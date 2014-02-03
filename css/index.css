@@ -8,6 +8,10 @@
 	padding: 40px 0 60px;
 }
 
+#top-stripe h2 {
+  color: #fff;
+}
+
 #top-diagonals {
   background-image: url(../img/diagonals.png);
   height: 40px;
@@ -32,4 +36,8 @@
 
 .top-row {
   margin-bottom: 270px;
+}
+
+.second-row {
+  padding-top: 40px;
 }

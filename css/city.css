@@ -2,16 +2,25 @@
  * Custom styles for the index page.
  */
 
-#header-logo {}
+#header-logo {
+  max-width: 80%;
+}
 
 .city-name {
-	font-size: 96px;
+	font-size: 72px;
 	font-weight: 800;
-	margin-bottom: 10px;
+	margin-bottom: 0px;
+  margin-top: 60px;
+  line-height: 1em;
 }
 
 .date {
-	margin-top: 10px;
+	margin-top: 0px;
+  margin-bottom: 40px;
+}
+
+.top-row .subtitle {
+  color: #eeeddb;
 }
 
 #schedule {
@@ -29,7 +38,7 @@
 
 .sched-item {
 	font-family: 'ostrich_sans';
-	font-size: 48px;
+	font-size: 42px;
 	line-height: 1;
 	padding-bottom: .3em;
 }
@@ -39,5 +48,12 @@
 }
 
 .button-pair {
-	margin-top: 20px;
+	margin-top: 40px;
+}
+.button-label {
+  margin-bottom: 20px;
+}
+
+.philly .top-row {
+  margin-bottom: 230px;
 }

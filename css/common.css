@@ -38,9 +38,13 @@ only screen and (                min-resolution: 2dppx) {
   }
 }
 
-
 .centered {
   text-align: center;
+}
+
+.centered p {
+  max-width: 600px;
+  margin: 0 auto;
 }
 
 .row {
@@ -57,26 +61,25 @@ only screen and (                min-resolution: 2dppx) {
 
 h1 {
 	color: #44342a;
-	font-family: "adelle", serif;
-	font-size: 48px;
+	font-family: "adelle", Georgia, serif;
+	font-size: 42px;
+  font-weight: 200;
 }
 
 h2 {
 	color: #44342a;
-	font-family: 'ostrich_sans';
-	font-size: 48px;
-}
-
-#top-stripe h2 {
-  color: #eeeddb;
+	font-family: 'ostrich_sans', Helvetica, Arial, sans-serif;
+	font-size: 38px;
+  line-height: 1em;
 }
 
 p {
-  font-size: 18px;
+  font-size: 16px;
+  font-family: "adelle-sans", Helvetica, Arial, sans-serif;
 }
 
 .btn-large {
-  font-size: 20px;
+  font-size: 16px;
 }
 
 .btn-left {
@@ -90,8 +93,10 @@ p {
 	border: none;
 	border-radius: 18px;
 	font-family: "adelle", serif;
-	padding: 10px 40px;
+	padding: 10px 30px;
 	text-transform: uppercase;
+  line-height: 1em;
+  font-weight: bold;
 }
 
 .btn-bbhd:hover {
@@ -124,6 +129,21 @@ fieldset[disabled] .btn-bbhd.active {
 }
 
 .subtitle {
-  margin-top: 10px;
+  margin-top: -10px;
 	margin-bottom: 30px;
+}
+
+a {
+  color: #51392d;
+  border-bottom: 1px solid #C2BC91;
+}
+
+a:hover {
+	color: #8b885f;
+  border-bottom: 1px solid #C2BC91;
+  text-decoration: none;
+}
+
+footer {
+  margin-bottom: 2em;
 }
