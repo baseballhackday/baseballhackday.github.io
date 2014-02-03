@@ -3,24 +3,24 @@
  */
 
 #header-logo {
-  max-width: 80%;
+	max-width: 80%;
 }
 
 .city-name {
 	font-weight: 800;
 	margin-bottom: 0px;
-  margin-top: 60px;
-  line-height: 1em;
+	margin-top: 60px;
+	line-height: 1em;
 	font-size: 54px;
 }
 
 .date {
 	margin-top: 0px;
-  margin-bottom: 40px;
+	margin-bottom: 40px;
 }
 
 .top-row .subtitle {
-  color: #eeeddb;
+	color: #eeeddb;
 }
 
 #schedule {
@@ -50,11 +50,11 @@
 	margin-top: 40px;
 }
 .button-label {
-  margin-bottom: 20px;
+	margin-bottom: 20px;
 }
 
 .philly .top-row {
-  margin-bottom: 230px;
+	margin-bottom: 230px;
 }
 
 /* sm break */

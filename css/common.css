@@ -44,7 +44,7 @@ only screen and (                min-resolution: 2dppx) {
 
 .centered p {
   max-width: 600px;
-  margin: 0 auto;
+  margin: 0 auto .3em;
 }
 
 .row {
@@ -149,10 +149,18 @@ a:hover {
   border-bottom: 1px solid #C2BC91;
   text-decoration: none;
 }
+a.imglink, a.imglink:hover {
+  border-bottom: none;
+}
 
 footer {
   margin-bottom: 2em;
 }
+
+.bot-row {
+  margin-bottom: 100px;
+}
+
 
 /* sm break */
 @media (min-width: 768px) {
@@ -162,9 +170,7 @@ footer {
   .near {
     margin-top: 0;
   }
-  .bot-row {
-    margin-bottom: 100px;
-  }
+
   h1 {
     font-size: 48px;
   }
