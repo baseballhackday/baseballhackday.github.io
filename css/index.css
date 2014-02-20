@@ -1,43 +1,13 @@
 /**
  * Custom styles for the index page.
  */
-#top-stripe {
-  background-color: #eae2a2;
-  background-image: url(../img/main.jpg);
-  background-repeat: no-repeat;
-	padding: 40px 0 60px;
-}
-
-#top-stripe h2 {
-  color: #fff;
-}
-
-#top-diagonals {
-  background-image: url(../img/diagonals.png);
-  height: 40px;
-  position: absolute;
-  top: 0;
-  width: 100%;
-}
-
-#bot-diagonals {
-  background-image: url(../img/diagonals.png);
-  height: 132px;
-  position: absolute;
-  top: 740px;
-  width: 100%;
-}
 
 #header-logo {
-	display: block;
-	margin: 0 auto 40px;
+  display: block;
+  margin: 0 auto 40px;
   max-width: 300px;
 }
 
 .top-row {
-  margin-bottom: 270px;
-}
-
-.second-row {
-  padding-top: 40px;
+  background-image: url(../img/main.jpg);
 }

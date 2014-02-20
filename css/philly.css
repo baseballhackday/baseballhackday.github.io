@@ -1,30 +1,6 @@
 /**
  * Custom styles for the Philly city page.
  */
-#top-stripe {
-  background-color: #eae2a2;
-  background-image: url(../img/philly-bg.jpg);
-	background-position-x: center;
-  background-repeat: no-repeat;
-	padding: 40px 0 60px;
-}
-
-#top-diagonals {
-  background-image: url(../img/diagonals.png);
-  height: 40px;
-  position: absolute;
-  top: 0;
-  width: 100%;
-}
-
-#bot-diagonals {
-  background-image: url(../img/diagonals.png);
-  height: 132px;
-  position: absolute;
-  top: 484px;
-  width: 100%;
-}
-
 .top-row {
-  margin-bottom: 280px;
+  background-image: url(../img/philly-bg.jpg);
 }
