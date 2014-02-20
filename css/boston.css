@@ -1,60 +1,13 @@
 /**
  * Custom styles for the Boston city page.
  */
-#top-stripe {
-  background-color: #eae2a2;
-  background-image: url(../img/boston-bg.jpg);
-  background-repeat: no-repeat;
-  padding: 40px 0 60px;
-}
-
-#top-diagonals {
-  background-image: url(../img/diagonals.png);
-  height: 40px;
-  position: absolute;
-  top: 0;
-  width: 100%;
-}
-
-#bot-diagonals {
-  background-image: url(../img/diagonals.png);
-  height: 132px;
-  position: absolute;
-  top: 484px;
-  width: 100%;
-}
-
 .top-row {
-  margin-bottom: 180px;
+  background-image: url(../img/boston-bg.jpg);
 }
 
-/* responsive google map  */
-.iframe-rwd  {
-  position: relative;
-  padding-bottom: 56%;
-  padding-top: 30px;
-  height: 0;
-  overflow: hidden;
-}
-.iframe-rwd iframe {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-}
 /* md break -- make map taller when two column*/
 @media (min-width: 992px) {
- .iframe-rwd  {
-  padding-bottom: 100%; 
-}
-
-
-.sponsor {
-  min-height: 100px;
-  margin-bottom: 1em;
-}
-
-.sponsors-info, .venue-info {
-  margin-bottom: 100px;
+  .iframe-rwd  {
+    padding-bottom: 100%; 
+  }
 }
