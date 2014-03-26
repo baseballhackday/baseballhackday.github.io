@@ -4,3 +4,12 @@
 .top-row {
   background-image: url(../img/philly-bg.jpg);
 }
+
+.ticketleap {
+  margin-top: 4em;
+}
+
+.oreilly {
+  clear: both;
+  margin-top: 7em;
+}
