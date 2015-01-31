@@ -1,0 +1,15 @@
+gems: [bourbon, neat]
+
+# Structure configuration
+source: source
+destination: build
+
+assets:
+  cachebust: soft
+
+# Site settings
+title: Baseball Hack Day
+description: One day of hacking in the name of all things baseball.
+
+# Build settings
+markdown: kramdown
