@@ -8,9 +8,19 @@
 
     nav {
       @include position(absolute, 2em 3em null null);
+      text-align: right;
+
+      &:hover {
+        ul {
+          display: block;
+        }
+      }
 
       .menu {
         color: #fff;
+      }
+
+      a {
         font-family: $sub-header-font-family;
         font-size: em(24);
         letter-spacing: 1px;
@@ -19,94 +29,132 @@
 
       ul {
         display: none;
+        margin-top: 1em;
+      }
+
+      li {
+        a {
+          color: $light-tan;
+        }
       }
     }
-  }
-
-  main {
-    @include align-items(flex-end);
-    @include display(flex);
-    @include flex-direction(row);
-    @include flex-wrap(wrap);
-    @include justify-content(space-between);
-    background-image: url("/images/berras-hands-overlay.jpg");
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    color: #fff;
-    min-height: 100vh;
   }
 
   .logo {
-    width: 150px;
-    margin: 0 auto 5rem;
+    width: 125px;
+    margin: 0 auto 3rem;
 
     g {
-      fill: $tan;
+      fill: $light-tan;
+    }
+  }
+}
+
+.hero {
+  @include position(absolute, 20vh null null null);
+  pointer-events: none;
+  text-align: center;
+  width: 100%;
+
+  h2 {
+    color: #fff;
+    font-size: em(52);
+    margin: 0 auto;
+    max-width: rem(640);
+    line-height: 1;
+    margin-bottom: 1.5rem;
+  }
+
+  h3 {
+    color: rgba(#040102, 0.8);
+    color: $tan;
+    font-family: $sub-header-font-family;
+    font-weight: normal;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+  }
+}
+
+.cities {
+  @include align-items(stretch);
+  @include align-content(flex-end);
+  @include display(flex);
+  min-height: 100vh;
+}
+
+.city {
+  @include transition(2s);
+  @include display(flex);
+  @include align-items(flex-end);
+  padding: 6rem;
+  width: 50%;
+
+  &:hover {
+    .action {
+      background-color: #fff;
     }
   }
 
-  .hero {
-    width: 100%;
-    text-align: center;
+  h2 {
+    font-size: em(40);
+    color: $light-tan;
+    color: rgba(#fff, 0.8);
+    font-weight: normal;
 
-    h2 {
-      font-size: em(52);
-      margin: 0 auto;
-      max-width: rem(640);
-      line-height: 1em;
-      margin-bottom: 2rem;
-    }
-
-    h3 {
-      color: $light-tan;
-      font-family: $sub-header-font-family;
-      font-weight: normal;
-      letter-spacing: 1px;
-      text-transform: uppercase;
-    }
-  }
-
-  .city {
-    padding: 6rem;
-
-    h2 {
-      font-size: em(40);
-      color: $light-tan;
-      font-weight: normal;
-
-      &::after {
-        display: block;
-        width: rem(60);
-        height: rem(9);
-        content: "";
-        background-color: #734444;
-        margin: 1.5rem 0;
-      }
-    }
-
-    p {
-      -webkit-font-smoothing: antialiased;
-      color: $tan;
-      font-family: $sub-header-font-family;
-      font-size: 2em;
-      line-height: 1.3;
-    }
-
-    span {
+    &::after {
+      background-color: shade($tan, 50);
+      content: "";
       display: block;
+      height: rem(9);
+      margin: 1rem 0 1.5rem;
+      width: rem(60);
     }
   }
 
-  .boston {
-    text-align: left;
+  p {
+    -webkit-font-smoothing: antialiased;
+    color: $tan;
+    font-family: $sub-header-font-family;
+    font-size: em(26);
+    line-height: 1.3;
+    margin-bottom: 3rem;
   }
 
-  .philly {
-    text-align: right;
+  span {
+    display: block;
+  }
+}
 
-    h2::after {
-      margin-left: auto;
-    }
+.boston {
+  left: 0;
+  background-blend-mode: multiply;
+  background-color: darken($boston-red, 10%);
+  background-image: url("/images/berras-hands-left.jpg");
+  background-position: right center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  &:hover {
+    background-color: darken($boston-red, 20%);
+  }
+}
+
+.philly {
+  @include justify-content(flex-end);
+  background-blend-mode: multiply;
+  background-color: darken($philly-maroon, 10%);
+  background-image: url("/images/berras-hands-right.jpg");
+  background-position: left center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  right: 0;
+  text-align: right;
+
+  &:hover {
+    background-color: darken($philly-maroon, 20%);
+  }
+
+  h2::after {
+    margin-left: auto;
   }
 }

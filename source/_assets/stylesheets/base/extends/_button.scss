@@ -22,11 +22,18 @@
 }
 
 .action {
-  color: #140707;
+  @include transition();
   background-color: $light-tan;
-  padding: 0.25em 1em;
+  color: #140707;
+  display: inline-block;
   font-family: $sub-header-font-family;
-  text-transform: uppercase;
-  letter-spacing: 1px;
   font-size: em(24);
+  letter-spacing: 1px;
+  line-height: 1;
+  padding: 0.4em 1.5em;
+  text-transform: uppercase;
+
+  &:hover {
+    background-color: #fff;
+  }
 }
