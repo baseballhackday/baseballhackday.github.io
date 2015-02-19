@@ -22,18 +22,15 @@
 
   <body class="{% if page.body-class %}{{ page.body-class  }}{% endif %}">
     <header class="main">
-      <h1><a href="{{ site.baseurl }}">Baseball Hack Day</a></h1>
+      <h1>
+        <a href="/">
+          {% include bbhd-logo.svg %}
+        </a>
+      </h1>
 
       <nav>
         <a href="#" class="menu">Menu</a>
-        <ul>
-          <li><a href="">Twitter</a></li>
-          <li><a href="">GitHub</a></li>
-          <li><a href="">Boston</a></li>
-          <li><a href="">Philly</a></li>
-          <li><a href="">About &amp; History</a></li>
-          <li><a href="">Forum &amp; Resources</a></li>
-        </ul>
+        {% include navigation.html %}
       </nav>
     </header>
 
@@ -41,8 +38,22 @@
       {{ content }}
     </main>
 
-    <footer>
+    <footer class="main">
+      <nav>
+        {% include navigation.html %}
+      </nav>
+
+      <section>
+        <h3>Organized by</h3>
+        <h4>Daigo Fujiwara &amp; Matt Carroll (Boston),
+          <br>Kyle Fiedler &amp; Mike Gadsby (Philadelphia)</h4>
+      </section>
+      <section>
+        <h3>Site Desisgn by</h3>
+        <h4>
+          <a href="http://thoughtbot.com">thoughtbot</a>
+        </h4>
+      </section>
     </footer>
-    <script type="text/javascript" src="{{ site.baseurl }}{% asset_path application.js %}"></script>
   </body>
 </html>
