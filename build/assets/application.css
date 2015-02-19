@@ -780,6 +780,38 @@ footer.main {
   display: -ms-flexbox;
   display: flex;
   min-height: 100vh; }
+  .cities .boston {
+    background-blend-mode: multiply;
+    background-color: #862e2e;
+    background-image: url("/images/berras-hands-left.jpg");
+    background-position: right center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    left: 0; }
+    .cities .boston:hover {
+      background-color: #BE4343; }
+  .cities .philly {
+    -webkit-box-pack: end;
+    -moz-box-pack: end;
+    box-pack: end;
+    -webkit-justify-content: flex-end;
+    -moz-justify-content: flex-end;
+    -ms-justify-content: flex-end;
+    -o-justify-content: flex-end;
+    justify-content: flex-end;
+    -ms-flex-pack: end;
+    background-blend-mode: multiply;
+    background-color: #743443;
+    background-image: url("/images/berras-hands-right.jpg");
+    background-position: left center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    right: 0;
+    text-align: right; }
+    .cities .philly:hover {
+      background-color: #984457; }
+    .cities .philly h2::after {
+      margin-left: auto; }
 
 .city {
   -webkit-transition: 1s;
@@ -818,40 +850,6 @@ footer.main {
     margin-bottom: 3rem; }
   .city span {
     display: block; }
-
-.boston {
-  background-blend-mode: multiply;
-  background-color: #862e2e;
-  background-image: url("/images/berras-hands-left.jpg");
-  background-position: right center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  left: 0; }
-  .boston:hover {
-    background-color: #BE4343; }
-
-.philly {
-  -webkit-box-pack: end;
-  -moz-box-pack: end;
-  box-pack: end;
-  -webkit-justify-content: flex-end;
-  -moz-justify-content: flex-end;
-  -ms-justify-content: flex-end;
-  -o-justify-content: flex-end;
-  justify-content: flex-end;
-  -ms-flex-pack: end;
-  background-blend-mode: multiply;
-  background-color: #743443;
-  background-image: url("/images/berras-hands-right.jpg");
-  background-position: left center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  right: 0;
-  text-align: right; }
-  .philly:hover {
-    background-color: #984457; }
-  .philly h2::after {
-    margin-left: auto; }
 
 .philadelphia .banner {
   background-color: #863C4D;

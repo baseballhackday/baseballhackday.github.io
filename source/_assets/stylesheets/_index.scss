@@ -89,6 +89,40 @@
   @include align-content(flex-end);
   @include display(flex);
   min-height: 100vh;
+
+  .boston {
+    background-blend-mode: multiply;
+    background-color: darken($boston-red, 15%);
+    background-image: url("/images/berras-hands-left.jpg");
+    background-position: right center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    left: 0;
+
+    &:hover {
+      background-color: $boston-red;
+    }
+  }
+
+  .philly {
+    @include justify-content(flex-end);
+    background-blend-mode: multiply;
+    background-color: darken($philly-maroon, 5%);
+    background-image: url("/images/berras-hands-right.jpg");
+    background-position: left center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    right: 0;
+    text-align: right;
+
+    &:hover {
+      background-color: lighten($philly-maroon, 5%);
+    }
+
+    h2::after {
+      margin-left: auto;
+    }
+  }
 }
 
 .city {
@@ -126,37 +160,4 @@
   }
 }
 
-.boston {
-  background-blend-mode: multiply;
-  background-color: darken($boston-red, 15%);
-  background-image: url("/images/berras-hands-left.jpg");
-  background-position: right center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  left: 0;
-
-  &:hover {
-    background-color: $boston-red;
-  }
-}
-
-.philly {
-  @include justify-content(flex-end);
-  background-blend-mode: multiply;
-  background-color: darken($philly-maroon, 5%);
-  background-image: url("/images/berras-hands-right.jpg");
-  background-position: left center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  right: 0;
-  text-align: right;
-
-  &:hover {
-    background-color: lighten($philly-maroon, 5%);
-  }
-
-  h2::after {
-    margin-left: auto;
-  }
-}
 
