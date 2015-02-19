@@ -1,0 +1,274 @@
+/**
+ * Common styles for Baseball Hackday pages.
+ */
+body {
+  -webkit-font-smoothing: antialiased;
+  background-color: #fff;
+  color: #57553B;
+  font-family: "adelle", Georgia, serif;
+}
+
+img {
+ max-width: 100%;
+}
+
+/* 2x stripes for Retina */
+@media
+only screen and (-webkit-min-device-pixel-ratio: 2),
+only screen and (   min--moz-device-pixel-ratio: 2),
+only screen and (     -o-min-device-pixel-ratio: 2/1),
+only screen and (        min-device-pixel-ratio: 2),
+only screen and (                min-resolution: 192dpi),
+only screen and (                min-resolution: 2dppx) {
+  #top-diagonals {
+    background-image: url(../img/diagonals@2x.png);
+    background-size: 1600px 132px;
+  }
+
+  #bot-diagonals {
+    background-image: url(../img/diagonals@2x.png);
+    background-size: 1600px 132px;
+  }
+}
+
+.centered {
+  text-align: center;
+}
+
+.centered p {
+  max-width: 600px;
+  margin: 0 auto .3em;
+}
+
+.row {
+  margin-top: 40px;
+}
+
+.near {
+  margin-top: 0;
+}
+
+h1 {
+  color: #44342a;
+  font-family: "adelle", Georgia, serif;
+  font-size: 36px;
+  font-weight: 200;
+}
+
+h2 {
+  color: #BEB886;
+  font-family: "atrament-web", Helvetica, Arial, sans-serif;
+  font-size: 32px;
+  line-height: 1em;
+  text-transform: uppercase;
+}
+
+p {
+  font-size: 16px;
+}
+
+blockquote {
+  border-left: 0;
+}
+
+a {
+  color: #57553B;
+  border-bottom: 1px solid #C2BC91;
+}
+
+a:hover {
+  color: #51392d;
+  border-bottom: 1px solid #C2BC91;
+  text-decoration: none;
+}
+
+a.imglink, a.imglink:hover {
+  border-bottom: none;
+}
+
+header {
+  text-align: center;
+}
+
+footer {
+  margin: 2em auto;
+}
+
+label {
+  font-family: "adelle", serif;
+  font-weight: normal;
+  -webkit-font-smoothing: antialiased;
+}
+
+input[type="text"], input[type="email"] {
+  border-color: #57553B;
+  border-radius: 0;
+}
+
+input[type="submit"] {
+  -webkit-font-smoothing: antialiased;
+  background-color: rgba(79, 66, 47, .8);
+  border-radius: 25px;
+  border: none;
+  color: #eeeddb;
+  cursor: pointer;
+  font-family: "adelle", serif;
+  font-size: 16px;
+  font-weight: bold;
+  line-height: 1em;
+  padding: 10px 30px;
+  text-transform: uppercase;
+}
+
+.container {
+  max-width: 700px;
+}
+
+.btn-left {
+  margin-right: 22px;
+}
+
+.btn-bbhd {
+  color: #eeeddb;
+  font-family: "atrament-web", sans-serif;
+}
+
+.btn-bbhd {
+  background-color: rgba(79, 66, 47, .8);
+  border-radius: 25px;
+  display: inline-block;
+  border: none;
+  color: #eeeddb;
+  cursor: pointer;
+  font-family: "adelle", serif;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 1em;
+  padding: 10px 30px;
+  text-transform: uppercase;
+}
+
+.btn-bbhd:hover {
+  color: #eeeddb;
+  text-decoration: none;
+  border-bottom: none;
+}
+
+.btn-bbhd:hover,
+.btn-bbhd:focus,
+.btn-bbhd:active,
+.btn-bbhd.active {
+  background-color: #3f3525;
+  border-color: #2f271c;
+}
+
+.btn-bbhd.disabled:hover,
+.btn-bbhd.disabled:focus,
+.btn-bbhd.disabled:active,
+.btn-bbhd.disabled.active,
+.btn-bbhd[disabled]:hover,
+.btn-bbhd[disabled]:focus,
+.btn-bbhd[disabled]:active,
+.btn-bbhd[disabled].active,
+fieldset[disabled] .btn-bbhd:hover,
+fieldset[disabled] .btn-bbhd:focus,
+fieldset[disabled] .btn-bbhd:active,
+fieldset[disabled] .btn-bbhd.active {
+  background-color: #4f422f;
+  border-color: #4f422f;
+}
+
+.subtitle {
+  margin-top: 0;
+  margin-bottom: 30px;
+}
+
+#top-stripe {
+  background-color: #eae2a2;
+  padding: 0 0 60px;
+}
+
+#top-stripe h2 {
+  color: #fff;
+}
+
+#top-diagonals {
+  background-image: url(../img/diagonals.png);
+  height: 40px;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+
+#bot-diagonals {
+  background-image: url(../img/diagonals.png);
+  height: 75px;
+  position: absolute;
+  bottom: -25px;
+  width: 100%;
+}
+
+.top-row {
+  background-repeat: no-repeat;
+  -webkit-background-size: cover;
+  background-size: cover;
+  background-position: center;
+  padding-bottom: 180px;
+  margin: 0;
+  padding-top: 100px;
+  position: relative;
+}
+
+.top-row h2 {
+  margin-bottom: 2em;
+}
+
+.second-row {
+  padding-top: 40px;
+}
+
+.bot-row {
+  margin: 80px 0;
+}
+
+.updates {
+  border:1px solid #eae2a2;
+  padding: 1em;
+}
+
+/* sm break */
+@media (min-width: 768px) {
+  .row {
+    margin-top: 40px;
+  }
+  .top-row {
+    margin-top: 0;
+  }
+
+  .bot-row {
+    margin-top: 80px;
+  }
+
+  .near {
+    margin-top: 0;
+  }
+
+  h1 {
+    font-size: 42px;
+  }
+  h2 {
+    font-size: 38px;
+  }
+  p {
+    font-size: 18px;
+  }
+  .btn-left {
+    margin-right: 22px;
+  }
+
+}
+
+/* md break */
+@media (min-width: 992px) {
+
+}

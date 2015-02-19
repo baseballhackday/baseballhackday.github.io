@@ -1,0 +1,163 @@
+.index {
+  header.main {
+    text-align: center;
+
+    h1 {
+      display: none;
+    }
+
+    nav {
+      @include position(absolute, 2em 3em null null);
+      text-align: right;
+
+      &:hover {
+        ul {
+          display: block;
+        }
+      }
+
+      .menu {
+        color: #fff;
+      }
+
+      a {
+        font-family: $sub-header-font-family;
+        font-size: em(24);
+        letter-spacing: 1px;
+        text-transform: uppercase;
+      }
+
+      ul {
+        display: none;
+        margin-top: 1em;
+      }
+
+      li {
+        a {
+          color: $light-tan;
+        }
+      }
+    }
+  }
+
+  .logo {
+    width: 125px;
+    margin: 0 auto 3rem;
+
+    g {
+      fill: $light-tan;
+    }
+  }
+
+  footer.main {
+    display: none;
+  }
+}
+
+.hero {
+  @include position(absolute, 20vh null null null);
+  pointer-events: none;
+  text-align: center;
+  width: 100%;
+
+  h2 {
+    color: #fff;
+    font-size: em(52);
+    font-weight: bold;
+    line-height: 1;
+    margin-bottom: 1.5rem;
+    margin: 0 auto;
+    max-width: rem(640);
+
+    &:after {
+      display: none;
+    }
+  }
+
+  h3 {
+    color: rgba(#040102, 0.8);
+    color: $light-tan;
+    font-family: $sub-header-font-family;
+    font-weight: normal;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+  }
+}
+
+.cities {
+  @include align-items(stretch);
+  @include align-content(flex-end);
+  @include display(flex);
+  min-height: 100vh;
+
+  .boston {
+    background-blend-mode: multiply;
+    background-color: darken($boston-red, 15%);
+    background-image: url("/images/berras-hands-left.jpg");
+    background-position: right center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    left: 0;
+
+    &:hover {
+      background-color: $boston-red;
+    }
+  }
+
+  .philly {
+    @include justify-content(flex-end);
+    background-blend-mode: multiply;
+    background-color: darken($philly-maroon, 5%);
+    background-image: url("/images/berras-hands-right.jpg");
+    background-position: left center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    right: 0;
+    text-align: right;
+
+    &:hover {
+      background-color: lighten($philly-maroon, 5%);
+    }
+
+    h2::after {
+      margin-left: auto;
+    }
+  }
+}
+
+.city {
+  @include transition(1s);
+  @include display(flex);
+  @include align-items(flex-end);
+  padding: 6rem;
+  width: 50%;
+
+  &:hover {
+    .action {
+      background-color: #fff;
+    }
+  }
+
+  h2 {
+    color: #fff;
+
+    &::after {
+      background-color: shade($tan, 80);
+    }
+  }
+
+  p {
+    -webkit-font-smoothing: antialiased;
+    color: $light-tan;
+    font-family: $sub-header-font-family;
+    font-size: em(26);
+    line-height: 1.3;
+    margin-bottom: 3rem;
+  }
+
+  span {
+    display: block;
+  }
+}
+
+

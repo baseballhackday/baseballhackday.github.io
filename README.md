@@ -1,27 +1,89 @@
-baseballhackday.github.io
-=========================
+# Proteus - Jekyll
 
-The new Baseball Hack Day website 
+## About Proteus
+[Proteus](http://github.com/thoughtbot/proteus) is a collection of useful
+starter kits to help you prototype faster. It follows the
+[thoughtbot styleguide](https://github.com/thoughtbot/guides) and includes our
+favorite front end tools.
 
-Available at <a href="http://baseballhackday.github.io">baseballhackday.github.io</a> and eventually moved to <a href="baseballhackday.com">baseballhackday.com</a>
+About Jekyll
+---------------
+Jekyll is a static site generator built in Ruby. This makes it a great fit
+for projects that may end up as a Ruby on Rails app.
+
+Includes
+--------
+* [HAML](http://haml.info):
+  Simple template markup
+* [Coffeescript](http://coffeescript.org):
+  Write javascript with simpler syntax
+* [Sass](http://sass-lang.com):
+  CSS with superpowers
+* [Bourbon](http://bourbon.io):
+  Sass mixin library
+* [Neat](http://neat.bourbon.io):
+  Semantic grid for Sass and Bourbon
+* [Bitters](http://bitters.bourbon.io):
+  Scaffold styles, variables and structure for Bourbon projects.
+
+We also recommend [Refills](http://refills.bourbon.io/) for prepackaged interface patterns
+
+Getting Started
+---------------
+Set up your project in your code directory
+```
+git clone git@github.com:thoughtbot/proteus-jekyll.git your-project-folder
+cd your-project-folder
+git remote rm origin
+git remote add origin your-repo-url
+```
+
+Install dependencies
+```
+bundle install
+```
+
+Run the server and watch for changes in your files
+```
+jekyll serve -w
+```
+
+Deploy to Github Pages
+```
+jekyll build && git subtree push --prefix build origin gh-pages
+```
+
+Or install the [Proteus gem](https://github.com/thoughtbot/proteus) and enjoy some shortcuts. 
+
+Stylesheets, fonts, images, and javascript files go in the `/source/_assets/` directory.
+Vendor stylesheets and javascripts should go in each of their `/vendor/` directories.
+
+Issues
+------
+
+If you have problems, please create a
+[GitHub Issue](https://github.com/thoughtbot/proteus-jekyll/issues).
+
+Contributing
+------------
+
+Have a fix or want to add a feature?
+[Pull Requests](https://github.com/thoughtbot/proteus-jekyll/pulls) are welcome!
 
 
-### Test the site locally
+Credits
+-------
 
-    $ bundle install
+![thoughtbot](http://thoughtbot.com/logo.png)
 
-in the directory of the project, it will install the github versions of jekyll and all dependencies. Then you can run 
+This application is maintained and funded by [thoughtbot, inc](http://thoughtbot.com/community)
 
-    $ bundle exec jekyll serve -w
+Thank you to all [the contributors](https://github.com/thoughtbot/proteus-jekyll/contributors)!
 
-which will serve the site on localhost using the same settings that github uses, at
+License
+-------
 
-http://localhost:4000
+The names and logos for thoughtbot are trademarks of thoughtbot, inc.
 
-
-# Huge thanks!
-
-* [audiodude](https://github.com/audiodude)
-* [kylefiedler](https://github.com/kylefiedler)
-
-
+Proteus Jekyll is Copyright © 2014 thoughtbot, inc. It is free software, and may be
+redistributed under the terms specified in the LICENSE file.

@@ -1,0 +1,120 @@
+.philadelphia .banner {
+  background-color: $philly-maroon;
+  background-image: url("/images/philly.jpg");
+}
+
+.boston .banner {
+  background-color: $boston-red;
+  background-image: url("/images/boston.jpg");
+}
+
+.schedule {
+  @include media(em(920)) {
+    @include span-columns(6);
+  }
+
+  time {
+    @include secondary-header;
+  }
+
+  h3 {
+    line-height: 1;
+  }
+
+  li {
+    margin-bottom: 1em;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+}
+
+.sponsors {
+  @include media(em(920)) {
+    @include span-columns(6);
+    @include omega();
+  }
+
+  header {
+    @include row;
+  }
+
+  h2 {
+    float: left;
+  }
+
+  .action-primary {
+    float: right;
+    margin-top: 0.25em;
+  }
+}
+
+.sponsor-list {
+  @include row;
+
+  li {
+    @include span-columns(4);
+    text-align: center;
+
+    @include media(em(920)) {
+      @include span-columns(2 6);
+    }
+
+    h3 {
+      @include secondary-header;
+    }
+
+    img {
+      margin-bottom: 1em;
+    }
+
+    .be-sponsor img {
+      @include size(100% 160px);
+      background-color: lighten($light-tan, 20%);
+    }
+  }
+}
+
+
+.prizes {
+  padding-top: $large-spacing;
+
+  @include media(em(920)) {
+    @include span-columns(8);
+
+  }
+
+  li {
+    @include span-columns(4);
+
+    @include media(em(920)) {
+      @include span-columns(4 8);
+    }
+  }
+}
+
+.judges {
+  padding-top: $large-spacing;
+
+  @include media(em(920)) {
+    @include span-columns(4);
+    @include omega();
+  }
+
+  p {
+    @include secondary-header;
+  }
+}
+
+.guidelines {
+  clear: both;
+  padding-top: $large-spacing;
+
+  article {
+    @include media(em(920)) {
+      @include column-count(2);
+      @include column-gap(flex-gutter());
+    }
+  }
+}
