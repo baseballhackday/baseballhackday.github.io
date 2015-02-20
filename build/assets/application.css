@@ -985,10 +985,8 @@ footer.main {
   .prizes li {
     float: left;
     display: block;
-    margin-right: 2.35765%; }
-  @media screen and (min-width: 57.5em) {
-    .prizes li {
-      width: 31.76157%; } }
+    margin-right: 2.35765%;
+    width: 31.76157%; }
     .prizes li:last-child {
       margin-right: 0; }
     @media screen and (min-width: 57.5em) {
