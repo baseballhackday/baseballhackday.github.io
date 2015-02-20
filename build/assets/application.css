@@ -363,7 +363,7 @@ input[type="submit"] {
   font-size: 1.5em;
   letter-spacing: 1px;
   line-height: 1;
-  padding: 0.4em 0.4em;
+  padding: 0.4em 0.75em;
   text-transform: uppercase; }
   @media screen and (min-width: 32.5em) {
     .action {
@@ -574,7 +574,8 @@ ul,
 ol {
   margin: 0;
   padding: 0;
-  list-style-type: none; }
+  list-style-type: none;
+  overflow: auto; }
 dl {
   margin-bottom: 0.75em; }
   dl dt {
@@ -984,8 +985,10 @@ footer.main {
   .prizes li {
     float: left;
     display: block;
-    margin-right: 2.35765%;
-    width: 31.76157%; }
+    margin-right: 2.35765%; }
+  @media screen and (min-width: 57.5em) {
+    .prizes li {
+      width: 31.76157%; } }
     .prizes li:last-child {
       margin-right: 0; }
     @media screen and (min-width: 57.5em) {
