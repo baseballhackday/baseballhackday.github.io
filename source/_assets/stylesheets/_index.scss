@@ -42,8 +42,10 @@
 
   .logo {
     width: 125px;
-    margin: 0 auto 3rem;
-
+    margin: 0 auto 1rem;
+    @include media(em(520)) {
+      margin: 0 auto 3rem;
+    }
     g {
       fill: $light-tan;
     }
@@ -55,14 +57,23 @@
 }
 
 .hero {
-  @include position(absolute, 20vh null null null);
+  @include position(absolute, 3vh null null null);
+  @include media(em(960)) {
+    @include position(absolute, 15vh null null null);
+  }
+  @include media(em(1260)) {
+    @include position(absolute, 20vh null null null);
+  } 
   pointer-events: none;
   text-align: center;
   width: 100%;
 
   h2 {
     color: #fff;
-    font-size: em(52);
+    font-size: em(36);
+    @include media(em(520)) {
+      font-size: em(52);
+    }
     font-weight: bold;
     line-height: 1;
     margin-bottom: 1.5rem;
@@ -129,8 +140,12 @@
   @include transition(1s);
   @include display(flex);
   @include align-items(flex-end);
-  padding: 6rem;
+  padding: 2rem;
+  @include media(em(960)) {
+    padding: 6rem;
+  }
   width: 50%;
+  height: 100vh;
 
   &:hover {
     .action {
@@ -140,19 +155,30 @@
 
   h2 {
     color: #fff;
-
+    font-size: em(26);
+    @include media(em(520)) {
+      font-size: em(40);
+    }
     &::after {
       background-color: shade($tan, 80);
     }
   }
 
   p {
+    display: none;
+    @include media(em(360)) {
+      display: block;
+    }
     -webkit-font-smoothing: antialiased;
     color: $light-tan;
     font-family: $sub-header-font-family;
-    font-size: em(26);
     line-height: 1.3;
-    margin-bottom: 3rem;
+    font-size: em(24);
+    margin-bottom: 1rem;
+    @include media(em(520)) {
+      font-size: em(26);
+      margin-bottom: 3rem;
+    }
   }
 
   span {
