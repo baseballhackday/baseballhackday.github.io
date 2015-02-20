@@ -31,9 +31,13 @@
 }
 
 .sponsors {
+  // space when stacked
+  padding-top: $large-spacing;
+
   @include media(em(920)) {
     @include span-columns(6);
     @include omega();
+    padding-top: 0;
   }
 
   header {

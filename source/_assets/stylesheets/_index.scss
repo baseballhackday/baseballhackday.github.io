@@ -43,9 +43,16 @@
   .logo {
     width: 125px;
     margin: 0 auto 1rem;
+
     @include media(em(520)) {
-      margin: 0 auto 3rem;
+      margin-bottom: 3rem;
     }
+
+    // landscape phone override
+    @media (max-width: em(640)) and (orientation: landscape) {
+      margin-bottom: 0.5rem;
+    }
+
     g {
       fill: $light-tan;
     }
@@ -57,28 +64,41 @@
 }
 
 .hero {
-  @include position(absolute, 3vh null null null);
-  @include media(em(960)) {
-    @include position(absolute, 15vh null null null);
-  }
-  @include media(em(1260)) {
-    @include position(absolute, 20vh null null null);
-  } 
+  @include position(absolute, 3vh null null null); 
   pointer-events: none;
   text-align: center;
   width: 100%;
 
+  @include media(em(960)) {
+    @include position(absolute, 15vh null null null);
+  }
+
+  @include media(em(1260)) {
+    @include position(absolute, 20vh null null null);
+  }
+
   h2 {
     color: #fff;
     font-size: em(36);
-    @include media(em(520)) {
-      font-size: em(52);
-    }
     font-weight: bold;
     line-height: 1;
     margin-bottom: 1.5rem;
     margin: 0 auto;
     max-width: rem(640);
+
+    @include media(em(360)) {
+      font-size: em(52);
+    }
+
+    // landscape phone override
+    @media (max-width: em(640)) and (orientation: landscape) {
+      font-size: em(30);
+    }
+    
+    // landscape iphone override
+    @media (max-width: em(480)) and (orientation: landscape) {
+      font-size: em(20);
+    }
 
     &:after {
       display: none;
@@ -140,12 +160,12 @@
   @include transition(1s);
   @include display(flex);
   @include align-items(flex-end);
-  padding: 2rem;
+  @include size(50% 100vh);
+  padding: 1.5rem;
+
   @include media(em(960)) {
     padding: 6rem;
   }
-  width: 50%;
-  height: 100vh;
 
   &:hover {
     .action {
@@ -156,28 +176,42 @@
   h2 {
     color: #fff;
     font-size: em(26);
+
     @include media(em(520)) {
       font-size: em(40);
     }
+
+    // landscape phone override
+    @media (max-width: em(640)) and (orientation: landscape) {
+      font-size: em(26);
+    }
+
     &::after {
       background-color: shade($tan, 80);
     }
   }
 
   p {
-    display: none;
-    @include media(em(360)) {
-      display: block;
-    }
     -webkit-font-smoothing: antialiased;
     color: $light-tan;
     font-family: $sub-header-font-family;
     line-height: 1.3;
     font-size: em(24);
     margin-bottom: 1rem;
+
     @include media(em(520)) {
       font-size: em(26);
       margin-bottom: 3rem;
+    }
+
+    // Hide the info for portrait small phones and 
+    // landscape iphones 
+    @media (max-width: em(360)) {
+      display: none;
+    }
+
+    @media (max-width: em(640)) and (orientation: landscape) {
+      display: none;
     }
   }
 

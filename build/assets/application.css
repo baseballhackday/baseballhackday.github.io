@@ -420,6 +420,10 @@ h2 {
     height: 0.5625rem;
     margin: 1rem 0 1.5rem;
     width: 3.75rem; }
+    @media (max-width: 40em) and (orientation: landscape) {
+      h2::after {
+        height: 0;
+        margin: 0.5em 0 0; } }
 
 h3 {
   font-size: 1.5em;
@@ -739,7 +743,10 @@ footer.main {
   margin: 0 auto 1rem; }
   @media screen and (min-width: 32.5em) {
     .index .logo {
-      margin: 0 auto 3rem; } }
+      margin-bottom: 3rem; } }
+  @media (max-width: 40em) and (orientation: landscape) {
+    .index .logo {
+      margin-bottom: 0.5rem; } }
   .index .logo g {
     fill: #CDCCBB; }
 .index footer.main {
@@ -767,9 +774,15 @@ footer.main {
     margin-bottom: 1.5rem;
     margin: 0 auto;
     max-width: 40rem; }
-    @media screen and (min-width: 32.5em) {
+    @media screen and (min-width: 22.5em) {
       .hero h2 {
         font-size: 3.25em; } }
+    @media (max-width: 40em) and (orientation: landscape) {
+      .hero h2 {
+        font-size: 1.875em; } }
+    @media (max-width: 30em) and (orientation: landscape) {
+      .hero h2 {
+        font-size: 1.25em; } }
     .hero h2:after {
       display: none; }
   .hero h3 {
@@ -855,9 +868,9 @@ footer.main {
   -o-align-items: flex-end;
   align-items: flex-end;
   -ms-flex-align: end;
-  padding: 2rem;
+  height: 100vh;
   width: 50%;
-  height: 100vh; }
+  padding: 1.5rem; }
   @media screen and (min-width: 60em) {
     .city {
       padding: 6rem; } }
@@ -869,23 +882,28 @@ footer.main {
     @media screen and (min-width: 32.5em) {
       .city h2 {
         font-size: 2.5em; } }
+    @media (max-width: 40em) and (orientation: landscape) {
+      .city h2 {
+        font-size: 1.625em; } }
     .city h2::after {
       background-color: #22221c; }
   .city p {
-    display: none;
     -webkit-font-smoothing: antialiased;
     color: #CDCCBB;
     font-family: "alternate-gothic-no-1-d", "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
     line-height: 1.3;
     font-size: 1.5em;
     margin-bottom: 1rem; }
-    @media screen and (min-width: 22.5em) {
-      .city p {
-        display: block; } }
     @media screen and (min-width: 32.5em) {
       .city p {
         font-size: 1.625em;
         margin-bottom: 3rem; } }
+    @media (max-width: 22.5em) {
+      .city p {
+        display: none; } }
+    @media (max-width: 40em) and (orientation: landscape) {
+      .city p {
+        display: none; } }
   .city span {
     display: block; }
 
@@ -917,26 +935,29 @@ footer.main {
   .schedule li:last-child {
     margin-bottom: 0; }
 
-@media screen and (min-width: 57.5em) {
-  .sponsors {
-    float: left;
-    display: block;
-    margin-right: 2.35765%;
-    width: 48.82117%;
-    margin-right: 0; }
-    .sponsors:last-child {
-      margin-right: 0; } }
-.sponsors header {
-  display: block; }
-  .sponsors header:after {
-    content: "";
-    display: table;
-    clear: both; }
-.sponsors h2 {
-  float: left; }
-.sponsors .action-primary {
-  float: right;
-  margin-top: 0.25em; }
+.sponsors {
+  padding-top: 4em; }
+  @media screen and (min-width: 57.5em) {
+    .sponsors {
+      float: left;
+      display: block;
+      margin-right: 2.35765%;
+      width: 48.82117%;
+      margin-right: 0;
+      padding-top: 0; }
+      .sponsors:last-child {
+        margin-right: 0; } }
+  .sponsors header {
+    display: block; }
+    .sponsors header:after {
+      content: "";
+      display: table;
+      clear: both; }
+  .sponsors h2 {
+    float: left; }
+  .sponsors .action-primary {
+    float: right;
+    margin-top: 0.25em; }
 
 .sponsor-list {
   display: block; }
