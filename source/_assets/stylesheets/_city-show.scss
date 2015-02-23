@@ -8,6 +8,13 @@
   background-image: url("/images/boston.jpg");
 }
 
+.city-show header nav {
+  display: none;
+  @include media(em(580)) {
+    display: block;
+  }
+}
+
 .schedule {
   @include media(em(920)) {
     @include span-columns(6);
@@ -31,9 +38,13 @@
 }
 
 .sponsors {
+  // space when stacked
+  padding-top: $large-spacing;
+
   @include media(em(920)) {
     @include span-columns(6);
     @include omega();
+    padding-top: 0;
   }
 
   header {
