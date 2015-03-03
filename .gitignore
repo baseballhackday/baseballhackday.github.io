@@ -42,5 +42,3 @@ Thumbs.db
 _site
 .ruby-gemset
 .ruby-version
-
-build/*

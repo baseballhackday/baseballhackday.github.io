@@ -1,0 +1,13 @@
+/**
+ * Custom styles for the Boston city page.
+ */
+.top-row {
+  background-image: url(../img/boston-bg.jpg);
+}
+
+/* md break -- make map taller when two column*/
+@media (min-width: 992px) {
+  .iframe-rwd  {
+    padding-bottom: 100%; 
+  }
+}
