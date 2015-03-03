@@ -70,6 +70,12 @@
 
     @include media(em(920)) {
       @include span-columns(2 6);
+      @include omega(3n);
+      margin-bottom: 3em;
+    }
+
+    a {
+      display: block;
     }
 
     h3 {
@@ -83,6 +89,11 @@
     .be-sponsor img {
       @include size(100% 160px);
       background-color: lighten($light-tan, 20%);
+    }
+
+    .ticketleap, 
+    .citycoho {
+      padding-top: 3em;
     }
   }
 }
