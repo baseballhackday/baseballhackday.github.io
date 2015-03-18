@@ -82,6 +82,11 @@
       @include secondary-header;
     }
 
+    small {
+      color: darken($light-tan, 10%);
+      font-size: em(14);
+    }
+
     img {
       margin-bottom: 1em;
     }
