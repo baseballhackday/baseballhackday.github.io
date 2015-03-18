@@ -999,6 +999,9 @@ footer.main {
       font-family: "alternate-gothic-no-1-d", "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
       font-size: 1.625em;
       line-height: 1; }
+    .sponsor-list li small {
+      color: #b7b69e;
+      font-size: 0.875em; }
     .sponsor-list li img {
       margin-bottom: 1em; }
     .sponsor-list li .be-sponsor img {
