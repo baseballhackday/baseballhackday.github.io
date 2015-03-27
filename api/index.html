@@ -10,7 +10,7 @@
       <meta name="viewport" content="width=device-width, initial-scale=1">
 
       <link rel="canonical" href="/api/">
-      <link rel="stylesheet" href="/assets/application.css?cb=28219b07a19cf2e8769307de62cead8a">
+      <link rel="stylesheet" href="/assets/application.css?cb=a9bb422ab27ea3418846ec099e9af83b">
 
       <script src="//use.typekit.net/uyp2hnr.js"></script>
       <script>try{Typekit.load();}catch(e){}</script>
@@ -42,11 +42,44 @@
     <h2>API information</h2>
   </div>
 </header>
-<div class='wrapper'>
+<div class='wrapper api'>
   <ul>
     <li>
       <h2>A View From My Seat</h2>
-      <p>Instructions to come</p>
+      <p>These include: lots of photos, venue info, section info, geo location</p>
+      <h3>JSON APIs</h3>
+      <ul>
+        <li>
+          The appkey for everyone is : c17d17fc9af203465ac9d79457f2d25e
+        </li>
+        <li>
+          Docs can be fond at: http://developer.aviewfrommyseat.com/docs.php
+        </li>
+      </ul>
+      <p>
+        <strong>Sample calls:</strong>
+      </p>
+      <ul>
+        <li>
+          <code><a href='ttps://aviewfrommyseat.com/avf/api/featured.php?appkey=c17d17fc9af203465ac9d79457f2d25e'>https://aviewfrommyseat.com/avf/api/featured.php?appkey=c17d17fc9af203465ac9d79457f2d25e</a></code>
+        </li>
+        <li>
+          <code><a href='http://api.avf.ms/featured.php?appkey=c17d17fc9af203465ac9d79457f2d25e'>http://api.avf.ms/featured.php?appkey=c17d17fc9af203465ac9d79457f2d25e</a></code>
+        </li>
+      </ul>
+      <h3>Single Image API</h3>
+      <p>
+        Docs can be found here:
+        <a href='http://developer.aviewfrommyseat.com/image_api.php'>http://developer.aviewfrommyseat.com/image_api.php</a>
+      </p>
+      <p>
+        <strong>Sample call:</strong>
+      </p>
+      <ul>
+        <li>
+          <code><a href='http://aviewfrommyseat.com/image.php?width=800c&amp;venue=Citizens+Bank+Park&amp;sport=baseball&amp;section=1     20&amp;appkey=c17d17fc9af203465ac9d79457f2d25e'>http://aviewfrommyseat.com/image.php?width=800c&venue=Citizens+Bank+Park&sport=baseball&section=120&appkey=c17d17fc9af203465ac9d79457f2d25e</a></code>
+        </li>
+      </ul>
     </li>
     <li>
       <h2>SeatGeek</h2>
@@ -100,7 +133,17 @@
     </li>
     <li>
       <h2>TiqIQ</h2>
-      <p>Instructions to come</p>
+      <p>These include: Upcoming events, tickets, prices, trends, seating charts</p>
+      <h3>XML APIs</h3>
+      <ul>
+        <li>
+          See
+          <a href='https://drive.google.com/file/d/0B-zWdFg8Kq5Yc0kyM2lvV2c5dFhKSC1BcXpKSU0tRHphc0tz/view?usp=sharing'>TiqIQWebService doc.</a>
+        </li>
+        <li>
+          No key is necessary.
+        </li>
+      </ul>
     </li>
   </ul>
 </div>
