@@ -313,6 +313,10 @@ table {
   border-collapse: collapse;
   border-spacing: 0; }
 
+/* Neat 1.7.0
+ * http://neat.bourbon.io
+ * Copyright 2012-2014 thoughtbot, inc.
+ * MIT License */
 html {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -355,7 +359,7 @@ input[type="submit"] {
   background-color: #CDCCBB;
   color: #140707;
   display: inline-block;
-  font-family: "alternate-gothic-no-1-d", "Helvetica Neue", "Helvetica", "Roboto", "Arial", sans-serif;
+  font-family: "alternate-gothic-no-1-d", "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
   font-size: 1.5em;
   letter-spacing: 1px;
   line-height: 1;
@@ -374,7 +378,7 @@ input[type="submit"] {
   background-color: #BE4343;
   color: #fff;
   display: inline-block;
-  font-family: "alternate-gothic-no-1-d", "Helvetica Neue", "Helvetica", "Roboto", "Arial", sans-serif;
+  font-family: "alternate-gothic-no-1-d", "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
   font-size: 1.5em;
   letter-spacing: 1px;
   line-height: 1;
@@ -388,7 +392,7 @@ body {
   -webkit-font-smoothing: antialiased;
   background-color: white;
   color: #333;
-  font-family: "proxima-nova", "Helvetica Neue", "Helvetica", "Roboto", "Arial", sans-serif;
+  font-family: "proxima-nova", "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
   font-size: 1em;
   line-height: 1.5; }
 
@@ -398,7 +402,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "jubilat", "Georgia", "Cambria", "Times New Roman", "Times", serif;
+  font-family: "jubilat", Georgia, Cambria, "Times New Roman", Times, serif;
   line-height: 1.25;
   margin: 0;
   text-rendering: optimizeLegibility; }
@@ -485,7 +489,7 @@ input,
 label,
 select {
   display: block;
-  font-family: "proxima-nova", "Helvetica Neue", "Helvetica", "Roboto", "Arial", sans-serif;
+  font-family: "proxima-nova", "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
   font-size: 1em; }
 
 label {
@@ -497,7 +501,7 @@ label {
     display: none; }
 
 textarea,
-input[type="color"], input[type="date"], input[type="datetime"], input[type="datetime-local"], input[type="email"], input[type="month"], input[type="number"], input[type="password"], input[type="search"], input[type="tel"], input[type="text"], input[type="time"], input[type="url"], input[type="week"], textarea,
+input[type="email"], input[type="number"], input[type="password"], input[type="search"], input[type="tel"], input[type="text"], input[type="url"], input[type="color"], input[type="date"], input[type="datetime"], input[type="datetime-local"], input[type="month"], input[type="time"], input[type="week"],
 select[multiple=multiple] {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -509,17 +513,17 @@ select[multiple=multiple] {
   border-radius: 3px;
   border: 1px solid #DDD;
   box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.06);
-  font-family: "proxima-nova", "Helvetica Neue", "Helvetica", "Roboto", "Arial", sans-serif;
+  font-family: "proxima-nova", "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
   font-size: 1em;
   margin-bottom: 0.75em;
   padding: 0.5em 0.5em;
   width: 100%; }
   textarea:hover,
-  input[type="color"]:hover, input[type="date"]:hover, input[type="datetime"]:hover, input[type="datetime-local"]:hover, input[type="email"]:hover, input[type="month"]:hover, input[type="number"]:hover, input[type="password"]:hover, input[type="search"]:hover, input[type="tel"]:hover, input[type="text"]:hover, input[type="time"]:hover, input[type="url"]:hover, input[type="week"]:hover, textarea:hover,
+  input[type="email"]:hover, input[type="number"]:hover, input[type="password"]:hover, input[type="search"]:hover, input[type="tel"]:hover, input[type="text"]:hover, input[type="url"]:hover, input[type="color"]:hover, input[type="date"]:hover, input[type="datetime"]:hover, input[type="datetime-local"]:hover, input[type="month"]:hover, input[type="time"]:hover, input[type="week"]:hover,
   select[multiple=multiple]:hover {
     border-color: #c4c4c4; }
   textarea:focus,
-  input[type="color"]:focus, input[type="date"]:focus, input[type="datetime"]:focus, input[type="datetime-local"]:focus, input[type="email"]:focus, input[type="month"]:focus, input[type="number"]:focus, input[type="password"]:focus, input[type="search"]:focus, input[type="tel"]:focus, input[type="text"]:focus, input[type="time"]:focus, input[type="url"]:focus, input[type="week"]:focus, textarea:focus,
+  input[type="email"]:focus, input[type="number"]:focus, input[type="password"]:focus, input[type="search"]:focus, input[type="tel"]:focus, input[type="text"]:focus, input[type="url"]:focus, input[type="color"]:focus, input[type="date"]:focus, input[type="datetime"]:focus, input[type="datetime-local"]:focus, input[type="month"]:focus, input[type="time"]:focus, input[type="week"]:focus,
   select[multiple=multiple]:focus {
     border-color: #863C4D;
     box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.06), 0 0 5px rgba(116, 52, 67, 0.7);
@@ -611,10 +615,10 @@ input[type="submit"] {
   margin-left: auto;
   margin-right: auto;
   padding: 0 2em; }
-  .wrapper::after {
-    clear: both;
+  .wrapper:after {
     content: "";
-    display: table; }
+    display: table;
+    clear: both; }
 
 .banner {
   background-blend-mode: multiply;
@@ -630,7 +634,7 @@ input[type="submit"] {
       background-color: #22221c; }
   .banner p {
     color: #b7b69e;
-    font-family: "alternate-gothic-no-1-d", "Helvetica Neue", "Helvetica", "Roboto", "Arial", sans-serif;
+    font-family: "alternate-gothic-no-1-d", "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
     font-size: 1.625em;
     line-height: 1;
     padding: 1em 0; }
@@ -646,10 +650,10 @@ header.main {
   margin-left: auto;
   margin-right: auto;
   padding: 2em 2em 0; }
-  header.main::after {
-    clear: both;
+  header.main:after {
     content: "";
-    display: table; }
+    display: table;
+    clear: both; }
   header.main h1 {
     float: left; }
     header.main h1 svg {
@@ -668,7 +672,7 @@ header.main {
     margin-left: 1em; }
   header.main a {
     color: #b7b69e;
-    font-family: "alternate-gothic-no-1-d", "Helvetica Neue", "Helvetica", "Roboto", "Arial", sans-serif;
+    font-family: "alternate-gothic-no-1-d", "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
     font-size: 1.625em;
     line-height: 1; }
     header.main a:hover {
@@ -701,7 +705,7 @@ footer.main {
       margin-right: 0; }
     footer.main li a {
       color: #b7b69e;
-      font-family: "alternate-gothic-no-1-d", "Helvetica Neue", "Helvetica", "Roboto", "Arial", sans-serif;
+      font-family: "alternate-gothic-no-1-d", "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
       font-size: 1.625em;
       line-height: 1; }
       footer.main li a:hover {
@@ -710,7 +714,7 @@ footer.main {
     margin-top: 4em; }
   footer.main h3 {
     color: #b7b69e;
-    font-family: "alternate-gothic-no-1-d", "Helvetica Neue", "Helvetica", "Roboto", "Arial", sans-serif;
+    font-family: "alternate-gothic-no-1-d", "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
     font-size: 1.625em;
     line-height: 1; }
   footer.main h4 {
@@ -734,7 +738,7 @@ footer.main {
     .index header.main nav .menu {
       color: #fff; }
     .index header.main nav a {
-      font-family: "alternate-gothic-no-1-d", "Helvetica Neue", "Helvetica", "Roboto", "Arial", sans-serif;
+      font-family: "alternate-gothic-no-1-d", "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
       font-size: 1.5em;
       letter-spacing: 1px;
       text-transform: uppercase; }
@@ -793,7 +797,7 @@ footer.main {
   .hero h3 {
     color: rgba(4, 1, 2, 0.8);
     color: #CDCCBB;
-    font-family: "alternate-gothic-no-1-d", "Helvetica Neue", "Helvetica", "Roboto", "Arial", sans-serif;
+    font-family: "alternate-gothic-no-1-d", "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
     font-weight: normal;
     letter-spacing: 1px;
     text-transform: uppercase; }
@@ -895,7 +899,7 @@ footer.main {
   .city p {
     -webkit-font-smoothing: antialiased;
     color: #CDCCBB;
-    font-family: "alternate-gothic-no-1-d", "Helvetica Neue", "Helvetica", "Roboto", "Arial", sans-serif;
+    font-family: "alternate-gothic-no-1-d", "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
     line-height: 1.3;
     font-size: 1.5em;
     margin-bottom: 1rem; }
@@ -936,7 +940,7 @@ footer.main {
       margin-right: 0; } }
 .schedule time {
   color: #b7b69e;
-  font-family: "alternate-gothic-no-1-d", "Helvetica Neue", "Helvetica", "Roboto", "Arial", sans-serif;
+  font-family: "alternate-gothic-no-1-d", "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
   font-size: 1.625em;
   line-height: 1; }
 .schedule h3 {
@@ -960,10 +964,10 @@ footer.main {
         margin-right: 0; } }
   .sponsors header {
     display: block; }
-    .sponsors header::after {
-      clear: both;
+    .sponsors header:after {
       content: "";
-      display: table; }
+      display: table;
+      clear: both; }
   .sponsors h2 {
     float: left; }
   .sponsors .action-primary {
@@ -972,10 +976,10 @@ footer.main {
 
 .sponsor-list {
   display: block; }
-  .sponsor-list::after {
-    clear: both;
+  .sponsor-list:after {
     content: "";
-    display: table; }
+    display: table;
+    clear: both; }
   .sponsor-list li {
     float: left;
     display: block;
@@ -1001,7 +1005,7 @@ footer.main {
       display: block; }
     .sponsor-list li h3 {
       color: #b7b69e;
-      font-family: "alternate-gothic-no-1-d", "Helvetica Neue", "Helvetica", "Roboto", "Arial", sans-serif;
+      font-family: "alternate-gothic-no-1-d", "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
       font-size: 1.625em;
       line-height: 1; }
     .sponsor-list li small {
@@ -1060,7 +1064,7 @@ footer.main {
         margin-right: 0; } }
   .judges p {
     color: #b7b69e;
-    font-family: "alternate-gothic-no-1-d", "Helvetica Neue", "Helvetica", "Roboto", "Arial", sans-serif;
+    font-family: "alternate-gothic-no-1-d", "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
     font-size: 1.625em;
     line-height: 1; }
 
