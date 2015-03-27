@@ -7,11 +7,41 @@ body-class: about-history
   .wrapper
     %h2 API information
 
-.wrapper
+.wrapper.api
   %ul
     %li
       %h2 A View From My Seat
-      %p Instructions to come
+      %p These include: lots of photos, venue info, section info, geo location
+
+      %h3 JSON APIs
+      %ul
+        %li
+          The appkey for everyone is : c17d17fc9af203465ac9d79457f2d25e
+        %li
+          Docs can be fond at: http://developer.aviewfrommyseat.com/docs.php
+
+      %p 
+        %strong Sample calls:
+      %ul
+        %li
+          %code 
+            %a{ href: "ttps://aviewfrommyseat.com/avf/api/featured.php?appkey=c17d17fc9af203465ac9d79457f2d25e" } https://aviewfrommyseat.com/avf/api/featured.php?appkey=c17d17fc9af203465ac9d79457f2d25e
+        %li
+          %code 
+            %a{ href: "http://api.avf.ms/featured.php?appkey=c17d17fc9af203465ac9d79457f2d25e" } http://api.avf.ms/featured.php?appkey=c17d17fc9af203465ac9d79457f2d25e
+
+      %h3 Single Image API
+      %p 
+        Docs can be found here: 
+        %a{ href: "http://developer.aviewfrommyseat.com/image_api.php" } http://developer.aviewfrommyseat.com/image_api.php
+
+      %p
+        %strong Sample call:
+      %ul 
+        %li 
+          %code
+            %a{ href: "http://aviewfrommyseat.com/image.php?width=800c&venue=Citizens+Bank+Park&sport=baseball&section=1     20&appkey=c17d17fc9af203465ac9d79457f2d25e" } http://aviewfrommyseat.com/image.php?width=800c&venue=Citizens+Bank+Park&sport=baseball&section=120&appkey=c17d17fc9af203465ac9d79457f2d25e
+
     %li
       %h2 SeatGeek
       %p 
@@ -56,4 +86,12 @@ body-class: about-history
  
     %li
       %h2 TiqIQ
-      %p Instructions to come
+      %p These include: Upcoming events, tickets, prices, trends, seating charts
+
+      %h3 XML APIs
+      %ul
+        %li
+          See 
+          %a{ href: "https://drive.google.com/file/d/0B-zWdFg8Kq5Yc0kyM2lvV2c5dFhKSC1BcXpKSU0tRHphc0tz/view?usp=sharing" } TiqIQWebService doc.
+        %li
+          No key is necessary.
