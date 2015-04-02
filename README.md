@@ -1,44 +1,20 @@
-# Proteus - Jekyll
+# Baseball Hack Day 
 
-## About Proteus
+Baseball Hack Day is a fun, free, friendly one-day hacking/coding/designing competition for baseball fans. 
+
+#HackBaseball 
+
+## This website is built with Proteus and Jekyll
 [Proteus](http://github.com/thoughtbot/proteus) is a collection of useful
 starter kits to help you prototype faster. It follows the
 [thoughtbot styleguide](https://github.com/thoughtbot/guides) and includes our
-favorite front end tools.
+favorite front end tools. 
+Jekyll is a static site generator built in Ruby. 
 
-About Jekyll
----------------
-Jekyll is a static site generator built in Ruby. This makes it a great fit
-for projects that may end up as a Ruby on Rails app.
-
-Includes
---------
-* [HAML](http://haml.info):
-  Simple template markup
-* [Coffeescript](http://coffeescript.org):
-  Write javascript with simpler syntax
-* [Sass](http://sass-lang.com):
-  CSS with superpowers
-* [Bourbon](http://bourbon.io):
-  Sass mixin library
-* [Neat](http://neat.bourbon.io):
-  Semantic grid for Sass and Bourbon
-* [Bitters](http://bitters.bourbon.io):
-  Scaffold styles, variables and structure for Bourbon projects.
-
-We also recommend [Refills](http://refills.bourbon.io/) for prepackaged interface patterns
 
 Getting Started
 ---------------
-Set up your project in your code directory
-```
-git clone git@github.com:thoughtbot/proteus-jekyll.git your-project-folder
-cd your-project-folder
-git remote rm origin
-git remote add origin your-repo-url
-```
-
-Install dependencies
+Clone and install dependencies
 ```
 bundle install
 ```
@@ -50,7 +26,7 @@ jekyll serve -w
 
 Deploy to Github Pages
 ```
-jekyll build && git subtree push --prefix build origin gh-pages
+jekyll build && git subtree push --prefix build origin master
 ```
 
 Or install the [Proteus gem](https://github.com/thoughtbot/proteus) and enjoy some shortcuts. 
