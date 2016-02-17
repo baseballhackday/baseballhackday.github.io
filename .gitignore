@@ -42,3 +42,6 @@ Thumbs.db
 _site
 .ruby-gemset
 .ruby-version
+
+# Assuming this doesn't need to be in here?
+source/.asset-cache/

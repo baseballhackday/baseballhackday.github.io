@@ -819,7 +819,7 @@ footer.main {
   .cities .boston {
     background-blend-mode: multiply;
     background-color: #862e2e;
-    background-image: url("/images/berras-hands-left.jpg");
+    background-image: url("/2015/images/berras-hands-left.jpg");
     background-position: right center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -838,7 +838,7 @@ footer.main {
     -ms-flex-pack: end;
     background-blend-mode: multiply;
     background-color: #743443;
-    background-image: url("/images/berras-hands-right.jpg");
+    background-image: url("/2015/images/berras-hands-right.jpg");
     background-position: left center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -910,11 +910,11 @@ footer.main {
 
 .philadelphia .banner {
   background-color: #863C4D;
-  background-image: url("/images/philly.jpg"); }
+  background-image: url("/2015/images/philly.jpg"); }
 
 .boston .banner {
   background-color: #BE4343;
-  background-image: url("/images/boston.jpg"); }
+  background-image: url("/2015/images/boston.jpg"); }
 
 .city-show header nav {
   display: none; }
@@ -1074,7 +1074,7 @@ footer.main {
 
 .about-history .banner {
   background-color: #863C4D;
-  background-image: url("/images/about.jpg");
+  background-image: url("/2015/images/about.jpg");
   text-align: center; }
   .about-history .banner h2::after {
     margin-left: auto;
