@@ -1,0 +1,236 @@
+---
+layout: default
+body-class: boston city-show
+---
+
+%header.banner
+  .wrapper
+    %h2 Boston
+    %p.time-location
+      %span.time March 28th 2015, 9:30am – 6pm
+      %span.location The Boston Globe, 135 William T Morrissey Blvd, Boston, MA 02125
+
+    %a{ class: "action", href: "http://2015baseballhackday.challengepost.com/submissions" } See submissions!
+
+.wrapper
+  %section.schedule
+    %h2 Schedule
+    %ul
+      %li
+        %time{ datetime: "", pubdate: "" } 9:30 &ndash; 10:00am
+        %h3 Registration, Meet and Greet, and Coffee
+      %li
+        %time{ datetime: "", pubdate: "" } 10:00 &ndash; 10:30am
+        %h3 Welcome, Introductions, and Pitch
+      %li
+        %time{ datetime: "", pubdate: "" } 10:30 &ndash; 12:30pm
+        %h3 Code
+      %li
+        %time{ datetime: "", pubdate: "" } 12:30 &ndash; 1:30pm
+        %h3 Lunch
+      %li
+        %time{ datetime: "", pubdate: "" } 1:30 &ndash; 5:30pm
+        %h3 More Code
+      %li
+        %time{ datetime: "", pubdate: "" } 5:30 &ndash; 6:00pm
+        %h3 Presentation, Judging, and Awards
+
+  %section.sponsors
+    %header
+      %h2 Sponsors
+
+    %ul.sponsor-list
+      %li
+        %a{ class: "bostonglobemedia", href: "http://bostonglobemedia.com" }
+          %img{ src: "/images/boston-sponsors/bostonglobemedia.png", alt: "bostonglobemedia logo" }/
+          %h3 Boston Globe Media
+          %small Venue, MVP Sponsor
+      %li
+        %a{ class: "mlbam", href: "http://mlb.com" }
+          %img{ src: "/images/boston-sponsors/mlbam.png", alt: "mlbam Logo" }/
+          %h3 MLB Advanced Media
+          %small Prizes
+      %li
+        %a{ class: "actbluetech", href: "http://actbluetech.com" }
+          %img{ src: "/images/boston-sponsors/actbluetech.png", alt: "actbluetech Logo" }/
+          %h3 Act Blue Technical Service
+          %small Hall of Fame Sponsor
+      %li
+        %a{ class: "generalassembly", href: "https://generalassemb.ly/" }
+          %img{ src: "/images/boston-sponsors/generalassembly.png", alt: "generalassembly Logo" }/
+          %h3 General Assembly
+          %small Educational Partner
+      %li
+        %a{ class: "vitamin-t", href: "http://vitamintalent.com/" }
+          %img{ src: "/images/boston-sponsors/vitamin-t.png", alt: "vitamin-t Logo" }/
+          %h3 Vitamin T
+          %small MVP Sponsor
+      %li
+        %a{ class: "seatgeek", href: "http://seatgeek.com" }
+          %img{ src: "/images/boston-sponsors/seatgeek.png", alt: "seatgeek Logo" }/
+          %h3 SeatGeek
+          %small API, Prizes, MVP Sponsor
+      %li
+        %a{ class: "draftkings", href: "http://draftkings.com" }
+          %img{ src: "/images/boston-sponsors/draftkings.png", alt: "draftkings Logo" }/
+          %h3 DraftKings
+          %small MVP Sponsor
+      %li
+        %a{ class: "shadosports", href: "http://shadosports.com" }
+          %img{ src: "/images/boston-sponsors/shadosports.png", alt: "shadosports Logo" }/
+          %h3 Shado Sports
+          %small All Star Sponsor
+      %li
+        %a{ class: "sabrboston", href: "http://chapters.sabr.org/boston/" }
+          %img{ src: "/images/boston-sponsors/sabrboston.png", alt: "sabrboston Logo" }/
+          %h3 SABR Boston
+          %small Community Sponsor
+      %li
+        %a{ class: "sportsdata", href: "http://www.sportsdatallc.com/" }
+          %img{ src: "/images/boston-sponsors/sportsdata.png", alt: "sportsdata Logo" }/
+          %h3 Sports Data, LLC
+          %small API, Prizes
+
+      %a.action-primary{ href: "mailto:daigo@daigofujiwara.com" }
+        Be a Sponsor
+
+  %section.prizes
+    %h2 Prizes
+    %ul
+      %li
+        %h3 Boston Overall Winner
+        %p 
+          Winning team of the Boston competition will win 
+          %a{:href => "http://www.mlb.tv/"}an annual MLB.TV Premium subscription 
+          for each team member (maximum team size of four)
+      %li
+        %h3 Baseball Hack Day Grand Prize Winner
+        %p
+          In addition, the team who takes the grand prize (best of the three winning teams of Boston, Philadelphia and Montreal) will also receive 
+          %a{:href => "http://www.rbigame.com/"}RBI Baeball 15.
+      %li
+        %h3 
+          Best Use of 
+          %a{:href => "http://developer.sportsdatallc.com/docs/MLB_API"}Sports Data API
+        %p
+          2015 season (6-month) Real Time MLB key
+      %li
+        %h3 
+          Best Use of 
+          %a{:href => "http://platform.seatgeek.com/"}SeatGeek API
+        %p
+          $100 credit for tickets on SeatGeek
+
+      %li
+        %p 
+          and more! 
+          %a{ href: "mailto:daigo@daigofujiwara.com" } (Want to spronsor a prize? Email us.)
+
+  %section.judges
+    %h2 Judges
+    %ul
+      %li 
+        %h3 Ben Romy
+        %p 
+          Software Engineer, 
+          %a{:href => "http://www.mlbam.com/"}MLB Advanced Media
+      %li
+        %h3 Michael Amoroso
+        %p 
+          Director of the Technical Product Group, 
+          %a{:href => "http://www.mlbam.com/"}MLB Advanced Media
+      %li 
+        %h3 David Laurila
+        %p 
+          Staff Writer, 
+          %a{:href => "http://www.fangraphs.com/blogs/author/david-laurila/"}FanGraphs
+          %br
+          Chapter Co-chair, 
+          %a{:href => "http://chapters.sabr.org/boston/"}SABR Boston
+      %li 
+        %h3 David Thyresson
+        %p 
+          Co-founder, 
+          %a{:href => "http://www.stattleship.com"}Stattleship
+          %br
+          Director,
+          %a{:href => "http://www.intrepid.io"}Intrepid Pursuits
+
+  %section.guidelines
+    %h2 Come join us, March 28!
+    %article
+      %p Love creating stuff on your computer and LOVE baseball? Come hack with us on March 28 at The Boston Globe, <a href="https://www.google.com/maps/place/135+William+T+Morrissey+Blvd,+Boston,+MA+02125/@42.3155726,-71.0488811,17">135 William T Morrissey Blvd, Boston, MA 02125</a>!
+
+      %p The fourth annual Baseball Hack Day is a fun, friendly one-day hacking competition (also known as hackathon, hackfest or codefest) for baseball fans.
+
+      %p It is the day where area baseball minds come together and see what cool projects can be created within a limited time. The project could be (but is not limited to) a tool, app, website, or data visualization. Baseball Hack Day is a free event thanks to our generous sponsors. The event is based on the principal of <a href="http://hackdaymanifesto.com/">the Hack Day Manifesto</a>.
+
+      %p See what we did in <a href="http://baseballhackday.challengepost.com/submissions">2014</a>, <a href="https://www.hackerleague.org/hackathons/boston-baseball-hack-day-2013/hacks">2013</a>, and <a href="/2012">2012</a> to get an idea. See our resources in <a href="https://github.com/baseballhackday/data-and-resources/wiki/Resources-and-ideas">github wiki</a>, check out <a href="http://baseballhackday.tumblr.com/">our inspiraton blog on tumblr</a>, and follow us on <a href="http://twitter.com/baseballhackday">Twitter @BaseballHackDay</a>
+
+      %a.action-primary{ href: "https://www.eventbrite.com/e/boston-baseball-hack-day-2015-tickets-15826309919" }
+        Register now
+
+  %section.guidelines
+    %h2 New for Boston 2015
+
+    %article
+      %p New to hack days? Have no fear. To encourage participation of developers and designers of all levels, there will be <strong>three tracks</strong>:
+
+      %ul
+        %li First, <strong>"hacking track"</strong> is our usual, typical Baseball Hack Day track. You come with project and recruit people, or come and find a project to join and work on it for the day. 
+        %li Second one is a <strong>"project track"</strong>, where we have project/challenge ready to be worked on. There will be a "project manager" or "leader" type person to lead the team(s) to solve the challenge. 
+        %li Third one is a <strong>learning track</strong>, which is mostly designed for first-time hackathon attendees. This is where you can learn how to hack from Baseball Hack Day's mentor volunteers. Less like competition and more like a workshop. 
+
+  %section.guidelines
+    %h2 Guidelines &amp; Rules
+
+    %article
+      %p First and foremost, this event will be a success if everyone has a good time, so rule number 1, please don't do anything that would detract from the fairness or fun of the event. Respect your fellow hackers.
+      %p We are using a hack submission service called <a href="http://www.challengepost.com">ChallengePost</a>. In order to win, you need to submit the hacks through it. It helps organizers keep track of the teams and the projects they create.
+      %p Hacks could be (but are not limited to) a tool, application, software, website, or data visualization and may be built using any programing language and platform that you choose. Teams can be of any size, but awards are only given to up to four individuals. Hacks will be judged for 1) Creativity/Originality, 2) Design/Presentation, and 3) Execution/Functionality.
+      %p The majority of your coding must happen during the event. Some work done prior to the event is allowed, but it should be disclosed at your demo. Ideas that are compact and executable in one-day format are encouraged, and we will reward teams that recognize this time constraint.
+      %p At 5:30 p.m., you will have 3 to 5 minutes of presentation and demo time (depending on how many projects there are). Judges also will come around during the event and you are encouraged to tell them about your projects at that time.
+      %p Prototypes/mockups for demo is OK, but *working* websites or mobile apps are strongly encouraged.
+
+  %section.guidelines
+    %h2 Sign up for updates from Baseball Hack Day
+
+    %div
+      / Begin MailChimp Signup Form
+      %link{:href => "//cdn-images.mailchimp.com/embedcode/classic-081711.css", :rel => "stylesheet", :type => "text/css"}/
+      #mc_embed_signup
+        %form#mc-embedded-subscribe-form.validate{:action => "//baseballhackday.us6.list-manage.com/subscribe/post?u=bfb4eee5578f85e2a07e7cdf8&id=c18dbfbf5e", :method => "post", :name => "mc-embedded-subscribe-form", :novalidate => "", :target => "_blank"}
+          #mc_embed_signup_scroll
+            .indicates-required
+              %span.asterisk *
+              indicates required
+            .mc-field-group
+              %label{:for => "mce-EMAIL"}
+                Email Address
+                %span.asterisk *
+              %input#mce-EMAIL.required.email{:name => "EMAIL", :type => "email", :value => ""}/
+            .mc-field-group
+              %label{:for => "mce-NAME"} Name
+              %input#mce-NAME{:name => "NAME", :type => "text", :value => ""}/
+            .mc-field-group.input-group
+              %strong Email Format
+              %ul
+                %li
+                  %input#mce-EMAILTYPE-0{:name => "EMAILTYPE", :type => "radio", :value => "html"}/
+                  %label{:for => "mce-EMAILTYPE-0"} html
+                %li
+                  %input#mce-EMAILTYPE-1{:name => "EMAILTYPE", :type => "radio", :value => "text"}/
+                  %label{:for => "mce-EMAILTYPE-1"} text
+            #mce-responses.clear
+              #mce-error-response.response{:style => "display:none"}
+              #mce-success-response.response{:style => "display:none"}
+            / real people should not fill this in and expect good things - do not remove this or risk form bot signups
+            %div{:style => "position: absolute; left: -5000px;"}
+              %input{:name => "b_bfb4eee5578f85e2a07e7cdf8_c18dbfbf5e", :tabindex => "-1", :type => "text", :value => ""}/
+            .clear
+              %input#mc-embedded-subscribe.button{:name => "subscribe", :type => "submit", :value => "Subscribe"}/
+      %script{:src => "//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js", :type => "text/javascript"}
+      :javascript
+        (function($) {window.fnames = new Array(); window.ftypes = new Array();fnames[0]='EMAIL';ftypes[0]='email';fnames[1]='NAME';ftypes[1]='text';}(jQuery));var $mcj = jQuery.noConflict(true);
+      / End mc_embed_signup
+
