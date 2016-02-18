@@ -4,47 +4,34 @@ Baseball Hack Day is a fun, free, friendly one-day hacking/coding/designing comp
 
 #HackBaseball 
 
-## This website is built with Proteus and Jekyll
-[Proteus](http://github.com/thoughtbot/proteus) is a collection of useful
-starter kits to help you prototype faster. It follows the
-[thoughtbot styleguide](https://github.com/thoughtbot/guides) and includes our
-favorite front end tools. 
+## This website is built Jekyll
+
+ It follows the
+[thoughtbot styleguide](https://github.com/thoughtbot/guides) 
 Jekyll is a static site generator built in Ruby. 
 
 
 Getting Started
 ---------------
-Clone and install dependencies
-```
-bundle install
-```
 
-Run the server and watch for changes in your files
-```
-jekyll serve -w
-```
+If you don't have it, install [node.js](https://nodejs.org/en/). Easiest way it to use [Homebrew](http://brew.sh/) by
+  `ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"`
+then 
+  `brew install node`
+and install npm and gulp globally by running 
+  `sudo npm install npm gulp -g`
 
-Deploy to Github Pages
-```
-jekyll build && git subtree push --prefix build origin master
-```
+Run gulp to compile css from sass by simply run `gulp` from your terminal within your repo. 
+It will launch watch by default. <code>control-c</code> to stop. If you only want the css compiled once, run `gulp sass`
 
-Or install the [Proteus gem](https://github.com/thoughtbot/proteus) and enjoy some shortcuts. 
+To run jekyll locally to test your website while developing, run  `bundle exec jekyll serve --watch` (Requires ruby *) Your website should be viewable by going to [localhost:4000](http://localhost:4000/)
 
-Stylesheets, fonts, images, and javascript files go in the `/source/_assets/` directory.
-Vendor stylesheets and javascripts should go in each of their `/vendor/` directories.
+Github's doc on [how to use Jekyll on Github Pages](https://help.github.com/articles/using-jekyll-with-pages) is also helpful. 
 
-Issues
-------
 
-If you have problems, please create a
-[GitHub Issue](https://github.com/thoughtbot/proteus-jekyll/issues).
+* You may have to run `brew install ruby` and `sudo gem install bundler` then `sudo bundle install` once. [Mac OS X 10.11 nokogiri trouble](http://stackoverflow.com/questions/23668684/failed-to-build-gem-native-extension-when-i-run-bundle-install)
 
-Contributing
-------------
 
-Have a fix or want to add a feature?
-[Pull Requests](https://github.com/thoughtbot/proteus-jekyll/pulls) are welcome!
 
 
 Credits
@@ -52,9 +39,13 @@ Credits
 
 ![thoughtbot](http://thoughtbot.com/logo.png)
 
-This application is maintained and funded by [thoughtbot, inc](http://thoughtbot.com/community)
+[Proteus](http://github.com/thoughtbot/proteus) is maintained and funded by [thoughtbot, inc](http://thoughtbot.com/community)
 
 Thank you to all [the contributors](https://github.com/thoughtbot/proteus-jekyll/contributors)!
+
+Also based on Daigo Fujiwara's https://github.com/daigofuji/jekyll-foundation-6-starter
+
+
 
 License
 -------
