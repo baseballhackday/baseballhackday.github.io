@@ -1,0 +1,134 @@
+.index {
+  header.main {
+    text-align: center;
+
+
+    h1 {
+      display: none;
+    }
+
+    nav {
+      @include position(absolute, 2em 3em null null);
+      text-align: right;
+
+      &:hover {
+        ul {
+          display: block;
+        }
+      }
+
+      .menu {
+        color: #fff;
+      }
+
+      a {
+        font-family: $sub-header-font-family;
+        font-size: em(24);
+        letter-spacing: 1px;
+        text-transform: uppercase;
+      }
+
+      ul {
+        display: none;
+        margin-top: 1em;
+      }
+
+      li {
+        a {
+          color: $light-tan;
+        }
+      }
+    }
+  }
+
+  .logo {
+    width: 125px;
+    margin: 0 auto 1rem;
+
+    @include media(em(520)) {
+      margin-bottom: 3rem;
+    }
+
+    // landscape phone override
+    @media (max-width: em(640)) and (orientation: landscape) {
+      margin-bottom: 0.5rem;
+    }
+
+    g {
+      fill: $light-tan;
+    }
+  }
+
+  footer.main {
+    display: none;
+  }
+}
+
+.hero {
+  background-blend-mode: multiply;
+  background-color: $montreal-blue;
+  background-image: url("/images/berras-hands.jpg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  padding-top: 10vh;
+  text-align: center;
+  width: 100%;
+  height: 100vh;
+
+  h2 {
+    color: #fff;
+    font-size: em(36);
+    font-weight: bold;
+    line-height: 1;
+    margin-bottom: 1.5rem;
+    margin: 0 auto;
+    max-width: rem(640);
+
+    @include media(em(360)) {
+      font-size: em(52);
+    }
+
+    // landscape phone override
+    @media (max-width: em(640)) and (orientation: landscape) {
+      font-size: em(30);
+    }
+    
+    // landscape iphone override
+    @media (max-width: em(480)) and (orientation: landscape) {
+      font-size: em(20);
+    }
+
+    &:after {
+      display: none;
+    }
+  }
+
+  h3 {
+    color: rgba(#040102, 0.8);
+    color: $light-tan;
+    font-family: $sub-header-font-family;
+    font-weight: normal;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+  }
+
+  .select {
+    margin-top: $large-spacing;
+
+    // landscape iphone override
+    @media (max-width: em(640)) and (orientation: landscape) {
+      margin-top: em(16);
+    }
+
+
+    select {
+      padding: 1.3rem 6rem 1.3rem 2rem;
+      background-color: rgba($chicago-blue, .8);
+    }
+  }
+
+}
+
+

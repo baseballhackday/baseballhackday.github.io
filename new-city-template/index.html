@@ -1,0 +1,101 @@
+---
+layout: default
+body-class: boston city-show
+title: 2016 Boston Baseball Hack Day
+description: Fun, friendly, free, one-day, on-site hacking/coding competition for baseball fans. 
+url : http://baseballhackday.com/boston
+twitter : baseballhackday
+socialimage: http://www.baseballhackday.com/images/bbhd-logo.png
+---
+<!-- change the header image and color by creating a new body class in /scss/_city-show.scss -->
+<!-- schedule and rules are in "include" folder. If you want to create your own, just copy and paste the code on this page --> 
+
+<header class='banner'>
+  <div class='wrapper'>
+    <h2>Boston</h2>
+    <p class='time-location'>
+      <span class='time'>March 19th 2016, 9:30am – 6pm</span>
+      <span class='location'>TBA</span>
+    </p>
+    <a class='action' href='#'>Register!</a>
+  </div>
+</header>
+<div class='wrapper'>
+  <section class='schedule'>
+    <h2>Schedule</h2>
+    {% include schedule.html %}
+  </section>
+
+
+  <section class='sponsors'>
+    <header>
+      <h2>Sponsors</h2>
+      <a class='action-primary' href='mailto:kyle@thoughtbot.com'>
+        Be a Sponsor
+      </a>
+    </header>
+    <ul class='sponsor-list'>
+      <li>
+        <a class='mlbam' href='http://mlbam.com'>
+          <img alt='mlbam Logo' src='/images/boston-sponsors/mlbam.png'>
+          <h3>MLB Advanced Media</h3>
+        </a>
+      </li>
+      <li>
+          <h3>.. and more!</h3>
+      </li>
+    </ul>
+  </section>
+
+
+
+  <section class='prizes'>
+    <h2>Prizes</h2>
+    <ul>
+      <li>TBA</li>
+      <!--<li>
+        <h3>Boston Overall Winner</h3>
+        <p>
+          Winning team of the Boston competition will win
+          <a href='http://www.mlb.tv/'>an annual MLB.TV Premium subscription</a>
+          for each team member (maximum team size of four)
+        </p>
+      </li>
+      <li>
+        <h3>Baseball Hack Day Grand Prize Winner</h3>
+        <p>
+          In addition, the team who takes the grand prize (best of the winning teams of participating cities) will also recieve additional prize (and major bragging rights!)
+        </p>
+      </li>-->
+    </ul>
+  </section>
+
+
+
+  <section class='judges'>
+    <h2>Judges</h2>
+    <ul>
+      <li>
+        <h3>George Herman Ruth, Jr.</h3>
+        <p>
+          American professional baseball player
+        </p>
+      </li>
+      <li>
+        <h3>And more</h3>
+        <p>
+        </p>
+      </li> 
+    </ul>
+  </section>
+
+
+
+  <section class='guidelines'>
+    <h2>Guidelines &amp; Rules</h2>
+    {% include rule.html %}
+    <article>
+      <!-- <p>Put additional local rules here</p> -->
+    </article>
+  </section>
+</div>

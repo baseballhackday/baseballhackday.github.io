@@ -1,0 +1,11 @@
+title : 2016 Baseball Hack Day is on March 19
+description : Fun friendly free one-day on-site hacking/coding competition for baseball fans
+keyword : baseball, hackday, hackathon, hack, hacking, hackfest, codefest, mlb, major league baseball
+url : http://www.baseballhackday.com
+baseurl : http://www.baseballhackday.com
+email : daigo@baseballhackday.com
+twitter : baseballhackday
+socialimage: http://www.baseballhackday.com/images/bbhd-logo.png
+markdown: kramdown
+exclude :
+  - node_modules
