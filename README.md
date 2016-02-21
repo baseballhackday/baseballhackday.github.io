@@ -32,6 +32,14 @@ Github's doc on [how to use Jekyll on Github Pages](https://help.github.com/arti
 * You may have to run `brew install ruby` and `sudo gem install bundler` then `sudo bundle install` once. [Mac OS X 10.11 nokogiri trouble](http://stackoverflow.com/questions/23668684/failed-to-build-gem-native-extension-when-i-run-bundle-install)
 
 
+How to update chapter info
+--------------------------
+
+- Create a new branch off of master, for example, I will create a imaginary chapter in Tokyo. `git checkout master` `git checkout -b tokyo-update`
+- You would want to copy `/new-city-template` into `/tokyo` folder. This will become the url of the page (i.e. baseballhackday.com/tokyo). You want to edit the index.html. Use boston and philly as examples. 
+- header styles are managed in `/scss/_city-show.scss`
+- Once the page is built, you want to link it up in `_includes/pick-your-city.html`. Links will appear on every page. 
+- Now create a pull request against master. Then merge it. I like doing it though pyull request since changes are documented and easier to revert if needed. 
 
 
 Credits
