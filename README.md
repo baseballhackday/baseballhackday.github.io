@@ -4,7 +4,7 @@ Baseball Hack Day is a fun, free, friendly one-day hacking/coding/designing comp
 
 #HackBaseball 
 
-## This website is built Jekyll
+## This website is built with Jekyll
 
  It follows the
 [thoughtbot styleguide](https://github.com/thoughtbot/guides) 

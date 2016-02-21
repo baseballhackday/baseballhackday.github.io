@@ -29,12 +29,12 @@ label {
 textarea,
 #{$all-text-inputs},
 select[multiple=multiple] {
-  @include box-sizing(border-box);
   @include transition(border-color);
   background-color: white;
   border-radius: $form-border-radius;
   border: 1px solid $form-border-color;
   box-shadow: $form-box-shadow;
+  box-sizing: border-box;
   font-family: $form-font-family;
   font-size: $form-font-size;
   margin-bottom: $base-spacing / 2;
@@ -71,8 +71,55 @@ input[type="file"] {
   width: 100%;
 }
 
-select {
-  margin-bottom: $base-spacing;
-  max-width: 100%;
-  width: auto;
+
+/*
+ * WTF Select https://github.com/mdo/wtf-forms/blob/master/wtf-forms.css
+ */
+
+.select {
+  position: relative;
+  display: inline-block;
+  color: #555;
+
+  select {
+    font-family: $sub-header-font-family;
+    text-transform: uppercase;
+    display: inline-block;
+    width: 100%;
+    margin: 0;
+    font-size: 1.5em;
+    padding: .5rem 2.25rem .5rem 1rem;
+    color: $light-tan;
+    background-color: rgba(0,0,0,0.5) ;
+    border: 1px solid $light-tan;
+    border-radius: .0;
+    cursor: pointer;
+    outline: 0;
+    -webkit-appearance: none;
+       -moz-appearance: none;
+            appearance: none;
+  }
+
+  /* Undo the Firefox inner focus ring */
+  select:focus:-moz-focusring {
+    color: transparent;
+    text-shadow: 0 0 0 #000;
+  }
+}
+
+/* Dropdown arrow */
+.select:after {
+  position: absolute;
+  top: 50%;
+  right: 1.25rem;
+  display: inline-block;
+  margin-top: -.15rem;
+  content: "";
+  width: 0;
+  height: 0;
+  pointer-events: none;
+  border-top: .35rem solid $light-tan;
+  border-right: .35rem solid transparent;
+  border-bottom: .35rem solid transparent;
+  border-left: .35rem solid transparent;
 }

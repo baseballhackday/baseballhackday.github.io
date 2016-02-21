@@ -13,11 +13,23 @@
       <meta name="description" content="{{ site.description }}">
       <meta name="viewport" content="width=device-width, initial-scale=1">
 
-      <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
-      <link rel="stylesheet" href="css/application.css">
+      <link rel="canonical" href="{% if page.url %}{{ page.url }}{% else %}{{ site.url }}{% endif %}">
+      <link rel="stylesheet" href="/css/application.css">
 
       <script src="//use.typekit.net/uyp2hnr.js"></script>
       <script>try{Typekit.load();}catch(e){}</script>
+
+      <meta property="og:title" content="{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}"/>
+      <meta property="og:site_name" content="{{ site.name }}"/>
+      <meta property="og:url" content="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}"/>
+      <meta property="og:description" content="{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}"/>
+      <meta property="og:image" content="{% if page.socialimage %}{{ page.socialimage }}{% else %}{{ site.socialimage }}{% endif %}"/>
+      <meta name="twitter:card" content="summary">
+      <meta name="twitter:site" content="@{{ page.twitter }}">
+      <meta name="twitter:title" content="{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}">
+      <meta name="twitter:description" content="{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}">
+      <meta name="twitter:image" content="{% if page.socialimage %}{{ page.socialimage }}{% else %}{{ site.socialimage }}{% endif %}">
+  
   </head>
 
   <body class="{% if page.body-class %}{{ page.body-class  }}{% endif %}">
@@ -53,14 +65,24 @@
         <h4>Daigo Fujiwara &amp; Matt Carroll (Boston),
           <br>Kyle Fiedler &amp; Mike Gadsby (Philadelphia),
           <br>Warren Wilansky (Montreal)
+          <br>
         </h4>
       </section>
       <section>
         <h3>Site by</h3>
         <h4>
-          <a href="http://thoughtbot.com">thoughtbot</a>
+          <a href="http://thoughtbot.com">thoughtbot</a> and <a href="https://www.plankdesign.com/en">Plank</a>
         </h4>
       </section>
     </footer>
+    <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+    <script>window.jQuery || document.write('<script src="/bower_components/jquery/dist/jquery.min.js"><\/script>')</script>
+    <script src="/js/app.js"></script>
+
+    <script>
+        window.ga=function(){ga.q.push(arguments)};ga.q=[];ga.l=+new Date;
+        ga('create','UA-339429-12','auto');ga('send','pageview')
+    </script>
+    <script src="https://www.google-analytics.com/analytics.js" async defer></script>
   </body>
 </html>

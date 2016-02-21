@@ -2,6 +2,7 @@
   header.main {
     text-align: center;
 
+
     h1 {
       display: none;
     }
@@ -48,11 +49,6 @@
       margin-bottom: 3rem;
     }
 
-    // landscape phone override
-    @media (max-width: em(640)) and (orientation: landscape) {
-      margin-bottom: 0.5rem;
-    }
-
     g {
       fill: $light-tan;
     }
@@ -64,18 +60,17 @@
 }
 
 .hero {
-  @include position(absolute, 3vh null null null); 
-  pointer-events: none;
+  background-blend-mode: multiply;
+  background-color: $montreal-blue;
+  background-image: url("/images/berras-hands.jpg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  padding-top: 10vh;
   text-align: center;
   width: 100%;
-
-  @include media(em(960)) {
-    @include position(absolute, 15vh null null null);
-  }
-
-  @include media(em(1260)) {
-    @include position(absolute, 20vh null null null);
-  }
+  height: 100vh;
 
   h2 {
     color: #fff;
@@ -88,16 +83,6 @@
 
     @include media(em(360)) {
       font-size: em(52);
-    }
-
-    // landscape phone override
-    @media (max-width: em(640)) and (orientation: landscape) {
-      font-size: em(30);
-    }
-    
-    // landscape iphone override
-    @media (max-width: em(480)) and (orientation: landscape) {
-      font-size: em(20);
     }
 
     &:after {
@@ -113,111 +98,15 @@
     letter-spacing: 1px;
     text-transform: uppercase;
   }
-}
 
-.cities {
-  @include align-items(stretch);
-  @include align-content(flex-end);
-  @include display(flex);
-  min-height: 100vh;
-
-  .boston {
-    background-blend-mode: multiply;
-    background-color: darken($boston-red, 15%);
-    background-image: url("/images/berras-hands-left.jpg");
-    background-position: right center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    left: 0;
-
-    &:hover {
-      background-color: $boston-red;
+  .select {
+    margin-top: $large-spacing;
+    select {
+      padding: 1.5rem 6rem 1.5rem 2rem;
+      background-color: rgba($chicago-blue, .8);
     }
   }
 
-  .philly {
-    @include justify-content(flex-end);
-    background-blend-mode: multiply;
-    background-color: darken($philly-maroon, 5%);
-    background-image: url("/images/berras-hands-right.jpg");
-    background-position: left center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    right: 0;
-    text-align: right;
-
-    &:hover {
-      background-color: lighten($philly-maroon, 5%);
-    }
-
-    h2::after {
-      margin-left: auto;
-    }
-  }
-}
-
-.city {
-  @include transition(1s);
-  @include display(flex);
-  @include align-items(flex-end);
-  @include size(50% 100vh);
-  padding: 1.5rem;
-
-  @include media(em(960)) {
-    padding: 6rem;
-  }
-
-  &:hover {
-    .action {
-      background-color: #fff;
-    }
-  }
-
-  h2 {
-    color: #fff;
-    font-size: em(26);
-
-    @include media(em(520)) {
-      font-size: em(40);
-    }
-
-    // landscape phone override
-    @media (max-width: em(640)) and (orientation: landscape) {
-      font-size: em(26);
-    }
-
-    &::after {
-      background-color: shade($tan, 80);
-    }
-  }
-
-  p {
-    -webkit-font-smoothing: antialiased;
-    color: $light-tan;
-    font-family: $sub-header-font-family;
-    line-height: 1.3;
-    font-size: em(24);
-    margin-bottom: 1rem;
-
-    @include media(em(520)) {
-      font-size: em(26);
-      margin-bottom: 3rem;
-    }
-
-    // Hide the info for portrait small phones and 
-    // landscape iphones 
-    @media (max-width: em(360)) {
-      display: none;
-    }
-
-    @media (max-width: em(640)) and (orientation: landscape) {
-      display: none;
-    }
-  }
-
-  span {
-    display: block;
-  }
 }
 
 

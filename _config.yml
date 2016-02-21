@@ -1,14 +1,11 @@
-name : Foundation5/github pages/Jykill starter
-brand : My Site
-description : This is the description of my site
-keyword : 
-url : http://daigofuji.github.io/jekyll-foundation-6-starter/
-email : daigo@daigofujiwara.com
-twitter : DaigoFuji
-github : DaigoFuji
-author : Daigo Fujiwara
-analytics : UA-8418273-8
-year : 2016
-markdown : kramdown
+site
+title: 2016 Baseball Hack Day is on March 19
+description: Fun, friendly, free, one-day, on-site hacking/coding competition for baseball fans. 
+keyword : baseball, hackday, hackathon, hack, hacking, hackfest, codefest, mlb, major league baseball
+url : http://baseballhackday.com/
+email : daigo@baseballhackday.com
+twitter : baseballhackday
+socialimage: http://www.baseballhackday.com/images/bbhd-logo.png
+markdown: kramdown
 exclude :
   - node_modules
