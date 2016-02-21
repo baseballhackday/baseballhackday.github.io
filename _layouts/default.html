@@ -10,17 +10,17 @@
       <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
       <title>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</title>
-      <meta name="description" content="{{ site.description }}">
+      <meta name="description" content="{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}">
       <meta name="viewport" content="width=device-width, initial-scale=1">
 
-      <link rel="canonical" href="{% if page.url %}{{ page.url }}{% else %}{{ site.url }}{% endif %}">
+      <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
       <link rel="stylesheet" href="/css/application.css">
 
       <script src="//use.typekit.net/uyp2hnr.js"></script>
       <script>try{Typekit.load();}catch(e){}</script>
 
       <meta property="og:title" content="{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}"/>
-      <meta property="og:site_name" content="{{ site.name }}"/>
+      <meta property="og:site_name" content="{{ site.title }}"/>
       <meta property="og:url" content="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}"/>
       <meta property="og:description" content="{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}"/>
       <meta property="og:image" content="{% if page.socialimage %}{{ page.socialimage }}{% else %}{{ site.socialimage }}{% endif %}"/>
@@ -28,7 +28,7 @@
       <meta name="twitter:site" content="@{{ page.twitter }}">
       <meta name="twitter:title" content="{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}">
       <meta name="twitter:description" content="{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}">
-      <meta name="twitter:image" content="{% if page.socialimage %}{{ page.socialimage }}{% else %}{{ site.socialimage }}{% endif %}">
+      <meta name="twitter:image" content="{{ site.socialimage }}">
   
   </head>
 
@@ -62,10 +62,11 @@
       </nav>
       <section>
         <h3>Organized by</h3>
-        <h4>Daigo Fujiwara &amp; Matt Carroll (Boston),
-          <br>Kyle Fiedler &amp; Mike Gadsby (Philadelphia),
+        <h4>Daigo Fujiwara &amp; Matthew Shanley (Boston),
+          <br>Mike Gadsby, Courtney Wilburn &amp; Kyle Fiedler (Philadelphia),
           <br>Warren Wilansky (Montreal)
-          <br>
+          <br>Colin Shevlin (Chicago)
+          <br>David Lee (SF/Bay Area)
         </h4>
       </section>
       <section>
