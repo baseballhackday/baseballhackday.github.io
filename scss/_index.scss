@@ -49,6 +49,11 @@
       margin-bottom: 3rem;
     }
 
+    // landscape phone override
+    @media (max-width: em(640)) and (orientation: landscape) {
+      margin-bottom: 0.5rem;
+    }
+
     g {
       fill: $light-tan;
     }
@@ -85,6 +90,16 @@
       font-size: em(52);
     }
 
+    // landscape phone override
+    @media (max-width: em(640)) and (orientation: landscape) {
+      font-size: em(30);
+    }
+    
+    // landscape iphone override
+    @media (max-width: em(480)) and (orientation: landscape) {
+      font-size: em(20);
+    }
+
     &:after {
       display: none;
     }
@@ -101,8 +116,15 @@
 
   .select {
     margin-top: $large-spacing;
+
+    // landscape iphone override
+    @media (max-width: em(640)) and (orientation: landscape) {
+      margin-top: em(16);
+    }
+
+
     select {
-      padding: 1.5rem 6rem 1.5rem 2rem;
+      padding: 1.3rem 6rem 1.3rem 2rem;
       background-color: rgba($chicago-blue, .8);
     }
   }

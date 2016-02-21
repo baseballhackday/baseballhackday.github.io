@@ -778,6 +778,9 @@ footer.main {
   @media screen and (min-width: 32.5em) {
     .index .logo {
       margin-bottom: 3rem; } }
+  @media (max-width: 40em) and (orientation: landscape) {
+    .index .logo {
+      margin-bottom: 0.5rem; } }
   .index .logo g {
     fill: #CDCCBB; }
 
@@ -806,6 +809,12 @@ footer.main {
     @media screen and (min-width: 22.5em) {
       .hero h2 {
         font-size: 3.25em; } }
+    @media (max-width: 40em) and (orientation: landscape) {
+      .hero h2 {
+        font-size: 1.875em; } }
+    @media (max-width: 30em) and (orientation: landscape) {
+      .hero h2 {
+        font-size: 1.25em; } }
     .hero h2:after {
       display: none; }
   .hero h3 {
@@ -817,8 +826,11 @@ footer.main {
     text-transform: uppercase; }
   .hero .select {
     margin-top: 4em; }
+    @media (max-width: 40em) and (orientation: landscape) {
+      .hero .select {
+        margin-top: 1em; } }
     .hero .select select {
-      padding: 1.5rem 6rem 1.5rem 2rem;
+      padding: 1.3rem 6rem 1.3rem 2rem;
       background-color: rgba(22, 47, 132, 0.8); }
 
 .philadelphia .banner {
