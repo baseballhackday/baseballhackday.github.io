@@ -39,7 +39,7 @@ How to update chapter info
 - You would want to copy `/new-city-template` into `/tokyo` folder. This will become the url of the page (i.e. baseballhackday.com/tokyo). You want to edit the index.html. Use boston and philly as examples. 
 - header styles are managed in `/scss/_city-show.scss`
 - Once the page is built, you want to link it up in `_includes/pick-your-city.html`. Links will appear on every page. 
-- Now create a pull request against master. Then merge it. I like doing it though pyull request since changes are documented and easier to revert if needed. 
+- Now create a pull request against master. Then please ask to merge it. I like doing it though pull request since changes are documented and easier to revert if needed. 
 
 
 Credits
