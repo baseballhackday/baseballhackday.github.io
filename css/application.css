@@ -789,7 +789,7 @@ footer.main {
 
 .hero {
   background-blend-mode: multiply;
-  background-color: #1A4385;
+  background-color: #D3504D;
   background-image: url("/images/berras-hands.jpg");
   background-position: center center;
   background-repeat: no-repeat;
@@ -845,8 +845,8 @@ footer.main {
   background-image: url("/images/boston.jpg"); }
 
 .montreal .banner {
-  background-color: #1A4385;
-  background-image: url("/images/boston.jpg"); }
+  background-color: #D3504D;
+  background-image: url("/images/montreal.jpg"); }
 
 .chicago .banner {
   background-color: #162f84;
