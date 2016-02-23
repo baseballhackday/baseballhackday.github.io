@@ -402,7 +402,6 @@ h2 {
   h2::after {
     background-color: #CDCCBB;
     content: "";
-    display: block;
     height: 0.5625rem;
     margin: 1rem 0 1.5rem;
     width: 3.75rem; }
@@ -1067,3 +1066,17 @@ aside .action-primary {
     margin-top: 2rem; }
   .api h3 {
     margin-bottom: 1rem; }
+
+.mtl-h2 {
+  display: inline; }
+
+.language-btn {
+  text-transform: uppercase;
+  display: inline;
+  padding: 8px 10px;
+  -webkit-transform: translateY(-35%);
+      -ms-transform: translateY(-35%);
+          transform: translateY(-35%);
+  margin-left: 10px;
+  background-color: #D3504D;
+  border-radius: 0px; }
