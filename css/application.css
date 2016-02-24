@@ -322,7 +322,7 @@ html {
  * Copyright 2013–2014 thoughtbot, inc.
  * MIT License */
 button,
-input[type="submit"] {
+input[type="submit"], .language-btn {
   -webkit-font-smoothing: antialiased;
   background-color: #863C4D;
   border-radius: 3px;
@@ -334,11 +334,11 @@ input[type="submit"] {
   padding: 0.75em 1em;
   text-decoration: none; }
   button:hover,
-  input[type="submit"]:hover {
+  input[type="submit"]:hover, .language-btn:hover {
     background-color: #51242f;
     color: white; }
   button:disabled,
-  input[type="submit"]:disabled {
+  input[type="submit"]:disabled, .language-btn:disabled {
     cursor: not-allowed;
     opacity: 0.5; }
 
@@ -788,7 +788,7 @@ footer.main {
 
 .hero {
   background-blend-mode: multiply;
-  background-color: #D3504D;
+  background-color: #477DCA;
   background-image: url("/images/berras-hands.jpg");
   background-position: center center;
   background-repeat: no-repeat;
@@ -1068,15 +1068,20 @@ aside .action-primary {
     margin-bottom: 1rem; }
 
 .mtl-h2 {
-  display: inline; }
+  display: inline;
+  vertical-align: middle; }
 
 .language-btn {
   text-transform: uppercase;
-  display: inline;
   padding: 8px 10px;
-  -webkit-transform: translateY(-35%);
-      -ms-transform: translateY(-35%);
-          transform: translateY(-35%);
   margin-left: 10px;
   background-color: #D3504D;
-  border-radius: 0px; }
+  border-radius: 0px;
+  border: none;
+  cursor: pointer;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  vertical-align: middle;
+  white-space: nowrap; }
