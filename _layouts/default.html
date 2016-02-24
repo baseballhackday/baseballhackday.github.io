@@ -15,9 +15,12 @@
 
       <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
       <link rel="stylesheet" href="/css/application.css">
-
+<!-- For local environment only
       <script src="//use.typekit.net/uyp2hnr.js"></script>
       <script>try{Typekit.load();}catch(e){}</script>
+-->
+      <script src="https://use.typekit.net/oad1ljm.js"></script>
+      <script>try{Typekit.load({ async: true });}catch(e){}</script>
 
       <meta property="og:title" content="{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}"/>
       <meta property="og:site_name" content="{{ site.title }}"/>
