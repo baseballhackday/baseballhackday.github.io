@@ -555,6 +555,8 @@ input[type="file"] {
   .select select:focus:-moz-focusring {
     color: transparent;
     text-shadow: 0 0 0 #000; }
+  .select option {
+    background-color: rgba(0, 0, 0, 0.5); }
 
 /* Dropdown arrow */
 .select:after {
