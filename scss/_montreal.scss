@@ -1,0 +1,18 @@
+.mtl-h2 {
+	display: inline;
+	vertical-align: middle;
+}
+
+.language-btn {
+	text-transform: uppercase;
+	padding: 8px 10px;
+	margin-left: 10px;
+	background-color: $montreal-red;
+	border-radius: 0px;
+	border: none;
+	cursor: pointer;
+	user-select: none;
+	vertical-align: middle;
+	white-space: nowrap;
+	@extend %button;
+}

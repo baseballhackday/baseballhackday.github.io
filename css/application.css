@@ -322,7 +322,7 @@ html {
  * Copyright 2013–2014 thoughtbot, inc.
  * MIT License */
 button,
-input[type="submit"] {
+input[type="submit"], .language-btn {
   -webkit-font-smoothing: antialiased;
   background-color: #863C4D;
   border-radius: 3px;
@@ -334,11 +334,11 @@ input[type="submit"] {
   padding: 0.75em 1em;
   text-decoration: none; }
   button:hover,
-  input[type="submit"]:hover {
+  input[type="submit"]:hover, .language-btn:hover {
     background-color: #51242f;
     color: white; }
   button:disabled,
-  input[type="submit"]:disabled {
+  input[type="submit"]:disabled, .language-btn:disabled {
     cursor: not-allowed;
     opacity: 0.5; }
 
@@ -402,7 +402,6 @@ h2 {
   h2::after {
     background-color: #CDCCBB;
     content: "";
-    display: block;
     height: 0.5625rem;
     margin: 1rem 0 1.5rem;
     width: 3.75rem; }
@@ -789,7 +788,7 @@ footer.main {
 
 .hero {
   background-blend-mode: multiply;
-  background-color: #1A4385;
+  background-color: #477DCA;
   background-image: url("/images/berras-hands.jpg");
   background-position: center center;
   background-repeat: no-repeat;
@@ -845,8 +844,8 @@ footer.main {
   background-image: url("/images/boston.jpg"); }
 
 .montreal .banner {
-  background-color: #1A4385;
-  background-image: url("/images/boston.jpg"); }
+  background-color: #D3504D;
+  background-image: url("/images/montreal.jpg"); }
 
 .chicago .banner {
   background-color: #162f84;
@@ -1067,3 +1066,22 @@ aside .action-primary {
     margin-top: 2rem; }
   .api h3 {
     margin-bottom: 1rem; }
+
+.mtl-h2 {
+  display: inline;
+  vertical-align: middle; }
+
+.language-btn {
+  text-transform: uppercase;
+  padding: 8px 10px;
+  margin-left: 10px;
+  background-color: #D3504D;
+  border-radius: 0px;
+  border: none;
+  cursor: pointer;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  vertical-align: middle;
+  white-space: nowrap; }
