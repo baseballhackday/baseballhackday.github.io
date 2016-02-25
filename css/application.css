@@ -542,7 +542,7 @@ input[type="file"] {
     width: 100%;
     margin: 0;
     font-size: 1.5em;
-    padding: .5rem 2.25rem .5rem 1rem;
+    padding: .5rem 2.25rem .5rem .5rem;
     color: #CDCCBB;
     background-color: rgba(0, 0, 0, 0.5);
     border: 1px solid #CDCCBB;
@@ -561,7 +561,7 @@ input[type="file"] {
 /* Dropdown arrow */
 .select:after {
   position: absolute;
-  top: 50%;
+  top: 45%;
   right: 1.25rem;
   display: inline-block;
   margin-top: -.15rem;
@@ -790,7 +790,7 @@ footer.main {
 
 .hero {
   background-blend-mode: multiply;
-  background-color: #477DCA;
+  background-color: #003276;
   background-image: url("/images/berras-hands.jpg");
   background-position: center center;
   background-repeat: no-repeat;
@@ -841,14 +841,11 @@ footer.main {
     text-transform: uppercase;
     display: inline-block;
     width: 100%;
-    margin: 0;
     font-size: 1.5em;
-    padding: .5rem 2.25rem .5rem .5rem;
     color: #fff;
     background-color: rgba(22, 47, 132, 0.5);
     border: 1px solid #fff;
     cursor: pointer;
-    outline: 0;
     -webkit-appearance: none;
     -moz-appearance: none;
     appearance: none; }
@@ -858,9 +855,8 @@ footer.main {
     cursor: pointer;
     float: right;
     font-size: 1em;
-    margin: 0;
     position: relative;
-    padding: .5rem 2.25rem .5rem .5rem;
+    padding: .5rem 10rem .5rem 1rem;
     color: #fff; }
   .hero .dropdown-menu {
     transition: all 0.2s ease-in-out;
@@ -872,7 +868,7 @@ footer.main {
     overflow: show;
     position: absolute;
     right: 0;
-    top: 69px;
+    top: 52px;
     width: 100%;
     z-index: 99999;
     color: #fff; }

@@ -133,21 +133,17 @@
 
     }
   }
-  
 
   .dropdown-container {
     font-family: $sub-header-font-family;
     text-transform: uppercase;
     display: inline-block;
     width: 100%;
-    margin: 0;
     font-size: 1.5em;
-    padding: .5rem 2.25rem .5rem .5rem;
     color: #fff;
     background-color: rgba($chicago-blue, .5);
     border: 1px solid #fff;
     cursor: pointer;
-    outline: 0;
     -webkit-appearance: none;
        -moz-appearance: none;
             appearance: none;
@@ -160,9 +156,8 @@
     cursor: pointer;
     float: right;
     font-size: $form-font-size;
-    margin: 0;
     position: relative;
-    padding: .5rem 2.25rem .5rem .5rem;
+    padding: .5rem 10rem .5rem 1rem;
     color: #fff;
   }
 
@@ -176,7 +171,7 @@
     overflow: show;
     position: absolute;
     right: 0;
-    top: 69px;
+    top: 52px;
     width: 100%;
     z-index: 99999;
     color: #fff;
@@ -196,12 +191,5 @@
   .show-menu {
     display: block;
   }
-
-
-
-
-
-
-
 
 }
