@@ -836,6 +836,56 @@ footer.main {
     .hero .select select {
       padding: 1.3rem 6rem 1.3rem 2rem;
       background-color: rgba(22, 47, 132, 0.8); }
+  .hero .dropdown-container {
+    font-family: "alternate-gothic-no-1-d", "Helvetica Neue", "Helvetica", "Roboto", "Arial", sans-serif;
+    text-transform: uppercase;
+    display: inline-block;
+    width: 100%;
+    margin: 0;
+    font-size: 1.5em;
+    padding: .5rem 2.25rem .5rem .5rem;
+    color: #fff;
+    background-color: rgba(22, 47, 132, 0.5);
+    border: 1px solid #fff;
+    cursor: pointer;
+    outline: 0;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none; }
+    .hero .dropdown-container:hover {
+      background-color: rgba(22, 47, 132, 0.8); }
+  .hero .dropdown-button {
+    cursor: pointer;
+    float: right;
+    font-size: 1em;
+    margin: 0;
+    position: relative;
+    padding: .5rem 2.25rem .5rem .5rem;
+    color: #fff; }
+  .hero .dropdown-menu {
+    transition: all 0.2s ease-in-out;
+    border: 1px solid #DDD;
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    display: none;
+    margin: 0;
+    overflow: show;
+    position: absolute;
+    right: 0;
+    top: 69px;
+    width: 100%;
+    z-index: 99999;
+    color: #fff; }
+    .hero .dropdown-menu option {
+      border-bottom: 1px solid #DDD;
+      text-align: left;
+      padding: .5rem 1rem; }
+      .hero .dropdown-menu option:last-child {
+        border: none; }
+      .hero .dropdown-menu option:hover {
+        background-color: rgba(22, 47, 132, 0.8); }
+  .hero .show-menu {
+    display: block; }
 
 .philadelphia .banner {
   background-color: #863C4D;
