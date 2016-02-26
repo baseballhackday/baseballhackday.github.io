@@ -14,13 +14,13 @@
 }
 
 .chicago .banner {
-  background-color: $chicago-blue;
-  background-image: url("/images/boston.jpg");
+  background-color: $chicago-red;
+  background-image: url("/images/chicago.jpg");
 }
 
-.sanfrancisco .banner {
-  background-color: $boston-red;
-  background-image: url("/images/boston.jpg");
+.sf .banner {
+  background-color: $sf-orange;
+  background-image: url("/images/san-francisco.jpg");
 }
 
 .city-show header nav {

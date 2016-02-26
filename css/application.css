@@ -542,7 +542,7 @@ input[type="file"] {
     width: 100%;
     margin: 0;
     font-size: 1.5em;
-    padding: .5rem 2.25rem .5rem .5rem;
+    padding: .5rem 2.1rem .4rem 1.3rem;
     color: #CDCCBB;
     background-color: rgba(0, 0, 0, 0.5);
     border: 1px solid #CDCCBB;
@@ -562,7 +562,7 @@ input[type="file"] {
 .select:after {
   position: absolute;
   top: 45%;
-  right: 1.25rem;
+  right: 1rem;
   display: inline-block;
   margin-top: -.15rem;
   content: "";
@@ -896,12 +896,12 @@ footer.main {
   background-image: url("/images/montreal.jpg"); }
 
 .chicago .banner {
-  background-color: #162f84;
-  background-image: url("/images/boston.jpg"); }
+  background-color: #C96f67;
+  background-image: url("/images/chicago.jpg"); }
 
-.sanfrancisco .banner {
-  background-color: #BE4343;
-  background-image: url("/images/boston.jpg"); }
+.sf .banner {
+  background-color: #C28E57;
+  background-image: url("/images/san-francisco.jpg"); }
 
 .city-show header nav {
   display: none; }
