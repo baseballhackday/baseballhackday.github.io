@@ -542,7 +542,7 @@ input[type="file"] {
     width: 100%;
     margin: 0;
     font-size: 1.5em;
-    padding: .5rem 2.25rem .5rem 1rem;
+    padding: .5rem 2.25rem .5rem .5rem;
     color: #CDCCBB;
     background-color: rgba(0, 0, 0, 0.5);
     border: 1px solid #CDCCBB;
@@ -555,11 +555,13 @@ input[type="file"] {
   .select select:focus:-moz-focusring {
     color: transparent;
     text-shadow: 0 0 0 #000; }
+  .select option {
+    background-color: rgba(0, 0, 0, 0.5); }
 
 /* Dropdown arrow */
 .select:after {
   position: absolute;
-  top: 50%;
+  top: 45%;
   right: 1.25rem;
   display: inline-block;
   margin-top: -.15rem;
@@ -788,7 +790,7 @@ footer.main {
 
 .hero {
   background-blend-mode: multiply;
-  background-color: #477DCA;
+  background-color: #003276;
   background-image: url("/images/berras-hands.jpg");
   background-position: center center;
   background-repeat: no-repeat;
@@ -834,6 +836,52 @@ footer.main {
     .hero .select select {
       padding: 1.3rem 6rem 1.3rem 2rem;
       background-color: rgba(22, 47, 132, 0.8); }
+  .hero .dropdown-container {
+    font-family: "alternate-gothic-no-1-d", "Helvetica Neue", "Helvetica", "Roboto", "Arial", sans-serif;
+    text-transform: uppercase;
+    display: inline-block;
+    width: 100%;
+    font-size: 1.5em;
+    color: #fff;
+    background-color: rgba(22, 47, 132, 0.5);
+    border: 1px solid #fff;
+    cursor: pointer;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none; }
+    .hero .dropdown-container:hover {
+      background-color: rgba(22, 47, 132, 0.8); }
+  .hero .dropdown-button {
+    cursor: pointer;
+    float: right;
+    font-size: 1em;
+    position: relative;
+    padding: .5rem 10rem .5rem 1rem;
+    color: #fff; }
+  .hero .dropdown-menu {
+    transition: all 0.2s ease-in-out;
+    border: 1px solid #DDD;
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    display: none;
+    margin: 0;
+    overflow: show;
+    position: absolute;
+    right: 0;
+    top: 52px;
+    width: 100%;
+    z-index: 99999;
+    color: #fff; }
+    .hero .dropdown-menu option {
+      border-bottom: 1px solid #DDD;
+      text-align: left;
+      padding: .5rem 1rem; }
+      .hero .dropdown-menu option:last-child {
+        border: none; }
+      .hero .dropdown-menu option:hover {
+        background-color: rgba(22, 47, 132, 0.8); }
+  .hero .show-menu {
+    display: block; }
 
 .philadelphia .banner {
   background-color: #863C4D;
