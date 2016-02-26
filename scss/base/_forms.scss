@@ -88,7 +88,7 @@ input[type="file"] {
     width: 100%;
     margin: 0;
     font-size: 1.5em;
-    padding: .5rem 2.25rem .5rem .5rem;
+    padding: .5rem 2.1rem .4rem 1.3rem;
     color: $light-tan;
     background-color: rgba(0,0,0,0.5);
     border: 1px solid $light-tan;
@@ -115,7 +115,7 @@ input[type="file"] {
 .select:after {
   position: absolute;
   top: 45%;
-  right: 1.25rem;
+  right: 1rem;
   display: inline-block;
   margin-top: -.15rem;
   content: "";

@@ -129,7 +129,7 @@
 
     select {
       padding: 1.3rem 6rem 1.3rem 2rem;
-      background-color: rgba($chicago-blue, .8);
+      background-color: rgba($index-blue, .8);
 
     }
   }
@@ -141,14 +141,14 @@
     width: 100%;
     font-size: 1.5em;
     color: #fff;
-    background-color: rgba($chicago-blue, .5);
+    background-color: rgba($index-blue, .5);
     border: 1px solid #fff;
     cursor: pointer;
     -webkit-appearance: none;
        -moz-appearance: none;
             appearance: none;
     &:hover {
-      background-color: rgba($chicago-blue, .8);
+      background-color: rgba($index-blue, .8);
     }
     
   }
@@ -183,7 +183,7 @@
         border: none;
       }
       &:hover {
-        background-color: rgba($chicago-blue, .8);
+        background-color: rgba($index-blue, .8);
       }
     }
   }
