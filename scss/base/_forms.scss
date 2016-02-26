@@ -80,34 +80,17 @@ input[type="file"] {
   position: relative;
   display: inline-block;
   color: #555;
-
-  select {
-    font-family: $sub-header-font-family;
-    text-transform: uppercase;
-    display: inline-block;
-    width: 100%;
-    margin: 0;
-    font-size: 1.5em;
-    padding: .5rem 2.1rem .4rem 1.3rem;
-    color: $light-tan;
-    background-color: rgba(0,0,0,0.5);
-    border: 1px solid $light-tan;
-    border-radius: .0;
-    cursor: pointer;
-    outline: 0;
-    -webkit-appearance: none;
-       -moz-appearance: none;
-            appearance: none;
+  ul,
+  li {
+    overflow: visible;
   }
+}
 
-  /* Undo the Firefox inner focus ring */
-  select:focus:-moz-focusring {
-    color: transparent;
-    text-shadow: 0 0 0 #000;
-  }
-
-  option {
-    background-color: rgba(0,0,0,0.5);
+ul.navigation {
+  overflow: visible;
+  
+  li > :not(.select) {
+    padding-bottom: 0.4rem;
   }
 }
 

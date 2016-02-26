@@ -19,10 +19,6 @@ header.main {
     display: none;
   }
 
-  nav {
-    padding-top: 2em;
-  }
-
   ul {
     float: right;
   }
@@ -35,6 +31,7 @@ header.main {
   a {
     @include secondary-header;
 
+    font-size: rem(24);
     &:hover {
       color: #fff;
     }
