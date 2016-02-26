@@ -533,30 +533,15 @@ input[type="file"] {
 .select {
   position: relative;
   display: inline-block;
-  color: #555;
-  /* Undo the Firefox inner focus ring */ }
-  .select select {
-    font-family: "alternate-gothic-no-1-d", "Helvetica Neue", "Helvetica", "Roboto", "Arial", sans-serif;
-    text-transform: uppercase;
-    display: inline-block;
-    width: 100%;
-    margin: 0;
-    font-size: 1.5em;
-    padding: .5rem 2.1rem .4rem 1.3rem;
-    color: #CDCCBB;
-    background-color: rgba(0, 0, 0, 0.5);
-    border: 1px solid #CDCCBB;
-    border-radius: .0;
-    cursor: pointer;
-    outline: 0;
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    appearance: none; }
-  .select select:focus:-moz-focusring {
-    color: transparent;
-    text-shadow: 0 0 0 #000; }
-  .select option {
-    background-color: rgba(0, 0, 0, 0.5); }
+  color: #555; }
+  .select ul,
+  .select li {
+    overflow: visible; }
+
+ul.navigation {
+  overflow: visible; }
+  ul.navigation li > :not(.select) {
+    padding-bottom: 0.4rem; }
 
 /* Dropdown arrow */
 .select:after {
@@ -688,8 +673,6 @@ header.main {
         fill: #CDCCBB; }
   header.main .menu {
     display: none; }
-  header.main nav {
-    padding-top: 2em; }
   header.main ul {
     float: right; }
   header.main li {
@@ -699,7 +682,8 @@ header.main {
     color: #b7b69e;
     font-family: "alternate-gothic-no-1-d", "Helvetica Neue", "Helvetica", "Roboto", "Arial", sans-serif;
     font-size: 1.625em;
-    line-height: 1; }
+    line-height: 1;
+    font-size: 1.5rem; }
     header.main a:hover {
       color: #fff; }
   header.main .github:after {
@@ -764,7 +748,7 @@ footer.main {
       color: #fff; }
     .index header.main nav a {
       font-family: "alternate-gothic-no-1-d", "Helvetica Neue", "Helvetica", "Roboto", "Arial", sans-serif;
-      font-size: 1.5em;
+      font-size: 1.5rem;
       letter-spacing: 1px;
       text-transform: uppercase; }
     .index header.main nav ul {
@@ -829,36 +813,33 @@ footer.main {
     color: #fff;
     margin-top: 0.5em; }
   .hero .select {
-    margin-top: 4em; }
-    @media (max-width: 40em) and (orientation: landscape) {
-      .hero .select {
-        margin-top: 1em; } }
-    .hero .select select {
-      padding: 1.3rem 6rem 1.3rem 2rem;
-      background-color: rgba(22, 47, 132, 0.8); }
-  .hero .dropdown-container {
-    font-family: "alternate-gothic-no-1-d", "Helvetica Neue", "Helvetica", "Roboto", "Arial", sans-serif;
-    text-transform: uppercase;
-    display: inline-block;
-    width: 100%;
-    font-size: 1.5em;
-    color: #fff;
-    background-color: rgba(22, 47, 132, 0.5);
-    border: 1px solid #fff;
-    cursor: pointer;
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    appearance: none; }
-    .hero .dropdown-container:hover {
-      background-color: rgba(22, 47, 132, 0.8); }
-  .hero .dropdown-button {
+    margin-top: 3em; }
+    .hero .select .dropdown-button {
+      padding: .5rem 10rem .4rem 1rem; }
+
+.dropdown-container {
+  font-family: "alternate-gothic-no-1-d", "Helvetica Neue", "Helvetica", "Roboto", "Arial", sans-serif;
+  text-transform: uppercase;
+  display: inline-block;
+  width: 100%;
+  font-size: 1.5em;
+  color: #fff;
+  background-color: rgba(0, 0, 0, 0.5);
+  border: 1px solid #fff;
+  cursor: pointer;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none; }
+  .dropdown-container:hover {
+    background-color: rgba(0, 0, 0, 0.8); }
+  .dropdown-container .dropdown-button {
     cursor: pointer;
     float: right;
     font-size: 1em;
     position: relative;
-    padding: .5rem 10rem .5rem 1rem;
+    padding: .5rem 3rem .4rem 1rem;
     color: #fff; }
-  .hero .dropdown-menu {
+  .dropdown-container .dropdown-menu {
     transition: all 0.2s ease-in-out;
     border: 1px solid #DDD;
     box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
@@ -872,18 +853,18 @@ footer.main {
     width: 100%;
     z-index: 99999;
     color: #fff; }
-    .hero .dropdown-menu a {
-      background-color: rgba(22, 47, 132, 0.2);
+    .dropdown-container .dropdown-menu a {
+      background-color: rgba(0, 0, 0, 0.2);
       display: block;
       color: #fff;
       border-bottom: 1px solid #DDD;
       text-align: left;
       padding: .5rem 1rem; }
-      .hero .dropdown-menu a:last-child {
+      .dropdown-container .dropdown-menu a:last-child {
         border: none; }
-      .hero .dropdown-menu a:hover {
-        background-color: rgba(22, 47, 132, 0.8); }
-  .hero .show-menu {
+      .dropdown-container .dropdown-menu a:hover {
+        background-color: rgba(0, 0, 0, 0.8); }
+  .dropdown-container .show-menu {
     display: block; }
 
 .philadelphia .banner {

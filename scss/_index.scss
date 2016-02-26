@@ -23,7 +23,7 @@
 
       a {
         font-family: $sub-header-font-family;
-        font-size: em(24);
+        font-size: rem(24);
         letter-spacing: 1px;
         text-transform: uppercase;
       }
@@ -120,44 +120,37 @@
   }
 
   .select {
-    margin-top: $large-spacing;
+    margin-top: 3em;
 
-    // landscape iphone override
-    @media (max-width: em(640)) and (orientation: landscape) {
-      margin-top: em(16);
-    }
-
-    select {
-      padding: 1.3rem 6rem 1.3rem 2rem;
-      background-color: rgba($index-blue, .8);
-
+    .dropdown-button {
+      padding: .5rem 10rem .4rem 1rem;
     }
   }
+}
 
-  .dropdown-container {
-    font-family: $sub-header-font-family;
-    text-transform: uppercase;
-    display: inline-block;
-    width: 100%;
-    font-size: 1.5em;
-    color: #fff;
-    background-color: rgba($index-blue, .5);
-    border: 1px solid #fff;
-    cursor: pointer;
-    -webkit-appearance: none;
-       -moz-appearance: none;
-            appearance: none;
-    &:hover {
-      background-color: rgba($index-blue, .8);
-    }
-    
+.dropdown-container {
+  font-family: $sub-header-font-family;
+  text-transform: uppercase;
+  display: inline-block;
+  width: 100%;
+  font-size: 1.5em;
+  color: #fff;
+  background-color: rgba(black, .5);
+  border: 1px solid #fff;
+  cursor: pointer;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  &:hover {
+    background-color: rgba(black, .8);
   }
+
   .dropdown-button {
     cursor: pointer;
     float: right;
     font-size: $form-font-size;
     position: relative;
-    padding: .5rem 10rem .5rem 1rem;
+    padding: .5rem 3rem .4rem 1rem;
     color: #fff;
   }
 
@@ -176,7 +169,7 @@
     z-index: 99999;
     color: #fff;
     a {
-      background-color: rgba($gray, .2);
+      background-color: rgba(black, .2);
       display: block;
       color: #fff;
       border-bottom: $base-border;
@@ -186,7 +179,7 @@
         border: none;
       }
       &:hover {
-        background-color: rgba($gray, .8);
+        background-color: rgba(black, .8);
       }
     }
   }
