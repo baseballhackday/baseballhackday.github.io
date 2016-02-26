@@ -872,13 +872,16 @@ footer.main {
     width: 100%;
     z-index: 99999;
     color: #fff; }
-    .hero .dropdown-menu option {
+    .hero .dropdown-menu a {
+      background-color: rgba(22, 47, 132, 0.2);
+      display: block;
+      color: #fff;
       border-bottom: 1px solid #DDD;
       text-align: left;
       padding: .5rem 1rem; }
-      .hero .dropdown-menu option:last-child {
+      .hero .dropdown-menu a:last-child {
         border: none; }
-      .hero .dropdown-menu option:hover {
+      .hero .dropdown-menu a:hover {
         background-color: rgba(22, 47, 132, 0.8); }
   .hero .show-menu {
     display: block; }

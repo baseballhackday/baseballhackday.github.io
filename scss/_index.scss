@@ -175,7 +175,10 @@
     width: 100%;
     z-index: 99999;
     color: #fff;
-    option {
+    a {
+      background-color: rgba($gray, .2);
+      display: block;
+      color: #fff;
       border-bottom: $base-border;
       text-align: left;
       padding: .5rem 1rem;
@@ -183,7 +186,7 @@
         border: none;
       }
       &:hover {
-        background-color: rgba($index-blue, .8);
+        background-color: rgba($gray, .8);
       }
     }
   }
