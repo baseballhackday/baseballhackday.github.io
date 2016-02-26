@@ -7,13 +7,4 @@ $(document).ready(function() {
     $menu.toggleClass("show-menu");
   });
 
-    // bind change event to select
-  $('.city-select').on('change', function () {
-      var url = $(this).val(); // get selected value
-      if (url) { // require a URL
-          window.location = url; // redirect
-      }
-      return false;
-  });
-
 });
