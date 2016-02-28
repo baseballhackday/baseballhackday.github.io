@@ -1117,3 +1117,6 @@ aside .action-primary {
           user-select: none;
   vertical-align: middle;
   white-space: nowrap; }
+
+.dev-bootcamp, .chi-more {
+  padding-top: 2em; }
