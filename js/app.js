@@ -17,11 +17,11 @@ $(document).ready(function() {
 });
 
 function assignIndexHeroHeight() {
-  var $body = $('body');
   var $window = $(window);
   var $hero = $('.hero');
-  var $cities = $hero.find('.dropdown-select a');
-  var $indexDropdownButton = $hero.find('.dropdown-button');
+  var $heroContent = $('.hero-content');
+  var $cities = $heroContent.find('.dropdown-select a');
+  var $indexDropdownButton = $heroContent.find('.dropdown-button');
 
   // If TypeKit hasn't loaded, button could be wrapping on
   // smaller screens and therefore too large.
@@ -29,7 +29,7 @@ function assignIndexHeroHeight() {
   $indexDropdownButton.css('white-space', 'nowrap');
 
   var buttonHeight = $indexDropdownButton.height();
-  var minHeight = $body.height() + (buttonHeight * ($cities.length + 1));
+  var minHeight = $heroContent.height() + (buttonHeight * ($cities.length + 1));
   var windowHeight = $window.height();
 
   if (windowHeight > minHeight) {
