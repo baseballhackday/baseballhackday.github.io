@@ -646,7 +646,7 @@ input[type="submit"] {
   .banner p {
     color: #b7b69e;
     font-family: "alternate-gothic-no-1-d", "Helvetica Neue", "Helvetica", "Roboto", "Arial", sans-serif;
-    font-size: 1.625em;
+    font-size: 1.625rem;
     line-height: 1;
     padding: 1em 0; }
   .banner span {
@@ -682,7 +682,7 @@ header.main {
   header.main a {
     color: #b7b69e;
     font-family: "alternate-gothic-no-1-d", "Helvetica Neue", "Helvetica", "Roboto", "Arial", sans-serif;
-    font-size: 1.625em;
+    font-size: 1.625rem;
     line-height: 1;
     font-size: 1.5rem; }
     header.main a:hover {
@@ -716,16 +716,18 @@ footer.main {
     footer.main li a {
       color: #b7b69e;
       font-family: "alternate-gothic-no-1-d", "Helvetica Neue", "Helvetica", "Roboto", "Arial", sans-serif;
-      font-size: 1.625em;
+      font-size: 1.625rem;
       line-height: 1; }
       footer.main li a:hover {
         color: #adab8f; }
+    footer.main li .dropdown-container .dropdown-menu a {
+      background-color: #888; }
   footer.main section {
     margin-top: 4em; }
   footer.main h3 {
     color: #b7b69e;
     font-family: "alternate-gothic-no-1-d", "Helvetica Neue", "Helvetica", "Roboto", "Arial", sans-serif;
-    font-size: 1.625em;
+    font-size: 1.625rem;
     line-height: 1; }
   footer.main h4 {
     font-weight: normal;
@@ -905,7 +907,7 @@ footer.main {
 .schedule time {
   color: #b7b69e;
   font-family: "alternate-gothic-no-1-d", "Helvetica Neue", "Helvetica", "Roboto", "Arial", sans-serif;
-  font-size: 1.625em;
+  font-size: 1.625rem;
   line-height: 1; }
 
 .schedule h3 {
@@ -972,7 +974,7 @@ footer.main {
     .sponsor-list li h3 {
       color: #b7b69e;
       font-family: "alternate-gothic-no-1-d", "Helvetica Neue", "Helvetica", "Roboto", "Arial", sans-serif;
-      font-size: 1.625em;
+      font-size: 1.625rem;
       line-height: 1; }
     .sponsor-list li small {
       color: #b7b69e;
@@ -1031,7 +1033,7 @@ footer.main {
   .judges p {
     color: #b7b69e;
     font-family: "alternate-gothic-no-1-d", "Helvetica Neue", "Helvetica", "Roboto", "Arial", sans-serif;
-    font-size: 1.625em;
+    font-size: 1.625rem;
     line-height: 1; }
 
 .guidelines {
