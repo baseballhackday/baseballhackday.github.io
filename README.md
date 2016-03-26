@@ -4,6 +4,10 @@ Baseball Hack Day is a fun, free, friendly one-day hacking/coding/designing comp
 
 #HackBaseball 
 
+- [Join us in Slack](http://baseballhackday-slack.herokuapp.com/)
+- [Wanna start your own chapter?](https://docs.google.com/document/d/1bwzyhGPWIfZ6w5FyQqUOpu_s8vkUwcrPy2UHvw4QImY/edit?usp=sharing)
+
+
 ## This website is built with Jekyll
 
  It follows the
