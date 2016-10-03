@@ -804,6 +804,12 @@ footer.main {
         font-size: 1.25em; } }
     .hero h2:after {
       display: none; }
+    .hero h2 a,
+    .hero h2 a:active,
+    .hero h2 a:visited {
+      color: #fff; }
+    .hero h2 a:hover {
+      color: #CDCCBB; }
   .hero h3 {
     color: rgba(4, 1, 2, 0.8);
     color: #CDCCBB;
@@ -811,6 +817,14 @@ footer.main {
     font-weight: normal;
     letter-spacing: 1px;
     text-transform: uppercase; }
+    .hero h3.about-history {
+      margin-top: 2em; }
+    .hero h3 a,
+    .hero h3 a:active,
+    .hero h3 a:visited {
+      color: #fff; }
+    .hero h3 a:hover {
+      color: #CDCCBB; }
   .hero h5 {
     color: #fff;
     margin-top: 0.5em; }
