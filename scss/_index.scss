@@ -93,7 +93,7 @@
     @media (max-width: em(640)) and (orientation: landscape) {
       font-size: em(30);
     }
-    
+
     // landscape iphone override
     @media (max-width: em(480)) and (orientation: landscape) {
       font-size: em(20);
@@ -101,6 +101,15 @@
 
     &:after {
       display: none;
+    }
+
+    a,
+    a:active,
+    a:visited {
+      color: #fff;
+    }
+    a:hover {
+      color: $light-tan;
     }
   }
 
@@ -111,6 +120,19 @@
     font-weight: normal;
     letter-spacing: 1px;
     text-transform: uppercase;
+
+    &.about-history {
+      margin-top: 2em;
+    }
+
+    a,
+    a:active,
+    a:visited {
+      color: #fff;
+    }
+    a:hover {
+      color: $light-tan;
+    }
   }
 
   h5 {
