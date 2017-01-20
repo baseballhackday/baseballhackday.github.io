@@ -6,7 +6,7 @@ Baseball Hack Day is a fun, free, friendly one-day hacking/coding/designing comp
 
 - [Join us in Slack](http://baseballhackday-slack.herokuapp.com/)
 - [Wanna start your own chapter?](https://docs.google.com/document/d/1bwzyhGPWIfZ6w5FyQqUOpu_s8vkUwcrPy2UHvw4QImY/edit?usp=sharing)
-- [INterested in sponsoring?]()
+- [Interested in sponsoring?](https://docs.google.com/document/d/1N1UtvOCPPPdMF-Y7zvwGZOL5cObL9a2Z0ouOUB5JCTA/edit?usp=sharing)
 
 ## This website is built with Jekyll
 
