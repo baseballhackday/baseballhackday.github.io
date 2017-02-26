@@ -23,6 +23,21 @@
   background-image: url("/images/san-francisco.jpg");
 }
 
+.seattle .banner {
+  background-color: $sf-orange;
+  background-image: url("/images/san-francisco.jpg");
+}
+
+.portland .banner {
+  background-color: $sf-orange;
+  background-image: url("/images/san-francisco.jpg");
+}
+
+.minneapolis .banner {
+  background-color: $sf-orange;
+  background-image: url("/images/san-francisco.jpg");
+}
+
 .city-show header nav {
   display: none;
   @include media(em(580)) {

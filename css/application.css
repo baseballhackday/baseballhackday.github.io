@@ -903,6 +903,18 @@ footer.main {
   background-color: #C28E57;
   background-image: url("/images/san-francisco.jpg"); }
 
+.seattle .banner {
+  background-color: #C28E57;
+  background-image: url("/images/san-francisco.jpg"); }
+
+.portland .banner {
+  background-color: #C28E57;
+  background-image: url("/images/san-francisco.jpg"); }
+
+.minneapolis .banner {
+  background-color: #C28E57;
+  background-image: url("/images/san-francisco.jpg"); }
+
 .city-show header nav {
   display: none; }
   @media screen and (min-width: 36.25em) {
