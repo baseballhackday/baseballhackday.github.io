@@ -66,7 +66,7 @@
 
 .hero {
   background-blend-mode: multiply;
-  background-color: $blue;
+  background-color: $chicago-red;
   background-image: url("/images/berras-hands.jpg");
   background-position: center center;
   background-repeat: no-repeat;
@@ -122,7 +122,10 @@
     text-transform: uppercase;
 
     &.about-history {
-      margin-top: 2em;
+      margin-top: 6em;
+      a {
+        color: $light-tan;
+      }
     }
 
     a,
@@ -138,15 +141,9 @@
   h5 {
     color: #fff;
     margin-top: 0.5em;
+    margin-bottom: 4em;
   }
 
-  .select {
-    margin-top: 3em;
-
-    .dropdown-button {
-      padding: .5rem 10rem .4rem 1rem;
-    }
-  }
 }
 
 .dropdown-container {
@@ -209,4 +206,49 @@
     display: block;
   }
 
+}
+//homepage override
+.index .select {
+  display: block;
+
+  &:after {
+    display: none;
+  }
+}
+.index .dropdown-container {
+  display: block;
+  background: none;
+  width: 100%;
+  border: none;
+  &:hover {
+  }
+  .dropdown-button {
+    color: $light-tan;
+    display: block;
+    float: none;
+    position: relative;
+    text-align: center;
+    padding: 0;
+  }
+
+  .dropdown-menu {
+    border: none;
+    display: flex;
+    position: relative;
+    width: 100%;
+    
+    justify-content: center;
+    flex-wrap: wrap;
+
+    a {
+      font-size: 2.5rem;
+      padding: 2rem;
+      border: none;
+      &:last-child {
+        border: none;
+      }
+      &:hover {
+      }
+    }
+  }
 }

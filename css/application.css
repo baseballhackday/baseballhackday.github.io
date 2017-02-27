@@ -777,7 +777,7 @@ footer.main {
 
 .hero {
   background-blend-mode: multiply;
-  background-color: #003276;
+  background-color: #C96f67;
   background-image: url("/images/berras-hands.jpg");
   background-position: center center;
   background-repeat: no-repeat;
@@ -818,7 +818,9 @@ footer.main {
     letter-spacing: 1px;
     text-transform: uppercase; }
     .hero h3.about-history {
-      margin-top: 2em; }
+      margin-top: 6em; }
+      .hero h3.about-history a {
+        color: #CDCCBB; }
     .hero h3 a,
     .hero h3 a:active,
     .hero h3 a:visited {
@@ -827,11 +829,8 @@ footer.main {
       color: #CDCCBB; }
   .hero h5 {
     color: #fff;
-    margin-top: 0.5em; }
-  .hero .select {
-    margin-top: 3em; }
-    .hero .select .dropdown-button {
-      padding: .5rem 10rem .4rem 1rem; }
+    margin-top: 0.5em;
+    margin-bottom: 4em; }
 
 .dropdown-container {
   font-family: "alternate-gothic-no-1-d", "Helvetica Neue", "Helvetica", "Roboto", "Arial", sans-serif;
@@ -883,6 +882,40 @@ footer.main {
   .dropdown-container .show-menu {
     display: block; }
 
+.index .select {
+  display: block; }
+  .index .select:after {
+    display: none; }
+
+.index .dropdown-container {
+  display: block;
+  background: none;
+  width: 100%;
+  border: none; }
+  .index .dropdown-container .dropdown-button {
+    color: #CDCCBB;
+    display: block;
+    float: none;
+    position: relative;
+    text-align: center;
+    padding: 0; }
+  .index .dropdown-container .dropdown-menu {
+    border: none;
+    display: -ms-flexbox;
+    display: flex;
+    position: relative;
+    width: 100%;
+    -ms-flex-pack: center;
+        justify-content: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap; }
+    .index .dropdown-container .dropdown-menu a {
+      font-size: 2.5rem;
+      padding: 2rem;
+      border: none; }
+      .index .dropdown-container .dropdown-menu a:last-child {
+        border: none; }
+
 .philadelphia .banner {
   background-color: #863C4D;
   background-image: url("/images/philly.jpg"); }
@@ -901,6 +934,18 @@ footer.main {
 
 .sf .banner {
   background-color: #C28E57;
+  background-image: url("/images/san-francisco.jpg"); }
+
+.seattle .banner {
+  background-color: #003276;
+  background-image: url("/images/san-francisco.jpg"); }
+
+.portland .banner {
+  background-color: #999;
+  background-image: url("/images/san-francisco.jpg"); }
+
+.minneapolis .banner {
+  background-color: #CD9A76;
   background-image: url("/images/san-francisco.jpg"); }
 
 .city-show header nav {
