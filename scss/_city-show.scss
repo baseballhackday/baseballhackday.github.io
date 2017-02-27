@@ -188,3 +188,9 @@
     @include outer-container(60%);
   }
 }
+
+.slack-signup {
+  clear: both;
+  padding-top: $large-spacing;
+  text-align: center;
+}
