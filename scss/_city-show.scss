@@ -1,3 +1,7 @@
+.city-show p:not(.time-location) {
+  font-size: 1.125em;
+}
+
 .philadelphia .banner {
   background-color: $philly-maroon;
   background-image: url("/images/philly.jpg");
