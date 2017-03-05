@@ -9,6 +9,9 @@
   }
 }
 
+.about-history p {
+  font-size: 1.125em;
+}
 .about {
   @include media(em(900)) {
     @include span-columns(7);

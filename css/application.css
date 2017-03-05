@@ -652,6 +652,157 @@ input[type="submit"] {
   .banner span {
     display: block; }
 
+/* Helpers */
+/* text-alignment */
+.text-left {
+  text-align: left !important; }
+
+.text-right {
+  text-align: right !important; }
+
+.text-center {
+  text-align: center !important; }
+
+.text-justify {
+  text-align: justify !important; }
+
+.centered {
+  display: block;
+  margin-left: auto;
+  margin-right: auto; }
+
+/* floats */
+.float-right {
+  float: right !important; }
+
+/* postion */
+.position-absolute {
+  position: absolute !important; }
+
+.position-relative {
+  position: relative !important; }
+
+/* padding margins */
+.ptxs, .paxs, .pvxs {
+  padding-top: 8px !important; }
+
+.pts, .pas, .pvs {
+  padding-top: 16px !important; }
+
+.ptm, .pam, .pvm {
+  padding-top: 32px !important; }
+
+.ptl, .pal, .pvl {
+  padding-top: 64px !important; }
+
+.ptn, .pan, .pvn {
+  padding-top: 0px !important; }
+
+.prxs, .paxs, .phxs {
+  padding-right: 8px !important; }
+
+.prs, .pas, .phs {
+  padding-right: 16px !important; }
+
+.prm, .pam, .phm {
+  padding-right: 32px !important; }
+
+.prl, .pal, .phl {
+  padding-right: 64px !important; }
+
+.prn, .pan, .phn {
+  padding-right: 0px !important; }
+
+.pbxs, .paxs, .pvxs {
+  padding-bottom: 8px !important; }
+
+.pbs, .pas, .pvs {
+  padding-bottom: 16px !important; }
+
+.pbm, .pam, .pvm {
+  padding-bottom: 32px !important; }
+
+.pbl, .pal, .pvl {
+  padding-bottom: 64px !important; }
+
+.pbn, .pan, .pvn {
+  padding-bottom: 0px !important; }
+
+.plxs, .paxs, .phxs {
+  padding-left: 8px !important; }
+
+.pls, .pas, .phs {
+  padding-left: 16px !important; }
+
+.plm, .pam, .phm {
+  padding-left: 32px !important; }
+
+.pll, .pal, .phl {
+  padding-left: 64px !important; }
+
+.pln, .pan, .phn {
+  padding-left: 0px !important; }
+
+.mtxs, .maxs, .mvxs {
+  margin-top: 8px !important; }
+
+.mts, .mas, .mvs {
+  margin-top: 16px !important; }
+
+.mtm, .mam, .mvm {
+  margin-top: 32px !important; }
+
+.mtl, .mal, .mvl {
+  margin-top: 64px !important; }
+
+.mtn, .man, .mvn {
+  margin-top: 0px !important; }
+
+.mrxs, .maxs, .mhxs {
+  margin-right: 8px !important; }
+
+.mrs, .mas, .mhs {
+  margin-right: 16px !important; }
+
+.mrm, .mam, .mhm {
+  margin-right: 32px !important; }
+
+.mrl, .mal, .mhl {
+  margin-right: 64px !important; }
+
+.mrn, .man, .mhn {
+  margin-right: 0px !important; }
+
+.mbxs, .maxs, .mvxs {
+  margin-bottom: 8px !important; }
+
+.mbs, .mas, .mvs {
+  margin-bottom: 16px !important; }
+
+.mbm, .mam, .mvm {
+  margin-bottom: 32px !important; }
+
+.mbl, .mal, .mvl {
+  margin-bottom: 64px !important; }
+
+.mbn, .man, .mvn {
+  margin-bottom: 0px !important; }
+
+.mlxs, .maxs, .mhxs {
+  margin-left: 8px !important; }
+
+.mls, .mas, .mhs {
+  margin-left: 16px !important; }
+
+.mlm, .mam, .mhm {
+  margin-left: 32px !important; }
+
+.mll, .mal, .mhl {
+  margin-left: 64px !important; }
+
+.mln, .man, .mhn {
+  margin-left: 0px !important; }
+
 header.main {
   position: absolute;
   top: 0;
@@ -916,6 +1067,9 @@ footer.main {
       .index .dropdown-container .dropdown-menu a:last-child {
         border: none; }
 
+.city-show p:not(.time-location) {
+  font-size: 1.125em; }
+
 .philadelphia .banner {
   background-color: #863C4D;
   background-image: url("/images/philly.jpg"); }
@@ -1132,6 +1286,9 @@ footer.main {
   .about-history .banner h2::after {
     margin-left: auto;
     margin-right: auto; }
+
+.about-history p {
+  font-size: 1.125em; }
 
 @media screen and (min-width: 56.25em) {
   .about {
