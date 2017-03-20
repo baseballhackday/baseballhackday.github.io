@@ -11,10 +11,8 @@ body-class: about-history
   <section class='about'>
     <h2>About the hack day</h2>
     <article>
-      <p>Love creating stuff on your computer and LOVE baseball? Come hack with us!</p>
-      <p>The annual Baseball Hack Day is a fun, friendly one-day hacking competition for baseball fans. It is spreading around the world, and if you'd like to start your own chapter, <a href="https://docs.google.com/document/d/1bwzyhGPWIfZ6w5FyQqUOpu_s8vkUwcrPy2UHvw4QImY/edit?usp=sharing">Read this google document.</a></p>
-      <p>It is the day where area baseball minds come together and see what cool projects can be created within a limited time. The project could be (but is not limited to) a tool, app, website, or data visualization. Baseball Hack Day is a free event thanks to our <a href="https://docs.google.com/document/d/1N1UtvOCPPPdMF-Y7zvwGZOL5cObL9a2Z0ouOUB5JCTA/edit?usp=sharing">generous sponsors</a> and volunteers.</p>
-      <p>See our resources in <a href="https://github.com/baseballhackday/data-and-resources/wiki/Resources-and-ideas">github wiki</a>, check out our <a href="http://baseballhackday.tumblr.com/">inspiraton blog on tumblr</a>, and follow us on Twitter <a href="https://twitter.com/baseballhackday">@BaseballHackDay</a></p>
+      {% include about-baseball-hack-day.html %}
+      <p>See our resources in <a href="https://github.com/baseballhackday/data-and-resources/wiki/Resources-and-ideas">github wiki</a>, check out our <a href="http://baseballhackday.tumblr.com/">inspiraton blog on tumblr</a>, and  <a href="">@BaseballHackDay</a>. See our doc on <a href="https://docs.google.com/document/d/1N1UtvOCPPPdMF-Y7zvwGZOL5cObL9a2Z0ouOUB5JCTA/edit?usp=sharing">sponsors</a> or <a href="https://docs.google.com/document/d/1bwzyhGPWIfZ6w5FyQqUOpu_s8vkUwcrPy2UHvw4QImY/edit?usp=sharing">start your own chapter</a>.</p>
     </article>
   </section>
 
@@ -30,6 +28,15 @@ body-class: about-history
       </li>
       <li>
         <a class='action-primary' href='http://baseballhackday.tumblr.com/'>Inspiraton Blog</a>
+      </li>
+      <li>
+        <a class='action-primary' href='https://twitter.com/baseballhackday'>follow us on Twitter</a>
+      </li>
+      <li>
+        <a class='action-primary' href='https://docs.google.com/document/d/1N1UtvOCPPPdMF-Y7zvwGZOL5cObL9a2Z0ouOUB5JCTA/edit?usp=sharing'>Sponsor the event</a>
+      </li>
+      <li>
+        <a class='action-primary' href='https://docs.google.com/document/d/1bwzyhGPWIfZ6w5FyQqUOpu_s8vkUwcrPy2UHvw4QImY/edit?usp=sharing'>Start one in your own city</a>
       </li>
     </ul>
   </aside>
@@ -72,4 +79,10 @@ body-class: about-history
       <p>The event is based on the principal of <a href="http://hackdaymanifesto.com/">the Hack Day Manifesto</a>. It will always be free to attend, and we are run by volunteers, and we&rsquo;ll never be for-profit. It's a collective labor of love. If you want to join us in the fun, <a href="https://docs.google.com/document/d/1bwzyhGPWIfZ6w5FyQqUOpu_s8vkUwcrPy2UHvw4QImY/edit?usp=sharing">read this doc</a>, <a href="https://baseballhackday-slack.herokuapp.com/">join slack</a> and reach out. Can't wait to hear from you!</p>
     </article>
   </aside>
+
+  <section class='email-signup'>
+    {% include mc-signup.html %}
+  </section>
+
+
 </div>
