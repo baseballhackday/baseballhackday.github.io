@@ -1287,6 +1287,12 @@ footer.main {
     margin-left: auto;
     margin-right: auto; }
 
+.about-history header nav {
+  display: none; }
+  @media screen and (min-width: 36.25em) {
+    .about-history header nav {
+      display: block; } }
+
 .about-history p {
   font-size: 1.125em; }
 

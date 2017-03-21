@@ -8,6 +8,12 @@
     margin-right: auto;
   }
 }
+.about-history header nav {
+  display: none;
+  @include media(em(580)) {
+    display: block;
+  }
+}
 
 .about-history p {
   font-size: 1.125em;
