@@ -1232,18 +1232,18 @@ footer.main {
         .prizes li:last-child {
           margin-right: 0; } }
 
-.judges {
+.city-show .judges {
   padding-top: 4em; }
   @media screen and (min-width: 57.5em) {
-    .judges {
+    .city-show .judges {
       float: left;
       display: block;
       margin-right: 2.35765%;
       width: 31.76157%;
       margin-right: 0; }
-      .judges:last-child {
+      .city-show .judges:last-child {
         margin-right: 0; } }
-  .judges p {
+  .city-show .judges p {
     color: #b7b69e;
     font-family: "alternate-gothic-no-1-d", "Helvetica Neue", "Helvetica", "Roboto", "Arial", sans-serif;
     font-size: 1.625rem;
