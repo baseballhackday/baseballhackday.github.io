@@ -695,6 +695,9 @@ input[type="submit"] {
 .ptl, .pal, .pvl {
   padding-top: 64px !important; }
 
+.ptxl, .paxl, .pvxl {
+  padding-top: 128px !important; }
+
 .ptn, .pan, .pvn {
   padding-top: 0px !important; }
 
@@ -709,6 +712,9 @@ input[type="submit"] {
 
 .prl, .pal, .phl {
   padding-right: 64px !important; }
+
+.prxl, .paxl, .phxl {
+  padding-right: 128px !important; }
 
 .prn, .pan, .phn {
   padding-right: 0px !important; }
@@ -725,6 +731,9 @@ input[type="submit"] {
 .pbl, .pal, .pvl {
   padding-bottom: 64px !important; }
 
+.pbxl, .paxl, .pvxl {
+  padding-bottom: 128px !important; }
+
 .pbn, .pan, .pvn {
   padding-bottom: 0px !important; }
 
@@ -739,6 +748,9 @@ input[type="submit"] {
 
 .pll, .pal, .phl {
   padding-left: 64px !important; }
+
+.plxl, .paxl, .phxl {
+  padding-left: 128px !important; }
 
 .pln, .pan, .phn {
   padding-left: 0px !important; }
@@ -755,6 +767,9 @@ input[type="submit"] {
 .mtl, .mal, .mvl {
   margin-top: 64px !important; }
 
+.mtxl, .maxl, .mvxl {
+  margin-top: 128px !important; }
+
 .mtn, .man, .mvn {
   margin-top: 0px !important; }
 
@@ -769,6 +784,9 @@ input[type="submit"] {
 
 .mrl, .mal, .mhl {
   margin-right: 64px !important; }
+
+.mrxl, .maxl, .mhxl {
+  margin-right: 128px !important; }
 
 .mrn, .man, .mhn {
   margin-right: 0px !important; }
@@ -785,6 +803,9 @@ input[type="submit"] {
 .mbl, .mal, .mvl {
   margin-bottom: 64px !important; }
 
+.mbxl, .maxl, .mvxl {
+  margin-bottom: 128px !important; }
+
 .mbn, .man, .mvn {
   margin-bottom: 0px !important; }
 
@@ -799,6 +820,9 @@ input[type="submit"] {
 
 .mll, .mal, .mhl {
   margin-left: 64px !important; }
+
+.mlxl, .maxl, .mhxl {
+  margin-left: 128px !important; }
 
 .mln, .man, .mhn {
   margin-left: 0px !important; }
@@ -928,7 +952,7 @@ footer.main {
 
 .hero {
   background-blend-mode: multiply;
-  background-color: #C96f67;
+  background-color: #43BE66;
   background-image: url("/images/berras-hands.jpg");
   background-position: center center;
   background-repeat: no-repeat;
@@ -936,6 +960,18 @@ footer.main {
   padding-top: 10vh;
   text-align: center;
   width: 100%; }
+  .hero h2 a,
+  .hero h2 a:active,
+  .hero h2 a:visited, .hero h3 a,
+  .hero h3 a:active,
+  .hero h3 a:visited, .hero h4 a,
+  .hero h4 a:active,
+  .hero h4 a:visited, .hero h5 a,
+  .hero h5 a:active,
+  .hero h5 a:visited {
+    color: #fff; }
+  .hero h2 a:hover, .hero h3 a:hover, .hero h4 a:hover, .hero h5 a:hover {
+    color: #CDCCBB; }
   .hero h2 {
     color: #fff;
     font-size: 2.25em;
@@ -955,12 +991,6 @@ footer.main {
         font-size: 1.25em; } }
     .hero h2:after {
       display: none; }
-    .hero h2 a,
-    .hero h2 a:active,
-    .hero h2 a:visited {
-      color: #fff; }
-    .hero h2 a:hover {
-      color: #CDCCBB; }
   .hero h3 {
     color: rgba(4, 1, 2, 0.8);
     color: #CDCCBB;
@@ -968,20 +998,12 @@ footer.main {
     font-weight: normal;
     letter-spacing: 1px;
     text-transform: uppercase; }
-    .hero h3.about-history {
-      margin-top: 6em; }
-      .hero h3.about-history a {
-        color: #CDCCBB; }
-    .hero h3 a,
-    .hero h3 a:active,
-    .hero h3 a:visited {
-      color: #fff; }
-    .hero h3 a:hover {
-      color: #CDCCBB; }
   .hero h5 {
     color: #fff;
     margin-top: 0.5em;
     margin-bottom: 4em; }
+  .hero .tan {
+    color: #CDCCBB; }
 
 .dropdown-container {
   font-family: "alternate-gothic-no-1-d", "Helvetica Neue", "Helvetica", "Roboto", "Arial", sans-serif;

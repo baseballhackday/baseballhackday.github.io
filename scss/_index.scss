@@ -66,7 +66,7 @@
 
 .hero {
   background-blend-mode: multiply;
-  background-color: $chicago-red;
+  background-color: $light-green;
   background-image: url("/images/berras-hands.jpg");
   background-position: center center;
   background-repeat: no-repeat;
@@ -75,6 +75,17 @@
   padding-top: 10vh;
   text-align: center;
   width: 100%;
+
+  h2, h3, h4, h5 {
+    a,
+    a:active,
+    a:visited {
+      color: #fff;
+    }
+    a:hover {
+      color: $light-tan;
+    }
+  }
 
   h2 {
     color: #fff;
@@ -102,15 +113,6 @@
     &:after {
       display: none;
     }
-
-    a,
-    a:active,
-    a:visited {
-      color: #fff;
-    }
-    a:hover {
-      color: $light-tan;
-    }
   }
 
   h3 {
@@ -120,28 +122,16 @@
     font-weight: normal;
     letter-spacing: 1px;
     text-transform: uppercase;
-
-    &.about-history {
-      margin-top: 6em;
-      a {
-        color: $light-tan;
-      }
-    }
-
-    a,
-    a:active,
-    a:visited {
-      color: #fff;
-    }
-    a:hover {
-      color: $light-tan;
-    }
   }
 
   h5 {
     color: #fff;
     margin-top: 0.5em;
     margin-bottom: 4em;
+  }
+
+  .tan {
+    color: $light-tan;
   }
 
 }

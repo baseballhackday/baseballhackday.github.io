@@ -1,11 +1,11 @@
-title : Baseball Hack Day, March 25, 2017 - Fun friendly free one-day on-site hacking/coding competition for baseball fans
-description : Fun friendly free one-day on-site hacking/coding competition for baseball fans
+title : Baseball Hack Day, March 17, 2018 - Friendly one-day multi-city coding competition for baseball fans
+description : Friendly one-day multi-city coding competition for baseball fans - Baseball Hack Day
 keyword : baseball, hackday, hackathon, hack, hacking, hackfest, codefest, mlb, major league baseball
 url : http://www.baseballhackday.com
 baseurl : /
 email : daigo@baseballhackday.com
 twitter : baseballhackday
-socialimage: http://www.baseballhackday.com/images/bbhd-2016.png
+socialimage: http://www.baseballhackday.com/images/bbhd-2018.png
 markdown: kramdown
 exclude :
   - node_modules

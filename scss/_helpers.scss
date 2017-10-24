@@ -30,7 +30,7 @@
 $paddingMargins: p, m;
 $positions: t, r, b, l;
 $padding-increment: 16px;
-$sizes: xs, s, m, l, n;
+$sizes: xs, s, m, l, xl, n;
 $pm: padding;
 $pos: top;
 $sz: 0;
@@ -65,6 +65,8 @@ $hvpos: v;
         $sz: $padding-increment * 2;
       } @else if $size == "l" {
         $sz: $padding-increment * 4;
+      } @else if $size == "xl" {
+        $sz: $padding-increment * 8;
       } @else if $size == "xs" {
         $sz: $padding-increment / 2;
       } @else if $size == "n" {
