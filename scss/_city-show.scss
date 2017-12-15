@@ -42,6 +42,16 @@
   background-image: url("/images/san-francisco.jpg");
 }
 
+.sandiego .banner {
+  background-color: $padres-blue;
+  background-image: url("/images/san-francisco.jpg");
+}
+
+.dc .banner {
+  background-color: $philly-maroon;
+  background-image: url("/images/philly.jpg");
+}
+
 .city-show header nav {
   display: none;
   @include media(em(580)) {

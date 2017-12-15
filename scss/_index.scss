@@ -67,7 +67,7 @@
 .hero {
   background-blend-mode: multiply;
   background-color: $light-green;
-  background-image: url("/images/berras-hands.jpg");
+  background-image: url("/images/agnew.jpg");
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -143,7 +143,7 @@
   width: 100%;
   font-size: 1.5em;
   color: #fff;
-  background-color: rgba(black, .5);
+  background-color: rgba(black, .6);
   border: 1px solid #fff;
   cursor: pointer;
   -webkit-appearance: none;
@@ -165,7 +165,6 @@
   .dropdown-menu {
     @include transition (all 0.2s ease-in-out);
     border: $base-border;
-    box-shadow: 0 2px 2px transparentize(black, 0.8);
     cursor: pointer;
     display: none;
     margin: 0;
@@ -177,7 +176,8 @@
     z-index: 99999;
     color: #fff;
     a {
-      background-color: rgba(black, .2);
+      @include transition (all 0.2s ease-in-out);
+      background-color: rgba(black, .5);
       display: block;
       color: #fff;
       border-bottom: $base-border;

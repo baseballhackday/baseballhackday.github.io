@@ -953,7 +953,7 @@ footer.main {
 .hero {
   background-blend-mode: multiply;
   background-color: #43BE66;
-  background-image: url("/images/berras-hands.jpg");
+  background-image: url("/images/agnew.jpg");
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -1012,7 +1012,7 @@ footer.main {
   width: 100%;
   font-size: 1.5em;
   color: #fff;
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0.6);
   border: 1px solid #fff;
   cursor: pointer;
   -webkit-appearance: none;
@@ -1030,7 +1030,6 @@ footer.main {
   .dropdown-container .dropdown-menu {
     transition: all 0.2s ease-in-out;
     border: 1px solid #DDD;
-    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
     cursor: pointer;
     display: none;
     margin: 0;
@@ -1042,7 +1041,8 @@ footer.main {
     z-index: 99999;
     color: #fff; }
     .dropdown-container .dropdown-menu a {
-      background-color: rgba(0, 0, 0, 0.2);
+      transition: all 0.2s ease-in-out;
+      background-color: rgba(0, 0, 0, 0.5);
       display: block;
       color: #fff;
       border-bottom: 1px solid #DDD;
@@ -1123,6 +1123,14 @@ footer.main {
 .twin-cities .banner {
   background-color: #CD9A76;
   background-image: url("/images/san-francisco.jpg"); }
+
+.sandiego .banner {
+  background-color: #274E82;
+  background-image: url("/images/san-francisco.jpg"); }
+
+.dc .banner {
+  background-color: #863C4D;
+  background-image: url("/images/philly.jpg"); }
 
 .city-show header nav {
   display: none; }
