@@ -1132,6 +1132,10 @@ footer.main {
   background-color: #863C4D;
   background-image: url("/images/philly.jpg"); }
 
+.toronto .banner {
+  background-color: #5DBCD2;
+  background-image: url("/images/toronto.jpg"); }
+
 .city-show header nav {
   display: none; }
   @media screen and (min-width: 36.25em) {
@@ -1284,9 +1288,7 @@ footer.main {
   padding-top: 4em; }
   @media screen and (min-width: 57.5em) {
     .guidelines article {
-      -moz-column-count: 2;
       column-count: 2;
-      -moz-column-gap: 2.35765%;
       column-gap: 2.35765%; } }
   .guidelines article + article {
     padding-top: 2em; }
