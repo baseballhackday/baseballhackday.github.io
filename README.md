@@ -28,7 +28,11 @@ and install npm and gulp globally by running
 Run gulp to compile css from sass by simply run `gulp` from your terminal within your repo. 
 It will launch watch by default. <code>control-c</code> to stop. If you only want the css compiled once, run `gulp sass`
 
-**Local development, RUBY/Jekyll** To run jekyll locally to test your website while developing, run  `bundle exec jekyll serve --watch` (Requires ruby *) Your website should be viewable by going to [localhost:4000](http://localhost:4000/)
+**Local development, RUBY/Jekyll** To run jekyll locally to test your website while developing, run  
+```
+bundle exec jekyll serve --watch
+``` 
+(Requires ruby *) Your website should be viewable by going to [localhost:4000](http://localhost:4000/)
 
 Github's doc on [how to use Jekyll on Github Pages](https://help.github.com/articles/using-jekyll-with-pages) is also helpful. 
 
