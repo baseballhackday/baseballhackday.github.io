@@ -34,6 +34,7 @@ $light-red: #FBE3E4;
 $light-yellow: #FFF6BF;
 $light-green: #E6EFC2;
 $light-tan: #CDCCBB;
+$light-blue: lighten($blue, 20%);
 $tan: darken($light-tan, 15%);
 $burnt-orange: #CD9A76;
 $boston-red: #BE4343;

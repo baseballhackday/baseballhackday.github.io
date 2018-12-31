@@ -2,6 +2,8 @@
 
 Baseball Hack Day is a fun, free, friendly one-day hacking/coding/designing competition for baseball fans. 
 
+Boston, Chicago, Cincinnati, Los Angeles, New York, San Diego, Seattle, Toronto, Twin Cities
+
 `#HackBaseball`
 
 - [Join us in Slack](http://baseballhackday-slack.herokuapp.com/)
@@ -37,8 +39,9 @@ bundle exec jekyll serve --watch
 Github's doc on [how to use Jekyll on Github Pages](https://help.github.com/articles/using-jekyll-with-pages) is also helpful. 
 
 
-* You may have to run `brew install ruby` and `sudo gem install bundler` then `sudo bundle install` once. [Mac OS X 10.11 nokogiri trouble](http://stackoverflow.com/questions/23668684/failed-to-build-gem-native-extension-when-i-run-bundle-install)
+* You may have to run `brew install ruby` and `gem install bundler` then `bundle install` once. This [GoRails tutorial on setting up Mac](https://gorails.com/setup/osx/10.14-mojave) is helpful.
 
+* Update. After upgrading my Mac to Mojave, I was unable to use Apple's native Ruby. [This jeckyll thread](https://github.com/jekyll/jekyll/issues/7274#issuecomment-425069689) helps. 
 
 How to update chapter info
 --------------------------
@@ -57,9 +60,7 @@ Credits
 
 [Proteus](http://github.com/thoughtbot/proteus) is maintained and funded by [thoughtbot, inc](http://thoughtbot.com/community)
 
-Thank you to all [the contributors](https://github.com/thoughtbot/proteus-jekyll/contributors)!
-
-Also based on Daigo Fujiwara's https://github.com/daigofuji/jekyll-foundation-6-starter
+Also based on Daigo Fujiwara's [jekyll-foundation-6-starter](https://github.com/daigofuji/jekyll-foundation-6-starter)
 
 
 
@@ -67,6 +68,3 @@ License
 -------
 
 The names and logos for thoughtbot are trademarks of thoughtbot, inc.
-
-Proteus Jekyll is Copyright © 2014 thoughtbot, inc. It is free software, and may be
-redistributed under the terms specified in the LICENSE file.

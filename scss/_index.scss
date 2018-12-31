@@ -66,8 +66,8 @@
 
 .hero {
   background-blend-mode: multiply;
-  background-color: $light-green;
-  background-image: url("/images/agnew.jpg");
+  background-color: $light-blue;
+  background-image: url("/images/2019-cover.jpg");
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -140,17 +140,19 @@
   font-family: $sub-header-font-family;
   text-transform: uppercase;
   display: inline-block;
+  margin: 0 auto;
   width: 100%;
+  max-width: 1000px;
   font-size: 1.5em;
   color: #fff;
-  background-color: rgba(black, .6);
+  background-color: rgba(black, .5);
   border: 1px solid #fff;
   cursor: pointer;
   -webkit-appearance: none;
      -moz-appearance: none;
           appearance: none;
   &:hover {
-    background-color: rgba(black, .8);
+    background-color: rgba(black, .9);
   }
 
   .dropdown-button {

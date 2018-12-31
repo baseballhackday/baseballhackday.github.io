@@ -952,8 +952,8 @@ footer.main {
 
 .hero {
   background-blend-mode: multiply;
-  background-color: #43BE66;
-  background-image: url("/images/agnew.jpg");
+  background-color: #005ddc;
+  background-image: url("/images/2019-cover.jpg");
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -1009,17 +1009,19 @@ footer.main {
   font-family: "alternate-gothic-no-1-d", "Helvetica Neue", "Helvetica", "Roboto", "Arial", sans-serif;
   text-transform: uppercase;
   display: inline-block;
+  margin: 0 auto;
   width: 100%;
+  max-width: 1000px;
   font-size: 1.5em;
   color: #fff;
-  background-color: rgba(0, 0, 0, 0.6);
+  background-color: rgba(0, 0, 0, 0.5);
   border: 1px solid #fff;
   cursor: pointer;
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none; }
   .dropdown-container:hover {
-    background-color: rgba(0, 0, 0, 0.8); }
+    background-color: rgba(0, 0, 0, 0.9); }
   .dropdown-container .dropdown-button {
     cursor: pointer;
     float: right;
@@ -1288,7 +1290,9 @@ footer.main {
   padding-top: 4em; }
   @media screen and (min-width: 57.5em) {
     .guidelines article {
+      -moz-column-count: 2;
       column-count: 2;
+      -moz-column-gap: 2.35765%;
       column-gap: 2.35765%; } }
   .guidelines article + article {
     padding-top: 2em; }
