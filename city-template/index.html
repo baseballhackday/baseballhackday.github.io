@@ -11,19 +11,21 @@ socialimage: http://www.baseballhackday.com/images/bbhd-2018.png
 {% assign venue_name = "" %}
 {% assign venue_address = "" %}
 
-
-<header class="banner">
-  <div class="wrapper">
-    <h2>{{ city_name }}</h2>
-    <p class="time-location">
-      <span class="time">Saturday, March 9th 2019, 9:00 am – 6 pm (EST)</span>
-      <span class="location">{{ venue_name }}, {{ venue_address }}</span>
-    </p>
-    {% if registration_url != "" %}
-    <a class="action" href="{{ registration_url }}">Register!</a>
-    {% endif %}
-  </div>
+<header class="{{ city_name | downcase }}"> 
+  <header class="banner">
+    <div class="wrapper">
+      <h2>{{ city_name }}</h2>
+      <p class="time-location">
+        <span class="time">Saturday, March 9th 2019, 9:00 am – 6 pm (EST)</span>
+        <span class="location">{{ venue_name }}, {{ venue_address }}</span>
+      </p>
+      {% if registration_url != "" %}
+      <a class="action" href="{{ registration_url }}">Register!</a>
+      {% endif %}
+    </div>
+  </header>
 </header>
+
 <div class="wrapper">
   <section class="schedule">
     <h2>Schedule</h2>
