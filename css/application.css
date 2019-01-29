@@ -1092,7 +1092,8 @@ footer.main {
         border: none; }
 
 .city-show p:not(.time-location) {
-  font-size: 1.125em; }
+  font-size: 1.125em;
+  line-height: 1.35em; }
 
 .philadelphia .banner {
   background-color: #863C4D;
@@ -1201,16 +1202,28 @@ footer.main {
     float: left;
     display: block;
     margin-right: 2.35765%;
-    width: 31.76157%;
-    text-align: center; }
+    width: 48.82117%;
+    margin-right: 0;
+    text-align: center;
+    padding: 0 10px; }
     .sponsor-list li:last-child {
       margin-right: 0; }
+    @media screen and (min-width: 0.7617em) {
+      .sponsor-list li {
+        float: left;
+        display: block;
+        margin-right: 2.35765%;
+        width: 31.76157%;
+        margin-right: 0; }
+        .sponsor-list li:last-child {
+          margin-right: 0; } }
     @media screen and (min-width: 57.5em) {
       .sponsor-list li {
         float: left;
         display: block;
         margin-right: 4.82916%;
         width: 30.11389%;
+        margin-right: 0;
         margin-bottom: 3em; }
         .sponsor-list li:last-child {
           margin-right: 0; }
@@ -1224,10 +1237,12 @@ footer.main {
       color: #b7b69e;
       font-family: "alternate-gothic-no-1-d", "Helvetica Neue", "Helvetica", "Roboto", "Arial", sans-serif;
       font-size: 1.625rem;
-      line-height: 1; }
+      line-height: 1;
+      line-height: 0.9; }
     .sponsor-list li small {
       color: #b7b69e;
-      font-size: 0.875em; }
+      font-size: 0.875em;
+      line-height: 0.9; }
     .sponsor-list li img {
       margin-bottom: 1em; }
     .sponsor-list li .be-sponsor img {
@@ -1252,7 +1267,7 @@ footer.main {
     float: left;
     display: block;
     margin-right: 2.35765%;
-    width: 31.76157%; }
+    width: 48.82117%; }
     .prizes li:last-child {
       margin-right: 0; }
     .prizes li:nth-child(2n) {

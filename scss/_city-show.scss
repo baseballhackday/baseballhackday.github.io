@@ -1,5 +1,6 @@
 .city-show p:not(.time-location) {
   font-size: 1.125em;
+  line-height: 1.35em;
 }
 
 .philadelphia .banner {
@@ -114,11 +115,19 @@
   @include row;
 
   li {
-    @include span-columns(4);
+    @include span-columns(6);
+    margin-right: 0;
     text-align: center;
+    padding: 0 10px;
+
+    @include media(em(700, 919)) {
+      @include span-columns(4);
+      margin-right: 0;
+    }
 
     @include media(em(920)) {
       @include span-columns(2 6);
+      margin-right: 0;
       @include omega(3n);
       margin-bottom: 3em;
     }
@@ -129,11 +138,13 @@
 
     h3 {
       @include secondary-header;
+      line-height: 0.9;
     }
 
     small {
       color: darken($light-tan, 10%);
       font-size: em(14);
+      line-height: 0.9;
     }
 
     img {
@@ -161,7 +172,7 @@
   }
 
   li {
-    @include span-columns(4);
+    @include span-columns(6);
     @include omega(2n);
 
     @include media(em(920)) {
