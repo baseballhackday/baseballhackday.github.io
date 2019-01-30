@@ -1,8 +1,8 @@
 # Baseball Hack Day 
 
-2019 date is Saturday, March 9th
+2019 date is Saturday, March 9th!
 
-Baseball Hack Day is a fun, free, friendly one-day hacking/coding/designing competition for baseball fans. 
+Baseball Hack Day is a fun, free, friendly one-day IRL hacking/coding/designing competition for baseball fans. 
 
 Boston, Chicago, Cincinnati, Los Angeles, New York, San Diego, Seattle, Toronto, Twin Cities
 
