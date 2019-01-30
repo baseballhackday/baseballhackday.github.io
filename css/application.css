@@ -1123,13 +1123,17 @@ footer.main {
   background-color: #999;
   background-image: url("/images/san-francisco.jpg"); }
 
-.twin-cities .banner {
+.twin.cities .banner {
   background-color: #CD9A76;
   background-image: url("/images/san-francisco.jpg"); }
 
-.sandiego .banner {
+.san.diego .banner {
   background-color: #274E82;
-  background-image: url("/images/san-francisco.jpg"); }
+  background-image: url("/images/sandiego-sdasm.jpg"); }
+
+.new.york .banner {
+  background-color: #2a4c98;
+  background-image: url("/images/yankees-loc.jpg"); }
 
 .dc .banner {
   background-color: #863C4D;

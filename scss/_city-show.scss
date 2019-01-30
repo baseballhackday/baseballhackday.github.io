@@ -38,16 +38,19 @@
   background-image: url("/images/san-francisco.jpg");
 }
 
-.twin-cities .banner {
+.twin.cities .banner {
   background-color: $burnt-orange;
   background-image: url("/images/san-francisco.jpg");
 }
 
-.sandiego .banner {
+.san.diego .banner {
   background-color: $padres-blue;
-  background-image: url("/images/san-francisco.jpg");
+  background-image: url("/images/sandiego-sdasm.jpg");
 }
-
+.new.york .banner {
+  background-color: $yankees-gray;
+  background-image: url("/images/yankees-loc.jpg");
+}
 .dc .banner {
   background-color: $philly-maroon;
   background-image: url("/images/philly.jpg");
