@@ -1,22 +1,22 @@
 ---
 layout: default
 body-class: city-show
-title: '2019 Baseball Hack Day New York - Sat. March 9'
-description: Friendly one-day multi-city coding competition for baseball fans - Baseball Hack Day Sat. March 9, 2019 - New York City
+title: '2019 Baseball Hack Day Seattle, Sat. March 9'
+description: Friendly one-day multi-city coding competition for baseball fans - Baseball Hack Day Sat. March 9, 2019 - Seattle, WA
 twitter : baseballhackday
 socialimage: http://www.baseballhackday.com/images/bbhd-2018.png
 ---
-{% assign city_name = "New York" %}
-{% assign registration_url = "https://www.eventbrite.com/e/baseball-hack-day-new-york-city-tickets-55645578423" %}
-{% assign venue_name = "GameChanger Office" %}
-{% assign venue_address = "44 Wall St. New York, NY 10005" %}
+{% assign city_name = "Seattle" %}
+{% assign registration_url = "" %}
+{% assign venue_name = "TBA" %}
+{% assign venue_address = "TBA" %}
 
-<header class="{{ city_name | downcase }}"> 
+<header class="{{ city_name | downcase }} city-show"> 
   <header class="banner">
     <div class="wrapper">
       <h2>{{ city_name }}</h2>
       <p class="time-location">
-        <span class="time">Saturday, March 9th 2019, 10:00 am – 6:30 pm (EST)</span>
+        <span class="time">Saturday, March 9th 2019, 9:00 am – 6 pm (PST)</span>
         <span class="location">{{ venue_name }}, {{ venue_address }}</span>
       </p>
       {% if registration_url != "" %}
@@ -31,15 +31,15 @@ socialimage: http://www.baseballhackday.com/images/bbhd-2018.png
     <h2>Schedule</h2>
     <ul>
     <li>
-      <time datetime=" pubdate=">10:00 &ndash; 10:30am </time>
-      <h3>Registration, Meet and Greet</h3>
+      <time datetime=" pubdate=">9:00 &ndash; 9:30am </time>
+      <h3>Registration, Meet and Greet, and Coffee</h3>
     </li>
     <li>
-      <time datetime=" pubdate=">10:30 &ndash; 11:00am </time>
+      <time datetime=" pubdate=">9:30 &ndash; 10:00am </time>
       <h3>Welcome, Introductions, and Pitch</h3>
     </li>
     <li>
-      <time datetime=" pubdate=">11:00 &ndash; 12:30pm </time>
+      <time datetime=" pubdate=">10:00 &ndash; 12:30pm </time>
       <h3>Design and Code</h3>
     </li>
     <li>
@@ -47,15 +47,15 @@ socialimage: http://www.baseballhackday.com/images/bbhd-2018.png
       <h3>Lunch</h3>
     </li>
     <li>
-      <time datetime=" pubdate=">1:30 &ndash; 5:30pm </time>
+      <time datetime=" pubdate=">1:30 &ndash; 4:00pm </time>
       <h3>More Design and Code</h3>
     </li>
     <li>
-      <time datetime=" pubdate=">5:30 &ndash; 6:30pm </time>
+      <time datetime=" pubdate=">4:00 &ndash; 5:00pm </time>
       <h3>Presentation</h3>
     </li>
     <li>
-      <time datetime=" pubdate=">6:30pm</time>
+      <time datetime=" pubdate=">5:00pm</time>
       <h3>Awards announcements</h3>
     </li>
   </ul>
@@ -66,15 +66,16 @@ socialimage: http://www.baseballhackday.com/images/bbhd-2018.png
       <h2>Sponsors</h2>
     </header>
     <ul class="sponsor-list">
-      <li>
-        <a class="gamechanger" href="https://gc.com/">
-          <img alt="gamechanger Logo" src="../images/ny-sponsors/gamechanger.png">
-          <h3>GameChanger</h3>
-          <small>Host, Venue, Food</small>
+      <!-- <li>
+        <a class="example-sponsor" href="#SponsorURL">
+          <img alt="example-sponsor Logo" src="http://placehold.jp/600x300.png">
+          <h3>Example Sponsor</h3>
+          <small>Hall of Fame, MVP or All-Star sponsor</small>
         </a>
-      </li>
+      </li> -->
 
     {% include shared-sponsors.html %}
+
 
     </ul>
     <a class="action-primary" href="https://docs.google.com/document/d/1lA_9jqN2oqfVSRw3RnjVvqJ8Ik1Khvy6q4MVj15tCpc/edit?usp=sharing">
@@ -98,7 +99,7 @@ socialimage: http://www.baseballhackday.com/images/bbhd-2018.png
       <li>
         <h3>Baseball Hack Day Grand Prize Winner</h3>
         <p>
-          In addition, the team who takes the grand prize (best of the winning teams of participating cities) will also recieve additional prize (and major bragging rights!)
+          {% include grand-prize.html %}
         </p>
       </li>
       <li>
