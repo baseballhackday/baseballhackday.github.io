@@ -1103,6 +1103,10 @@ footer.main {
   background-color: #BE4343;
   background-image: url("/images/boston.jpg"); }
 
+.cincinnati .banner {
+  background-color: #D3504D;
+  background-image: url("/images/philly.jpg"); }
+
 .montreal .banner {
   background-color: #D3504D;
   background-image: url("/images/montreal.jpg"); }
