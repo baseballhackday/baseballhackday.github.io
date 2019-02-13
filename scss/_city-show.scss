@@ -33,14 +33,20 @@
   background-image: url("/images/san-francisco.jpg");
 }
 
+.ann.arbor .banner,
+.annarbor .banner {
+  background-color: $detroit-orange;
+  background-image: url("/images/detroit.jpg");
+}
+
 .seattle .banner {
-  background-color: $blue;
+  background-color: $mariners-green;
   background-image: url("/images/philly.jpg");
 }
 
 .los.angeles .banner {
-  background-color: $toronto-blue;
-  background-image: url("/images/san-francisco.jpg");
+  background-color: $dodger-blue;
+  background-image: url("/images/dodgers.jpg");
 }
 
 .twin.cities .banner {

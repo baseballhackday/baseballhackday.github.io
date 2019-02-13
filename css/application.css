@@ -1119,13 +1119,18 @@ footer.main {
   background-color: #C28E57;
   background-image: url("/images/san-francisco.jpg"); }
 
+.ann.arbor .banner,
+.annarbor .banner {
+  background-color: #c4411e;
+  background-image: url("/images/detroit.jpg"); }
+
 .seattle .banner {
-  background-color: #003276;
+  background-color: #128287;
   background-image: url("/images/philly.jpg"); }
 
 .los.angeles .banner {
-  background-color: #5DBCD2;
-  background-image: url("/images/san-francisco.jpg"); }
+  background-color: #005A9C;
+  background-image: url("/images/dodgers.jpg"); }
 
 .twin.cities .banner {
   background-color: #CD9A76;
