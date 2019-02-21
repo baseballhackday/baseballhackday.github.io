@@ -206,6 +206,17 @@
   p {
     @include secondary-header;
   }
+
+  li {
+    clear: left;
+  }
+
+  .judges-photo {
+    display: block;
+    max-width: 125px;
+    float: left;
+    margin: 0 15px 15px 0;
+  }
 }
 
 .guidelines {

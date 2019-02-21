@@ -1312,6 +1312,13 @@ footer.main {
     font-family: "alternate-gothic-no-1-d", "Helvetica Neue", "Helvetica", "Roboto", "Arial", sans-serif;
     font-size: 1.625rem;
     line-height: 1; }
+  .city-show .judges li {
+    clear: left; }
+  .city-show .judges .judges-photo {
+    display: block;
+    max-width: 125px;
+    float: left;
+    margin: 0 15px 15px 0; }
 
 .guidelines {
   clear: both;
