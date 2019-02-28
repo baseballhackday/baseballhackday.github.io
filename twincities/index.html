@@ -8,8 +8,8 @@ socialimage: http://www.baseballhackday.com/images/bbhd-2018.png
 ---
 {% assign city_name = "Twin Cities" %}
 {% assign registration_url = "http://baseballhackdaytc.eventbrite.com/" %}
-{% assign venue_name = "TBA" %}
-{% assign venue_address = "" %}
+{% assign venue_name = "Sportradar Offices" %}
+{% assign venue_address = "150 S 5th Street, Ste 300, Minneapolis, MN 55402" %}
 
 <header class="{{ city_name | downcase }} city-show"> 
   <header class="banner">
@@ -67,14 +67,34 @@ socialimage: http://www.baseballhackday.com/images/bbhd-2018.png
     </header>
     <ul class="sponsor-list">
       <li>
-        <a class="intuit" href="https://www.intuit.com/">
-          <img alt="intuit Logo" src="../images/sandiego-sponsors/intuit.png">
-          <h3>Intuit</h3>
+        <a class="iotfuse" href="https://www.iotfuse.com/">
+          <img alt="iotfuse Logo" src="images/iotfuse.png">
+          <h3>IOT Fuse</h3>
           <small>Sponsor</small>
         </a>
       </li>
-
-      {% include shared-sponsors.html %}
+      <li>
+        <a class="microsoft" href="https://www.microsoft.com/">
+          <img alt="microsoft Logo" src="images/microsoft.png">
+          <h3>Microsoft</h3>
+          <small>Sponsor</small>
+        </a>
+      </li>
+      <li>
+        <a class="gener8tor" href="https://www.gener8tor.com/">
+          <img alt="gener8tor Logo" src="images/gener8tor.png">
+          <h3>Gener8tor Accelerator</h3>
+          <small>Sponsor</small>
+        </a>
+      </li>
+      <li>
+        <a class="nerdery" href="https://www.nerdery.com/">
+          <img alt="nerdery Logo" src="images/nerdery.png">
+          <h3>Nerdery</h3>
+          <small>Sponsor</small>
+        </a>
+      </li>
+        {% include shared-sponsors.html %}
       <li>
         <a class="nsbe" href="https://www.nsbe.org/home.aspx">
           <img alt="nsbe Logo" src="../images/sandiego-sponsors/nsbe.png">
@@ -104,8 +124,7 @@ socialimage: http://www.baseballhackday.com/images/bbhd-2018.png
         <p>
           The winning team of the {{ city_name }} competition will win
           <!-- edit prizes -->
-          TBD!
-          for each team member (maximum team size of four).
+          XBox Consoles, Private Lunch w/ Sportradar Staff (maximum team size of four).
         </p>
       </li>
       <li>
@@ -119,8 +138,7 @@ socialimage: http://www.baseballhackday.com/images/bbhd-2018.png
         <p>
           The runner-up team of the {{ city_name }} competition will win
           <!-- edit prizes -->
-          TBD!
-          for each team member (maximum team size of four).
+          Sponsor Swag and Prizes (maximum team size of four).
         </p>
       </li>
       <!-- add more prizes -->
@@ -136,14 +154,28 @@ socialimage: http://www.baseballhackday.com/images/bbhd-2018.png
   <section class="judges">
     <h2>Judges</h2>
     <ul>
-      <li><h3>TBD</h3></li>
-      <!-- <li>
-        <h3>Babe Ruth</h3>
+      <li>
+        <img src="images/hofland.jpg" class="judges-photo" alt="">
+        <h3>Elling Hofland</h3>
         <p>
-          Professional Baseball Player
+          Product Manager, Sportradar
         </p>
-      </li> -->
-      
+      </li>
+      <li>
+        <img src="images/terrill.jpg" class="judges-photo" alt="">
+        <h3>Phil Terrill</h3>
+        <p>
+          Global Program Manager, Microsoft Worldwide Commercial Business Group
+        </p>
+      </li>
+      <li>
+        <img src="images/tyrre.jpg" class="judges-photo" alt="">
+
+        <h3>Tyrre Burks</h3>
+        <p>
+          CEO & Founder, Players Health
+        </p>
+      </li>
     </ul>
   </section>
 

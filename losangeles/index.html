@@ -66,15 +66,28 @@ socialimage: http://www.baseballhackday.com/images/bbhd-2018.png
       <h2>Sponsors</h2>
     </header>
     <ul class="sponsor-list">
-      <!-- <li>
-        <a class="example-sponsor" href="#SponsorURL">
-          <img alt="example-sponsor Logo" src="http://placehold.jp/600x300.png">
+      <li>
+        <a class="sponsor" href="https://www.joinhoney.com/">
+          <img alt="sponsor Logo" src="images/honey.png">
           <h3>Example Sponsor</h3>
-          <small>Hall of Fame, MVP or All-Star sponsor</small>
+          <small>Sponsor</small>
         </a>
-      </li> -->
-
-    {% include shared-sponsors.html %}
+      </li>
+      <li>
+        <a class="sponsor" href="https://www.tripadvisor.com">
+          <img alt="sponsor Logo" src="images/tripadvisor.png">
+          <h3>TripAdvisor</h3>
+          <small>Sponsor</small>
+        </a>
+      </li>
+      <li>
+        <a class="sponsor" href="https://www.mlb.com/angels">
+          <img alt="sponsor Logo" src="images/angels.png">
+          <h3>Los Angeles Angels</h3>
+          <small>Prizes</small>
+        </a>
+      </li>
+      {% include shared-sponsors.html %}
 
 
     </ul>
@@ -92,8 +105,7 @@ socialimage: http://www.baseballhackday.com/images/bbhd-2018.png
         <p>
           The winning team of the {{ city_name }} competition will win
           <!-- edit prizes -->
-          TBD!
-          for each team member (maximum team size of four).
+          LA Angels Club MVP tickets and VIP parking!
         </p>
       </li>
       <li>
@@ -102,15 +114,14 @@ socialimage: http://www.baseballhackday.com/images/bbhd-2018.png
           {% include grand-prize.html %}
         </p>
       </li>
-      <li>
+<!--       <li>
         <h3>{{ city_name }} Runner-Ups</h3>
         <p>
           The runner-up team of the {{ city_name }} competition will win
-          <!-- edit prizes -->
           TBD!
           for each team member (maximum team size of four).
         </p>
-      </li>
+      </li> -->
       <!-- add more prizes -->
       <li>
         <p>
@@ -124,13 +135,20 @@ socialimage: http://www.baseballhackday.com/images/bbhd-2018.png
   <section class="judges">
     <h2>Judges</h2>
     <ul>
-      <li><h3>TBD</h3></li>
-      <!-- <li>
-        <h3>Babe Ruth</h3>
+      <li>
+        <img src="images/nesbitt.jpg" class="judges-photo" alt="">
+        <h3>Dave Nesbitt</h3>
         <p>
-          Professional Baseball Player
+         Principal Software Engineer, Trip Advisor
         </p>
-      </li> -->
+      </li>
+      <li>
+        <img src="images/glantz.jpg" class="judges-photo" alt="">
+        <h3>Seth Glantz</h3>
+        <p>
+         Sr. Baseball Systems Architect, LA Angels
+        </p>
+      </li>
       
     </ul>
   </section>
