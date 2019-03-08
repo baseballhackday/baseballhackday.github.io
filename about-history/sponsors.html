@@ -2,6 +2,8 @@
 layout: default
 body-class: about-history
 ---
+  <style>.sponsor-list li {height:250px;} </style>
+
 <header class='banner'>
   <div class='wrapper'>
     <h2>Sponsors</h2>
@@ -13,25 +15,27 @@ body-class: about-history
   
   <aside>
     <ul class='sponsor-list'>
+    {% include shared-sponsors.html %}
+
       <li>
+        <a class="example-sponsor" href="https://www.alfajango.com/">
+          <img alt="Alfa Jango" src="../images/annarbor-sponsors/AlfaJango.png">
+          <h3>Alfa Jango</h3>
+          <small>Venue</small>
+        </a>
+      </li>
+            <li>
         <a class="draftkings" href="http://draftkings.com">
-          <img alt="draftkings Logo" src="/images/boston-sponsors/draftkings-engineering.png ">
+          <img alt="draftkings Logo" src="/images/boston-sponsors/dk_engineering.png ">
           <h3>DraftKings Engineering</h3>
-          <small>Hall Of Fame Sponsor</small>
+          <small>Hall Of Fame PLUS Sponsor</small>
         </a>
       </li>
       <li>
-        <a class='mlbam' href='http://mlbam.com'>
-          <img alt='mlbam Logo' src='/images/boston-sponsors/mlbam.png'>
-          <h3>MLB Advanced Media</h3>
-          <small>Prizes</small>
-        </a>
-      </li>
-      <li>
-        <a class='spiria' href='https://www.spiria.com/en'>
-          <img alt='spiria Logo' src='/images/boston-sponsors/spiria.png'>
-          <h3>Spiria</h3>
-          <small>All-Star Sponsor</small>
+        <a class="rstudio" href="https://www.rstudio.com/">
+          <img alt="rstudio Logo" src="/boston/images/rstudio.png ">
+          <h3>R Studio</h3>
+          <small>All Star Sponsor</small>
         </a>
       </li>
       <li>
@@ -42,24 +46,10 @@ body-class: about-history
         </a>
       </li>
       <li>
-        <a class='upstatement' href='https://www.upstatement.com/'>
-          <img alt='Upstatement Logo' src='/images/boston-sponsors/upstatement.png'>
+        <a class="upstatement" href="https://www.upstatement.com/">
+          <img alt="upstatement Logo" src="../images/boston-sponsors/upstatement.png">
           <h3>Upstatement</h3>
           <small>Venue</small>
-        </a>
-      </li>
-      <li>
-        <a class='baseball-prospectus' href='http://www.baseballprospectus.com'>
-          <img alt='baseball-prospectus Logo' src='/images/chicago-sponsors/baseball-prospectus.png'>
-          <h3>Baseball Prospectus</h3>
-          <small>Prizes</small>
-        </a>
-      </li>
-      <li>
-        <a class='sportradar' href='http://www.sportradar.com/'>
-          <img alt='sportradar logo' src='/images/boston-sponsors/sportradar.png'>
-          <h3>SportRadar</h3>
-          <small>API</small>
         </a>
       </li>
       <li>
@@ -70,99 +60,146 @@ body-class: about-history
         </a>
       </li>
       <li>
-        <a class='hhboston' href='https://www.meetup.com/hackshackersboston/'>
-          <img alt='hhboston Logo' src='/images/boston-sponsors/hhboston.png'>
-          <h3>Hacks/Hackers Boston</h3>
+        <a class="redsox" href="https://www.mlb.com/redsox">
+          <img alt="redsox Logo" src="/boston/images/redsox.png ">
+          <h3>Boston Red Sox</h3>
+          <small>Prizes</small>
+        </a>
+      </li>
+      <li>
+        <a class="odsc" href="https://odsc.com/boston">
+          <img alt="odsc Logo" src="/images/boston-sponsors/odsc.png ">
+          <h3>ODSC East</h3>
           <small>Community Sponsor</small>
         </a>
       </li>
       <li>
-        <a class='sabrboston' href='https://www.facebook.com/BostonSABR/'>
-          <img alt='sabrboston Logo' src='/images/boston-sponsors/sabr_logo.png'>
-          <h3>SABR Boston Chapter</h3>
-          <small>Community Sponsor</small>
+        <a class="insight" href="https://www.insight.com/en_US/home.html">
+          <img alt="insight Logo" src="/cincinnati/images/insight.png">
+          <h3>Insight</h3>
+          <small>Venue, Host</small>
         </a>
       </li>
       <li>
-        <a class='pitch-info' href='http://pitchinfo.com'>
-          <img alt='Pitch Info Logo' src='/images/chicago-sponsors/pitch_info.png'>
-          <h3>Pitch Info</h3>
-          <small>Food, API, and Prizes</small>
+        <a class="bit" href="https://www.blacksintechnology.net/">
+          <img alt="bit Logo" src="../images/sandiego-sponsors/bit.png">
+          <h3>Blacks in Technology</h3>
+          <small>Community Partner</small>
         </a>
       </li>
-            <li>
-                <a target="_blank" class="plank" href="http://plankdesign.com">
-                    <img alt="Plank Logo" src="/images/montreal-sponsors/plank.png">
-                    <h3>Plank</h3>
-                    <small>Community Sponsor</small>
-                </a>
-            </li>
- 			<li>
-                <a class="evenko" href="http://www.evenko.ca/en">
-                    <img alt="evenko logo" src="/images/montreal-sponsors/evenko.jpg">
-                    <h3>Evenko</h3>
-                    <small>Prizes</small>
-                </a>
-            </li>
-            <li>
-                <a class="sportlogiq" href="http://sportlogiq.com/en/">
-                    <img alt="evenko logo" src="/images/montreal-sponsors/sportlogiq.png">
-                    <h3>SPORTLOGiQ</h3>
-                    <small>All-Star Sponsor</small>
-                </a>
-            </li>
-      <li>
-        <a class='learn-academy' href='https://www.learnacademy.org/'>
-          <img alt='learn-academy Logo' src='/images/sandiego-sponsors/learn-academy.png'>
-          <h3>Learn Academy</h3>
-          <small>Venue</small>
+     <li>
+        <a class="sponsor" href="https://www.joinhoney.com/">
+          <img alt="sponsor Logo" src="/losangeles/images/honey.png">
+          <h3>Honey</h3>
+          <small>Sponsor</small>
         </a>
       </li>
       <li>
-        <a class='techcoastangels' href='https://www.techcoastangels.com/'>
-          <img alt='techcoastangels Logo' src='/images/sandiego-sponsors/techcoastangels.png'>
-          <h3>Tech Coast Angels San Diego</h3>
+        <a class="sponsor" href="https://www.tripadvisor.com">
+          <img alt="sponsor Logo" src="/losangeles/images/tripadvisor.png">
+          <h3>TripAdvisor</h3>
+          <small>Sponsor</small>
         </a>
       </li>
-                <li> 
-            <a target="_blank" class="think-research" href="http://www.thinkresearch.com/ca/"> 
-              <img alt='Think Research Logo' src="/images/toronto-sponsors/think-research-logo.png">
-              <h3>Think Research</h3>
-              <small>Community Sponsor</small>  
-            </a>
-          </li>
-          <li> 
-            <!-- <a target="_blank" class="meld-space" href="#">  -->
-              <img alt='Meld Coworking Space' src="/images/toronto-sponsors/meld_logo.png">
-              <!-- <h3>Meld</h3> -->
-              <small>Venue Sponsor</small>  
-            <!-- </a> -->
-          </li>
+      <li>
+        <a class="sponsor" href="https://www.mlb.com/angels">
+          <img alt="sponsor Logo" src="/losangeles/images/angels.png">
+          <h3>Los Angeles Angels</h3>
+          <small>Prizes</small>
+        </a>
+      </li>
+      <li>
+        <a class="gamechanger" href="https://gc.com/">
+          <img alt="gamechanger Logo" src="../images/ny-sponsors/gamechanger.png">
+          <h3>GameChanger</h3>
+          <small>Host, Venue, Food</small>
+        </a>
+      </li>
+      <li>
+        <a class="dsg" href="https://www.dickssportinggoods.com/">
+          <img alt="dsg Logo" src="/newyork/images/dicks.png">
+          <h3>Dick's Sporting Goods</h3>
+          <small>Prizes</small>
+        </a>
+      </li>
+      <li>
+        <a class="intuit" href="https://www.intuit.com/">
+          <img alt="intuit Logo" src="../images/sandiego-sponsors/intuit.png">
+          <h3>Intuit</h3>
+          <small>Host</small>
+        </a>
+      </li>
+      <li>
+        <a class="nsbe" href="https://www.nsbe.org/home.aspx">
+          <img alt="nsbe Logo" src="../images/sandiego-sponsors/nsbe.png">
+          <h3>National Society of Black Engineers</h3>
+          <small>Community Partner</small>
+        </a>
+      </li>
+      <li>
+        <a class="iboost-zone" href="https://www.iboostzone.com/">
+          <img alt="iBoost Zone" src="../images/toronto-sponsors/iboost-logo.png">
+          <h3>iBoost Zone</h3>
+          <small>MVP Sponsor and Venue</small>
+        </a>
+      </li>
+      <li>
+        <a class="think-research" href="https://www.thinkresearch.com/ca/">
+          <img alt="ThinkResearch" src="../images/toronto-sponsors/think-research-logo.png">
+          <h3>Think Research</h3>
+          <small>MVP Sponsor</small>
+        </a>
+      </li>
 
-          <li>
-            <a class='talent-accurate' href='http://beta.talentaccurate.com/'>
-              <img alt='Talent Accurate Logo' src='/images/toronto-sponsors/talent-accurate-logo.png'>
-              <h3>Talent Accurate</h3>
-              <small>Food Sponsor</small>
-            </a>
-          </li>
+      <li>
+        <a class="talent-accurate" href="http://talentaccurate.com/">
+          <img alt="Talent Accurate" src="../images/toronto-sponsors/talent-accurate-logo.png">
+          <h3>Talent Accurate</h3>
+          <small>All Star Sponsor</small>
+        </a>
+      </li>
+      <li>
+        <a class="iotfuse" href="https://www.iotfuse.com/">
+          <img alt="iotfuse Logo" src="/twincities/images/iotfuse.png">
+          <h3>IOT Fuse</h3>
+          <small>Sponsor</small>
+        </a>
+      </li>
+      <li>
+        <a class="microsoft" href="https://www.microsoft.com/">
+          <img alt="microsoft Logo" src="/twincities/images/microsoft.png">
+          <h3>Microsoft</h3>
+          <small>Sponsor</small>
+        </a>
+      </li>
+      <li>
+        <a class="gener8tor" href="https://www.gener8tor.com/">
+          <img alt="gener8tor Logo" src="/twincities/images/gener8tor.png">
+          <h3>Gener8tor Accelerator</h3>
+          <small>Sponsor</small>
+        </a>
+      </li>
+      <li>
+        <a class="nerdery" href="https://www.nerdery.com/">
+          <img alt="nerdery Logo" src="/twincities/images/nerdery.png">
+          <h3>Nerdery</h3>
+          <small>Sponsor</small>
+        </a>
+      </li>
 
-          <li>
-            <a class='pitch-talks' href='http://www.homestandsports.com/showslist/2016/4/30/pitch-talks-toronto'>
-              <img alt='Pitch Talks Logo' src='/images/toronto-sponsors/pitch-talks-logo.jpg'>
-              <h3>Pitch Talks</h3>
-              <small>Prizes</small>
-            </a>
-          </li>
-
-          <li>
-            <a class='sportley' href='https://sportley.ca/'>
-              <img alt='Sportley Logo' src='/images/toronto-sponsors/sportley-logo.png'>
-              <h3>Sportley</h3>
-              <small>Prize</small>
-            </a>
-          </li>
-    </ul>
+          </ul>
   </aside>
+
+
+<!-- Ann Arbor Winner
+Boston Winner
+Cincinnati Winner
+Los Angeles Winner
+New York Winner
+San Diego Winner
+Toronto Winner
+Twin Cities Winner
+
+ -->
 
 </div>
