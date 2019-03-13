@@ -7,6 +7,4 @@ email : daigo@baseballhackday.com
 twitter : baseballhackday
 socialimage: http://www.baseballhackday.com/images/bbhd-2019.png
 markdown: kramdown
-exclude :
-  - node_modules
-  - bower_components
+exclude : [node_modules, bower_components, vendor]
