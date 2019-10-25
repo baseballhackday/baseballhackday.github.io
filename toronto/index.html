@@ -1,15 +1,17 @@
 ---
 layout: default
 body-class: twincity city-show
-title: '2019 Baseball Hack Day Sat. March 9'
+title: '2019 Baseball Hack Day Sat. March 21'
 description: Fun, friendly, free, one-day, on-site hacking/coding competition for baseball fans in Boston.
 twitter : baseballhackday
 socialimage: http://www.baseballhackday.com/images/bbhd-2018.png
 ---
 {% assign city_name = "Toronto" %}
-{% assign registration_url = "https://www.eventbrite.ca/e/toronto-baseball-hack-day-hackathon-2019-tickets-55931645056" %}
-{% assign venue_name = "Ryerson University iBoost Zone" %}
+{% assign registration_url = "" %}
+{% assign venue_name = "" %}
 {% assign venue_address = "20 Dundas St W Suite 921, Toronto, ON M5G 2H1" %}
+{% assign hack_date_full = "March 21st 2020" %}
+{% assign hack_date_short = "March 21st" %}
 
 
 <header class="{{ city_name | downcase }}"> 
@@ -17,8 +19,8 @@ socialimage: http://www.baseballhackday.com/images/bbhd-2018.png
     <div class="wrapper">
       <h2>{{ city_name }}</h2>
       <p class="time-location">
-        <span class="time">Saturday, March 9th 2019, 9:00 am – 6 pm (EST)</span>
-        <span class="location">{{ venue_name }}, {{ venue_address }}</span>
+        <span class="time">{{ hack_date_full }}, 9:00 am – 6 pm (EST)</span>
+        <span class="location">TBA</span>
       </p>
       {% if registration_url != "" %}
       <a class="action" href="{{ registration_url }}">Register!</a>
@@ -67,38 +69,9 @@ socialimage: http://www.baseballhackday.com/images/bbhd-2018.png
       <h2>Sponsors</h2>
     </header>
     <ul class="sponsor-list">
-      <li>
-        <a class="iboost-zone" href="https://www.iboostzone.com/">
-          <img alt="iBoost Zone" src="../images/toronto-sponsors/iboost-logo.png">
-          <h3>iBoost Zone</h3>
-          <small>MVP Sponsor and Venue</small>
-        </a>
-      </li>
 
     {% include shared-sponsors.html %}
 
-      <li>
-        <a class="think-research" href="https://www.thinkresearch.com/ca/">
-          <img alt="ThinkResearch" src="../images/toronto-sponsors/think-research-logo.png">
-          <h3>Think Research</h3>
-          <small>MVP Sponsor</small>
-        </a>
-      </li>
-
-      <li>
-        <a class="talent-accurate" href="http://talentaccurate.com/">
-          <img alt="Talent Accurate" src="../images/toronto-sponsors/talent-accurate-logo.png">
-          <h3>Talent Accurate</h3>
-          <small>All Star Sponsor</small>
-        </a>
-      </li>
-      <li>
-        <a class="cbx-data-labs" href="http://cbxdatalabs.com/">
-          <img alt="CBX Labs" src="../images/toronto-sponsors/cbx-logo.png">
-          <h3>CBX Labs</h3>
-          <small>All Star Sponsor</small>
-        </a>
-      </li>
     </ul>
     <a class="action-primary" href="https://docs.google.com/document/d/1lA_9jqN2oqfVSRw3RnjVvqJ8Ik1Khvy6q4MVj15tCpc/edit?usp=sharing">
       Be a Sponsor
@@ -136,24 +109,16 @@ socialimage: http://www.baseballhackday.com/images/bbhd-2018.png
     <h2>Judges</h2>
     <ul>
       <li>
-        <h3>Sanjay Choudhury</h3>
-        <p>
-          Assistant Director, Research & Development - Toronto Blue Jays
-        </p> 
-        <h3>Peter Saunders</h3>
-        <p>
-          Data Architect - Toronto Blue Jays
-        </p>
+        <h3>To be announced!</h3>
       </li>
-      
     </ul>
   </section>
 
 
   <section class="guidelines">
-    <h2>Come join us, March 9!</h2>
+    <h2>Come join us, {{ hack_date_short }}!</h2>
     <article>
-      <p>Love creating stuff on your computer and LOVE baseball? Come hack with us on March 9, 2019 at {{ venue_name }}</p>
+      <p>Love creating stuff on your computer and LOVE baseball? Come hack with us on {{ hack_date_full }}.</p>
 
       {% include about-baseball-hack-day.html %}
 
