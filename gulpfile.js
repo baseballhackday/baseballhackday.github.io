@@ -20,6 +20,6 @@ gulp.task('sass', function() {
     .pipe(gulp.dest('css'));
 });
 
-gulp.task('default', ['sass'], function() {
+gulp.task('default', gulp.series('sass', function() {
   gulp.watch(['scss/**/*.scss'], ['sass']);
-});
+}));
