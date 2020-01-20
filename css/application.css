@@ -334,11 +334,11 @@ input[type="submit"], .language-btn {
   padding: 0.75em 1em;
   text-decoration: none; }
   button:hover,
-  input[type="submit"]:hover, .language-btn:hover {
+  input:hover[type="submit"], .language-btn:hover {
     background-color: #51242f;
     color: white; }
   button:disabled,
-  input[type="submit"]:disabled, .language-btn:disabled {
+  input:disabled[type="submit"], .language-btn:disabled {
     cursor: not-allowed;
     opacity: 0.5; }
 
@@ -615,7 +615,6 @@ input[type="submit"] {
   border: none;
   cursor: pointer;
   -webkit-user-select: none;
-     -moz-user-select: none;
       -ms-user-select: none;
           user-select: none;
   vertical-align: middle;
@@ -952,7 +951,7 @@ footer.main {
 
 .hero {
   background-blend-mode: multiply;
-  background-color: #ea222e;
+  background-color: #005ddc;
   background-image: url("/images/2019-cover.jpg");
   background-position: center center;
   background-repeat: no-repeat;
@@ -1325,9 +1324,7 @@ footer.main {
   padding-top: 4em; }
   @media screen and (min-width: 57.5em) {
     .guidelines article {
-      -moz-column-count: 2;
       column-count: 2;
-      -moz-column-gap: 2.35765%;
       column-gap: 2.35765%; } }
   .guidelines article + article {
     padding-top: 2em; }
@@ -1410,7 +1407,6 @@ aside .action-primary {
   border: none;
   cursor: pointer;
   -webkit-user-select: none;
-     -moz-user-select: none;
       -ms-user-select: none;
           user-select: none;
   vertical-align: middle;
