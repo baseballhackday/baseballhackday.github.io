@@ -4,10 +4,10 @@ body-class: city-show
 title: '2020 Boston Baseball Hack Day Sat. March 21'
 description: Friendly one-day multi-city coding competition for baseball fans - Baseball Hack Day Sat. March 21, 2020 - Boston
 twitter : baseballhackday
-socialimage: http://www.baseballhackday.com/images/bbhd-2018.png
+socialimage: http://www.baseballhackday.com/images/bbhd-2020.png
 ---
 {% assign city_name = "Boston" %}
-{% assign registration_url = "" %}
+{% assign registration_url = "https://www.eventbrite.com/e/2020-boston-baseball-hack-day-tickets-94250117639" %}
 {% assign venue_name = "Draft Kings HQ" %}
 {% assign venue_address = "222 Berkeley Street, Boston, MA 02116" %}
 
@@ -20,8 +20,7 @@ socialimage: http://www.baseballhackday.com/images/bbhd-2018.png
         <span class="location">{{ venue_name }}, {{ venue_address }}</span>
       </p>
       {% if registration_url != "" %}
-      <a class="action" href="https://baseball-hack-day-2019.devpost.com/submissions">See 2019 submissions and winners</a>
-      <!-- <a class="action" href="{{ registration_url }}">Register!</a> -->
+        <a class="action" href="{{ registration_url }}">Register!</a>
       {% endif %}
     </div>
   </header>
@@ -76,9 +75,9 @@ socialimage: http://www.baseballhackday.com/images/bbhd-2018.png
       </li> -->
       <li>
         <a class="draftkings" href="http://draftkings.com">
-          <img alt="draftkings Logo" src="/images/boston-sponsors/dk_engineering.png ">
-          <h3>DraftKings Engineering</h3>
-          <small>Hall Of Fame PLUS Sponsor</small>
+          <img alt="draftkings Logo" src="/images/boston-sponsors/DraftKings_FC.png">
+          <h3>DraftKings</h3>
+          <small>Hall Of Fame PLUS Sponsor, Venue</small>
         </a>
       </li>
       <!-- <li>
@@ -96,7 +95,7 @@ socialimage: http://www.baseballhackday.com/images/bbhd-2018.png
         </a>
       </li> -->
       {% include shared-sponsors.html %}
-
+      <!-- 
       <li>
         <a class='oreilly' href='https://www.oreilly.com/'>
           <img alt='oreilly logo' src='/images/boston-sponsors/oreilly.png'>
@@ -110,7 +109,7 @@ socialimage: http://www.baseballhackday.com/images/bbhd-2018.png
           <h3>Boston Red Sox</h3>
           <small>Prizes</small>
         </a>
-      </li>
+      </li> -->
     </ul>
     <a class="action-primary" href="https://docs.google.com/document/d/1lA_9jqN2oqfVSRw3RnjVvqJ8Ik1Khvy6q4MVj15tCpc/edit?usp=sharing">
       Be a Sponsor
@@ -126,7 +125,8 @@ socialimage: http://www.baseballhackday.com/images/bbhd-2018.png
         <p>
           The winning team of the {{ city_name }} competition will win
           <!-- edit prizes -->
-          Swags from sponsors, details TBA.
+          TBA!
+          for each team member (maximum team size of four).
         </p>
       </li>
       <li>
@@ -147,7 +147,7 @@ socialimage: http://www.baseballhackday.com/images/bbhd-2018.png
       <!-- add more prizes -->
       <li>
         <p>
-          and O'Reilly books will be given away, and more!
+          and more!
           <a href="mailto:daigo@baseballhackday.com">(Want to sponsor? Please email us.)</a>
         </p>
       </li>
