@@ -7,9 +7,9 @@ twitter : baseballhackday
 socialimage: http://www.baseballhackday.com/images/bbhd-2018.png
 ---
 {% assign city_name = "San Diego" %}
-{% assign registration_url = "" %}
-{% assign venue_name = "" %}
-{% assign venue_address = "" %}
+{% assign registration_url = "https://www.eventbrite.com/e/3rd-annual-baseball-hack-day-san-diego-2020-tickets-97216889333" %}
+{% assign venue_name = "Amazon" %}
+{% assign venue_address = "10300 Campus Point Drive, Suite 200, San Diego, CA 92121" %}
 {% assign hack_date_full = "March 21st 2020" %}
 {% assign hack_date_short = "March 21st" %}
 
@@ -21,7 +21,7 @@ socialimage: http://www.baseballhackday.com/images/bbhd-2018.png
         <span class="time">Saturday, March 21, 2020, 9:00 am – 6 pm (PST)</span>
         <span class="location">{{ venue_name }}, {{ venue_address }}</span>
       </p>
-      <a class="action" href="https://baseball-hack-day-2019.devpost.com/submissions">See 2019 submissions and winners</a>
+
       {% if registration_url != "" %}
       <!-- <a class="action" href="{{ registration_url }}">Register!</a> -->
       {% endif %}
