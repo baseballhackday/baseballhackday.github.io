@@ -513,8 +513,6 @@ textarea {
   resize: vertical; }
 
 input[type="search"] {
-  -webkit-appearance: none;
-  -moz-appearance: none;
   -ms-appearance: none;
   -o-appearance: none;
   appearance: none; }
@@ -607,8 +605,6 @@ dl {
 
 button,
 input[type="submit"] {
-  -webkit-appearance: none;
-  -moz-appearance: none;
   -ms-appearance: none;
   -o-appearance: none;
   appearance: none;
@@ -951,14 +947,17 @@ footer.main {
 
 .hero {
   background-blend-mode: multiply;
-  background-color: #005ddc;
-  background-image: url("/images/2019-cover.jpg");
+  background-color: #BE4343;
+  background-image: url("/images/2023-splash.jpg");
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
-  padding-top: 10vh;
+  padding: 10vh 0;
   text-align: center;
   width: 100%; }
+  .hero .hero-content {
+    max-width: 800px;
+    margin: 0 auto; }
   .hero h2 a,
   .hero h2 a:active,
   .hero h2 a:visited, .hero h3 a,
@@ -991,12 +990,19 @@ footer.main {
     .hero h2:after {
       display: none; }
   .hero h3 {
-    color: rgba(4, 1, 2, 0.8);
     color: #CDCCBB;
     font-family: "alternate-gothic-no-1-d", "Helvetica Neue", "Helvetica", "Roboto", "Arial", sans-serif;
     font-weight: normal;
     letter-spacing: 1px;
     text-transform: uppercase; }
+  .hero h3.joinus {
+    font-size: 1.875em; }
+  .hero .hero-text p {
+    font-size: 1.125em;
+    color: #fff; }
+    .hero .hero-text p a {
+      color: #CDCCBB;
+      font-weight: bold; }
   .hero h5 {
     color: #fff;
     margin-top: 0.5em;
@@ -1016,8 +1022,6 @@ footer.main {
   background-color: rgba(0, 0, 0, 0.5);
   border: 1px solid #fff;
   cursor: pointer;
-  -webkit-appearance: none;
-  -moz-appearance: none;
   appearance: none; }
   .dropdown-container:hover {
     background-color: rgba(0, 0, 0, 0.9); }

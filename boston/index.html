@@ -1,24 +1,24 @@
 ---
 layout: default
 body-class: city-show
-title: '2020 Boston Baseball Hack Day Sat. March 21'
-description: Friendly one-day multi-city coding competition for baseball fans - Baseball Hack Day Sat. March 21, 2020 - Boston
+title: '2023 Boston Baseball Hack Day Sat. March 11'
+description: Friendly one-day multi-city coding competition for baseball fans - Baseball Hack Day Sat. March 11, 2023 - Boston
 twitter : baseballhackday
 socialimage: http://www.baseballhackday.com/images/bbhd-2020.png
 ---
 {% assign city_name = "Boston" %}
-{% assign registration_url = "https://www.eventbrite.com/e/2020-boston-baseball-hack-day-tickets-94250117639" %}
-{% assign venue_name = "DraftKings HQ" %}
-{% assign venue_address = "222 Berkeley Street, Boston, MA 02116" %}
-{% assign hack_date_full = "March 21st 2020" %}
-{% assign hack_date_short = "March 21st" %}
+{% assign registration_url = "#" %}
+{% assign venue_name = "TBA" %}
+{% assign venue_address = "" %}
+{% assign hack_date_full = "March 11st 2021" %}
+{% assign hack_date_short = "March 11st" %}
 
 <header class="{{ city_name | downcase }}"> 
   <header class="banner">
     <div class="wrapper">
       <h2>{{ city_name }}</h2>
       <p class="time-location">
-        <span class="time">Saturday, March 21, 2020, 9:00 am – 6 pm (EST)</span>
+        <span class="time">Saturday, March 11, 2023</span>
         <span class="location">{{ venue_name }}, {{ venue_address }}</span>
       </p>
       {% if registration_url != "" %}
@@ -30,7 +30,7 @@ socialimage: http://www.baseballhackday.com/images/bbhd-2020.png
 
 <div class="wrapper">
   <section class="schedule">
-    <h2>Schedule</h2>
+    <h2>Schedule (tentative)</h2>
     <ul>
     <li>
       <time datetime=" pubdate=">9:00 &ndash; 9:30am </time>
@@ -68,13 +68,14 @@ socialimage: http://www.baseballhackday.com/images/bbhd-2020.png
       <h2>Sponsors</h2>
     </header>
     <ul class="sponsor-list">
+      <li>TBA</li>
       <!-- <li>
         <a class="example-sponsor" href="#SponsorURL">
           <img alt="example-sponsor Logo" src="http://placehold.jp/600x300.png">
           <h3>Example Sponsor</h3>
           <small>Hall of Fame, MVP or All-Star sponsor</small>
         </a>
-      </li> -->
+      </li>
       <li>
         <a class="draftkings" href="http://draftkings.com">
           <img alt="draftkings Logo" src="/images/boston-sponsors/DraftKings_FC.png">
@@ -82,7 +83,7 @@ socialimage: http://www.baseballhackday.com/images/bbhd-2020.png
           <small>Hall Of Fame PLUS Sponsor, Venue</small>
         </a>
       </li>
-      <!-- <li>
+      <li>
         <a class="rstudio" href="https://www.rstudio.com/">
           <img alt="rstudio Logo" src="images/rstudio.png ">
           <h3>R Studio</h3>
@@ -150,7 +151,7 @@ socialimage: http://www.baseballhackday.com/images/bbhd-2020.png
       <li>
         <p>
           and more!
-          <a href="mailto:daigo@baseballhackday.com">(Want to sponsor? Please email us.)</a>
+          <a href="mailto:daigo@daigofujiwara.com">(Want to sponsor? Please email us.)</a>
         </p>
       </li>
     </ul>
@@ -159,18 +160,17 @@ socialimage: http://www.baseballhackday.com/images/bbhd-2020.png
   <section class="judges">
     <h2>Judges</h2>
     <ul>
-      <li>
+      <li>... and TBA</li>
+      <!-- <li>
         <h3>Peter Kane</h3>
         <p>
           Associate Product Manager, DraftKings
         </p>
       </li>
-      <li>... and TBA</li>
-<!--     <li>
+      <li>
         <h3>David Thyresson</h3>
         <p>
-          CTO, Sports Innovation Lab<br>
-Co-founder, stattleship
+          CTO, Sports Innovation Lab<br> Co-founder, stattleship
         </p>
       </li>
       <li>
@@ -184,9 +184,9 @@ Co-founder, stattleship
 
 
   <section class="guidelines">
-    <h2>Come join us, March 21!</h2>
+    <h2>Come join us, March 11!</h2>
     <article>
-      <p>Love creating stuff on your computer and LOVE baseball? Come hack with us on March 21, 2020 at {{ venue_name }}</p>
+      <p>Love creating stuff on your computer and LOVE baseball? Come hack with us on March 11, 2023 at {{ venue_name }}</p>
 
       {% include about-baseball-hack-day.html %}
 

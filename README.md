@@ -1,6 +1,6 @@
 # Baseball Hack Day 
 
-2020 date is Saturday, March 21!
+2023 date is Saturday, March 11!
 
 Baseball Hack Day is a fun, free, friendly one-day IRL hacking/coding/designing competition for baseball fans. 
 
@@ -26,7 +26,7 @@ then
 and install npm and gulp globally by running 
   `sudo npm install npm gulp -g`
 
-Run `gulp` from this repo's root to start developing. 
+Run `gulp` from this repo's root to start compiling css. 
 It will launch watch by default. <code>control-c</code> to stop. Or, run `gulp sass` to compile the css once
 
 **Local development** To run jekyll locally to test your website while developing, run  
@@ -35,9 +35,8 @@ bundle exec jekyll serve --watch
 ``` 
  Your website should be viewable by going to [localhost:4000](http://localhost:4000/)
  
-* You may have to run `brew install ruby` and `gem install bundler` then `bundle install` once. For more Ruby/gem, this [GoRails tutorial on setting up Mac](https://gorails.com/setup/osx/10.14-mojave) is helpful.
+* For the first time only, you have to run `brew install ruby` and `gem install bundler` then `bundle install`. For more Ruby/gem, this [GoRails tutorial on setting up Mac](https://gorails.com/setup/osx/10.14-mojave) is helpful.
 
-* Update. After upgrading my Mac to Mojave, I was unable to use Apple's native Ruby. [This jeckyll thread](https://github.com/jekyll/jekyll/issues/7274#issuecomment-425069689) helped me. 
 
 How to update chapter info
 --------------------------
