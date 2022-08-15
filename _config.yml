@@ -5,6 +5,6 @@ url : http://www.baseballhackday.com
 baseurl : /
 email : daigo@baseballhackday.com
 twitter : baseballhackday
-socialimage: http://www.baseballhackday.com/images/bbhd-2020.jpg
+socialimage: http://www.baseballhackday.com/images/bbhd-2023.png
 markdown: kramdown
 exclude : [node_modules, bower_components, vendor]
