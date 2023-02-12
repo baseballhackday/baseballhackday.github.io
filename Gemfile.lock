@@ -257,6 +257,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  commonmarker
   github-pages
 
 BUNDLED WITH
