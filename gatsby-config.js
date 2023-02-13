@@ -8,7 +8,6 @@ module.exports = {
   },
   plugins: [
     "gatsby-plugin-styled-components",
-    "gatsby-plugin-google-gtag",
     "gatsby-plugin-image",
     "gatsby-transformer-remark",
     "gatsby-plugin-sharp",
@@ -52,11 +51,6 @@ module.exports = {
         trackingIds: [
           "G-L9M4VJWNCE", // Google Analytics / GA
         ],
-        pluginConfig: {
-          head: true,
-          respectDNT: true,
-          exclude: ["/preview/**", "/do-not-track/me/too/"],
-        },
       },
     },
   ]
