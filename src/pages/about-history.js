@@ -1,25 +1,44 @@
 import * as React from 'react'
+import styled from 'styled-components';
 import Layout from '../components/layout'
 import logo from '../images/bbhd-logo.svg'
-import bgimg from '../images/2023-splash.jpg';
+import bg from '../images/about.jpg';
 
 const logoStyle = {
   display: "inline-block",
   width: "90px",
 }
 const bgstyle = {
-  backgroundColor: "#BE4343",
-  backgroundImage: `url(${bgimg})`,
-  paddingTop: "4rem"
+  backgroundColor: "#fff",
+  color: "#000",
 }
-
+const HeaderStyle = styled.header`
+  margin: 0 -20px 4em;
+  max-width: none;
+  background-color: #BE4343;
+  background-image: url(${bg});
+  background-blend-mode: multiply;
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-bottom: 10vh;
+  padding-top: 5vh;
+  color: #fff;
+  article {
+    max-width: 860px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+`;
 const AboutPage = () => {
   return (
     <Layout inlineStyle={bgstyle}>
-      <h1 className="mbm"><a href="/"><img style={logoStyle} src={logo} alt="Baseball Hack Day logo" /></a>About & History</h1>
-
-
-      <h4 className="mtl mhl tan">Fun, friendly, one-day coding competition for baseball fans.</h4>
+       <HeaderStyle>
+        <article>
+          <h1 className="mbm"><a href="/"><img style={logoStyle} src={logo} alt="Baseball Hack Day logo" /></a>About & History</h1>
+          <h4 className="mtl mhl tan">Fun, friendly, one-day coding competition for baseball fans.</h4>
+        </article>
+      </HeaderStyle>
 
       <div className="section-group">
         <section class="about">
