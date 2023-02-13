@@ -17,7 +17,7 @@ const bgstyle = {
 
 const IndexPage = () => {
   return (
-    <Layout inlineStyle={bgstyle}>
+    <Layout inlineStyle={bgstyle} theme="dark">
       <h3><strong>We. Are. Back.</strong><br/>Join us!</h3>
       <h1 className="mbm">Sat. March 11, 2023</h1>
 
@@ -25,7 +25,7 @@ const IndexPage = () => {
         <img src={logo} alt="Baseball Hack Day logo" />
       </h1>
 
-      <h4 className="mtl mhl tan">Fun, friendly, one-day coding competition for baseball fans.</h4>
+      <h4 className="tan">Fun, friendly, one-day coding competition for baseball fans.</h4>
 
       <section>
         <h3>Select your city:</h3>
@@ -34,7 +34,7 @@ const IndexPage = () => {
         </div>
       </section>
 
-      <section className="hero-text mtl mhl">
+      <section className="hero-text dark">
         <p><a href="http://www.baseballhackday.com/">Baseball Hack Day</a> is an annual on-site, in-person hacking event (also known as hackathon, hack fest, code fest, or code party) where area baseball fans come together and create baseball-related projects to compete in a fun, friendly, one-day competition. Come with your laptop computer and your ideas or open mind!</p>
         
         <p>Born in Boston spring of 2012, Baseball Hack Day is a grass-roots, open-sourced movement, held at the same day at different locations all around the world. The goal of the day is to bring creative tech minds into one room, and see what they can produce within a limited time. The project could be (but is not limited to) a tool, simple web app, mobile app, web site, or data visualization.</p>
@@ -43,7 +43,7 @@ const IndexPage = () => {
       </section>
 
 
-      <section>
+      <section className="dark">
         
         <h4 className=""><a href="/about-history">Find out more &#187;</a></h4>
       </section>

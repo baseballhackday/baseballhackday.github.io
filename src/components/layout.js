@@ -25,6 +25,16 @@ const PageStyle = styled.main`
     color: #CDCCBB;
   }
   a {
+    color: #BE4343;
+    &.sponsor {
+      text-decoration: none;
+    }
+    &:hover {
+      color: #f00;
+    }
+  }
+
+  .dark a {
     color: #CDCCBB;
     &.sponsor {
       text-decoration: none;
@@ -33,6 +43,7 @@ const PageStyle = styled.main`
       color: #fff;
     }
   }
+  
   .section-group {
     @media(min-width: 600px) {
       display: grid;
@@ -81,7 +92,7 @@ const PageStyle = styled.main`
     line-height: 1.3;
     margin: 0 auto 1rem;
   }
-  .action {
+  .action, .dark a.action {
     display: inline-block;
     transition: all 0.15s ease-out 0s;
     background-color: #CDCCBB;
@@ -118,18 +129,19 @@ const footerStyle = {
   marginTop: "3rem"
 }
 
-export default function Layout({ children, inlineStyle }) {
+export default function Layout({ children, inlineStyle, theme }) {
+  const colorTheme = theme ? theme : 'normal';
   return (
     <PageStyle style={inlineStyle}>
       {children}
 
       <footer style={footerStyle}>
 
-        <section>
+        <section className={colorTheme}>
           <p>New to hack days? Have no fear. This is a hackathon of developers and designers of all levels. See past submissions to get an idea. See our resources in <a href="https://github.com/baseballhackday/data-and-resources/wiki/Resources-and-ideas">github wiki</a>, check out <a href="http://baseballhackday.tumblr.com/">our inspiraton blog on tumblr</a>, <a href="https://join.slack.com/t/baseballhackday/shared_invite/zt-1cnldwbkk-h_oAJO_PJfchijcOujJoHw">join us on our Slack chat</a>, and follow us on <a href="http://twitter.com/baseballhackday">Twitter @BaseballHackDay</a></p>
 
           <h4 className="tan">Past submissions</h4>
-          <div>
+          <div className={colorTheme}>
             <a className="action" href="https://baseball-hack-day-2019.devpost.com/submissions">2019</a>
             <a className="action" href="https://baseballhackday-2018.devpost.com/submissions">2018</a>
             <a className="action" href="https://baseballhackday-2017.devpost.com/submissions">2017</a>
@@ -140,7 +152,7 @@ export default function Layout({ children, inlineStyle }) {
         </section>
 
 
-        <section className="about-history">
+        <section className={colorTheme}>
           <div>
             Interested in <a href="https://docs.google.com/document/d/1lA_9jqN2oqfVSRw3RnjVvqJ8Ik1Khvy6q4MVj15tCpc/">Sponsoring?</a> (Thank you!)
           </div>
@@ -165,7 +177,7 @@ export default function Layout({ children, inlineStyle }) {
           <li>Edward Johnson (Toronto)</li>
         </ul>
 
-        <p><a href="/">Home</a> | <a href="/boston">Boston</a> | <a href="/about-history">About &amp; History</a></p>
+        <p className={colorTheme}><a href="/">Home</a> | <a href="/boston">Boston</a> | <a href="/about-history">About &amp; History</a></p>
       </footer>
     </PageStyle>
   )
