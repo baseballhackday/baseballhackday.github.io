@@ -1,0 +1,96 @@
+/**
+ * Custom styles for the city pages.
+ */
+
+#header-logo {
+  max-width: 80%;
+}
+
+.city-name {
+  font-weight: 800;
+  margin-bottom: 0px;
+  margin-top: 60px;
+  line-height: 1em;
+  font-size: 54px;
+}
+
+.date {
+  margin-top: 0px;
+}
+
+.time {
+  font-family: "adelle", Georgia, serif;
+  padding-right: 30px;
+  color: #A29D77;
+}
+
+.sched-item {
+  font-family: "atrament-web", Helvetica, Arial, sans-serif;
+  line-height: 1;
+  padding-bottom: .3em;
+  font-size: 32px;
+}
+
+.time {
+  text-align: right;
+}
+
+.button-pair {
+  margin-top: 40px;
+  text-align: center;
+}
+
+.button-label {
+  margin-bottom: 20px;
+}
+
+/* responsive google map  */
+.iframe-rwd  {
+  position: relative;
+  padding-bottom: 56%;
+  padding-top: 30px;
+  height: 0;
+  overflow: hidden;
+}
+.iframe-rwd iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.sponsor {
+  min-height: 100px;
+  margin-bottom: 1em;
+}
+
+.sponsor p {
+  margin-top: 1em;
+  text-align: center;
+}
+
+.sponsor span {
+  display: block;
+  color: #BEB884;
+}
+
+/* sm break */
+@media (min-width: 768px) {
+	
+	.city-name {
+		font-size: 72px;
+	}
+
+	.date {
+		margin-top: 10px;
+	}
+
+	.time {
+		font-size: 16px;
+	}
+
+	.sched-item {
+		font-size: 42px;
+	}
+}
