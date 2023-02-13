@@ -16,27 +16,27 @@ Boston, San Diego, and Toronto
 Getting Started
 ---------------
 
+Default branch of this repo is `source`.
+
 Baseball Hack Day website is built with Gatsby CLI and GitHub Pages. Clone this repo and run `npm install`.
 
 Originally developped on **node** v18.14.0 and **npm** v9.3.1 on February, 2023
 
-    ```shell
-    npm run develop
-    ```
+```shell
+npm run develop
+```
 
 Local dev site is now running at http://localhost:8000!
 
-Run `gulp` from this repo's root to start compiling css. 
-It will launch watch by default. <code>control-c</code> to stop. Or, run `gulp sass` to compile the css once
+## Deployment
 
-**Local development** To run jekyll locally to test your website while developing, run  
+Following [Gatsby's instruction on GithubPages](https://www.gatsbyjs.com/docs/how-to/previews-deploys-hosting/how-gatsby-works-with-github-pages/)
+
+```shell
+npm run deploy
 ```
-bundle exec jekyll serve --watch
-``` 
- Your website should be viewable by going to [localhost:4000](http://localhost:4000/)
- 
-* For the first time only, you have to run `brew install ruby` and `gem install bundler` then `bundle install`. For more Ruby/gem, this [GoRails tutorial on setting up Mac](https://gorails.com/setup/osx/10.14-mojave) is helpful.
 
+Needs to be run in order for the update to show up. The build content `public` is copied over to `main` branch. 
 
 ## Google fonts 
 Hepta+Slab:wght@700;800;900
@@ -54,17 +54,17 @@ How to update chapter info
 
 ## 🚀 Learn more
 
-    - [Documentation](https://www.gatsbyjs.com/docs/)
+- [Documentation](https://www.gatsbyjs.com/docs/)
 
-    - [Tutorials](https://www.gatsbyjs.com/tutorial/)
+- [Tutorials](https://www.gatsbyjs.com/tutorial/)
 
-    - [Guides](https://www.gatsbyjs.com/tutorial/)
+- [Guides](https://www.gatsbyjs.com/tutorial/)
 
-    - [API Reference](https://www.gatsbyjs.com/docs/api-reference/)
+- [API Reference](https://www.gatsbyjs.com/docs/api-reference/)
 
-    - [Plugin Library](https://www.gatsbyjs.com/plugins)
+- [Plugin Library](https://www.gatsbyjs.com/plugins)
 
-    - [Cheat Sheet](https://www.gatsbyjs.com/docs/cheat-sheet/)
+- [Cheat Sheet](https://www.gatsbyjs.com/docs/cheat-sheet/)
 
 
 # Google Tag 

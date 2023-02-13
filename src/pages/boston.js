@@ -54,23 +54,23 @@ const CityPage = () => {
           <h2>Schedule (tentative)</h2>
           <ul>
             <li>
-              <time datetime="">9:00</time>
+              <time datetime="">9:00 am</time>
               <p>Registration, Meet and Greet, and Coffee</p>
             </li>
             <li>
-              <time datetime="">9:30</time>
+              <time datetime="">9:30 am</time>
               <p>Welcome, Introductions, and Pitch</p>
             </li>
             <li>
-              <time datetime="">10:00</time>
+              <time datetime="">10:00 am</time>
               <p>Design and Code</p>
             </li>
             <li>
-              <time datetime="">12:30</time>
+              <time datetime="">12:30 pm</time>
               <p>Lunch (Working lunch)</p>
             </li>
             <li>
-              <time datetime="">4:00pm</time>
+              <time datetime="">4:00 pm</time>
               <p>Stop hacking!</p>
             </li>
             <li>
@@ -105,16 +105,16 @@ const CityPage = () => {
           <h2>Prizes</h2>
           <ul>
             <li>
-              <h3>Boston Overall Winners</h3>
-              <p>The winning team of the Boston competition will win TBA! for each team member (maximum team size of four).</p>
+              <h3 className="tan">Boston Overall Winners</h3>
+              <p>The winning team of the Boston competition will win To be announced! for each team member (maximum team size of four).</p>
             </li>
             <li>
-              <h3>Baseball Hack Day Grand Prize Winner</h3>
-              <p></p>
+              <h3 className="tan">Baseball Hack Day Grand Prize Winner</h3>
+              <p>To be announced!</p>
             </li>
             <li>
-              <h3>Boston Runner-Ups</h3>
-              <p>The runner-up team of the Boston competition will win TBA! for each team member (maximum team size of four).</p>
+              <h3 className="tan">Boston Runner-Ups</h3>
+              <p>The runner-up team of the Boston competition will win To be announced! for each team member (maximum team size of four).</p>
             </li>
             <li>
               <p>and more! <a href="mailto:daigo@daigofujiwara.com">(Want to sponsor prizes? Please email us.)</a></p>
@@ -125,9 +125,9 @@ const CityPage = () => {
         <section className="judges">
           <h2>Judges</h2>
           <ul>
-            <li>... and TBA</li>
+            <li>To be announced!</li>
             {/* <li>
-              <h3>Name</h3>
+              <h3 className="tan">Name</h3>
               <p>Position</p>
             </li> */}
           </ul>
@@ -154,11 +154,11 @@ const CityPage = () => {
 
           <p>We are using a hack submission service called <a href="http://devpost.com/">DevPost</a>. In order to win, you need to submit the hacks through it. It helps organizers keep track of the teams and the projects they create.</p>
 
-          <p>Hacks could be (but are not limited to) a tool, application, software, website, or data visualization and may be built using any programming language and platform that you choose. Teams can be of any size, but awards are only given to up to four individuals per team. Hacks will be judged for 
+          <p>Hacks could be (but are not limited to) a tool, application, software, website, or data visualization and may be built using any programming language and platform that you choose. Teams can be of any size, but awards are only given to up to four individuals per team. Hacks will be judged for:
             <ol>
-            <li><strong>Creativity/Originality</strong>,</li>
-            <li><strong>Design/Aesthetics</strong>, and</li>
-            <li><strong>Execution/Functionality</strong>.</li>
+              <li><strong>Creativity/Originality</strong>,</li>
+              <li><strong>Design/Aesthetics</strong>, and</li>
+              <li><strong>Execution/Functionality</strong>.</li>
             </ol>
           </p>
 

@@ -28,9 +28,10 @@ const PageStyle = styled.main`
     color: #BE4343;
     &.sponsor {
       text-decoration: none;
+      color: #CDCCBB;
     }
     &:hover {
-      color: #f00;
+      color: #BE4343;
     }
   }
 
