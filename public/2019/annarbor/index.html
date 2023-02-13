@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html>
+  <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width initial-scale=1" />
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+      <title>2019 Baseball Hack Day Ann Arbor Sat. March 9</title>
+      <meta name="description" content="Friendly one-day multi-city coding competition for baseball fans - Baseball Hack Day Sat. March 9, 2019 - Ann Arbor, Michigan">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+
+      <link rel="canonical" href="http://localhost:4000//annarbor/">
+      <link rel="stylesheet" href="../css/application.css">
+ 
+      <script src="//use.typekit.net/uyp2hnr.js"></script>
+      <script>try{Typekit.load();}catch(e){}</script>
+
+      <meta property="og:title" content="2019 Baseball Hack Day Ann Arbor Sat. March 9"/>
+      <meta property="og:type" content="website" />
+      <meta property="og:site_name" content="Baseball Hack Day, March 9, 2019 - Friendly one-day multi-city coding competition for baseball fans"/>
+      <meta property="og:url" content="http://localhost:4000//annarbor/"/>
+      <meta property="og:description" content="Friendly one-day multi-city coding competition for baseball fans - Baseball Hack Day Sat. March 9, 2019 - Ann Arbor, Michigan"/>
+      <meta property="og:image" content="http://www.baseballhackday.com/images/bbhd-2018.png"/>
+      <meta property="fb:app_id" content="313837716146814" /> 
+      <meta name="twitter:card" content="summary">
+      <meta name="twitter:site" content="@baseballhackday">
+      <meta name="twitter:title" content="2019 Baseball Hack Day Ann Arbor Sat. March 9">
+      <meta name="twitter:description" content="Friendly one-day multi-city coding competition for baseball fans - Baseball Hack Day Sat. March 9, 2019 - Ann Arbor, Michigan">
+      <meta name="twitter:image" content="http://www.baseballhackday.com/images/bbhd-2018.png">
+  
+  </head>
+
+  <body class="city-show">
+    <header class="main">
+      <h1>
+        <a href="../">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 301.3 334" enable-background="new 0 0 301.3 334"><g fill="#3D3D3D"><path d="M194.1 104.2h-5.8v55.4h5.8c3.9 0 5.5-2.3 5.5-7.5v-40.4c0-5.2-1.6-7.5-5.5-7.5zM82.4 45.4L80 53.5h4.5zM115.3 234.8h68.9v-42.6h-68.9v42.6zm38.9-29.2l3.1-3.1 11.9 11.9-11.9 11.9-3.1-3.1 8.8-8.8-8.8-8.8zm-11.3-3.2l3.1 3.1-8.8 8.8 8.8 8.8-3.1 3.1-11.9-11.9 11.9-11.9zM81.2 144.8H89l-3.7-31.3zM54.1 51.8h-3.5v5.1h3.5c1.7 0 2.4-.7 2.4-2.1V54c0-1.5-.8-2.2-2.4-2.2zM54.1 42.6h-3.5v5.1h3.5c1.7 0 2.4-.8 2.4-2.2v-.8c0-1.4-.8-2.1-2.4-2.1zM7.2 7.7v172.8l144.8 144 144.8-144V7.7H7.2zm236.2 28.1h9.9v20.1h13.8v7.7h-23.7V35.8zm-26.9 0h9.9v20.1h13.8v7.7h-23.7V35.8zm-22.7 0h10.3l9.8 27.8h-10.4l-1.2-4.3h-8l-1.4 4.3h-8.8l9.7-27.8zm-37.1 0H173c5.6 0 9.2 2.5 9.2 7.4v.3c0 2.3-1.6 5.4-5.1 6.1 3.7.7 5.3 3.5 5.3 6v.6c0 5-3.6 7.4-9.2 7.4h-16.5V35.8zm-28 0h23.7V43h-13.8v4.2h9.1v4.4h-9.1v4.3h13.8v7.7h-23.7V35.8zm-29.3 8.3c0-4.8 4.9-9 12.6-9 5.7 0 10 2.3 13 5.2l-5.3 4.5c-2.5-2-5.3-3.3-7.9-3.3-2 0-3.1.8-3.1 1.8 0 3.7 16.2 2.5 16.2 11.5 0 5.2-5.6 9.3-13 9.3-6 0-10.6-2.1-14.4-5.1l4.6-5.3c3 2.5 7 4 9.9 4 2.5 0 3.3-.9 3.3-2.1.1-3.6-15.9-2-15.9-11.5zm-21.7-8.3H88l9.8 27.8H87.3l-1.2-4.3h-8l-1.4 4.3H68l9.7-27.8zm-37.1 0h16.2c5.6 0 9.2 2.5 9.2 7.4v.3c0 2.3-1.6 5.4-5.1 6.1 3.7.7 5.3 3.5 5.3 6v.6c0 5-3.6 7.4-9.2 7.4H40.6V35.8zM38 77.7h230.2v4.4H38v-4.4zm118 19.2h7.5l-10.7 30.2 11 39.9h-7.9l-7.9-31.2-3.8 11.8V167h-7.6V96.9h7.6v36.7L156 96.9zm-38.6 6.2c-4 0-6.1 2.6-6.1 6v45.7c0 3.5 2.1 6 6.1 6 3.8 0 5.9-2.5 5.9-6.1v-12.3h6.6V154c0 8.1-4.6 14.1-12.9 14.1s-13.4-6.2-13.4-14.4v-43.4c0-8.1 5.2-14.4 13.4-14.4s12.9 6 12.9 14.1v11.5h-6.6v-12.2c0-3.6-2.1-6.2-5.9-6.2zM66.1 167h-7.5v-31.3H46.8V167h-7.7V96.9h7.7v31.8h11.9V96.9h7.5V167zm25.7 0l-1.9-15.2h-9.7L78 167h-7.2l10.6-70.2h7.9L99.6 167h-7.8zm106 75.9h-95.3v-8h8.3v-47h77.8v47h9.2v8zm9.4-91.4c0 9.8-3.8 15.5-12.9 15.5h-13.7V96.9h13.7c9.1 0 12.9 5.7 12.9 15.5v39.1zm25 15.5l-1.9-15.2h-9.7l-2.2 15.2h-7.2l10.6-70.2h7.9L240 167h-7.8zm25.8-27.7V167h-7.6v-27.7l-10.9-42.5h7.6l7.5 32.7 7.5-32.7h7.3L258 139.3zM198.6 45.4l-2.5 8.1h4.6zM221.5 144.8h7.8l-3.7-31.3zM170.2 51.8h-3.5v5.1h3.5c1.7 0 2.4-.7 2.4-2.1V54c0-1.5-.7-2.2-2.4-2.2zM170.2 42.6h-3.5v5.1h3.5c1.7 0 2.4-.8 2.4-2.2v-.8c0-1.4-.7-2.1-2.4-2.1z"/></g></svg>
+        </a>
+      </h1>
+
+      <nav>
+        <a href="#" class="menu">Menu</a>
+        <ul class="navigation">
+  <li>
+    <div class="select">
+  <div class="dropdown-container">
+    <div class="dropdown-button">Pick your city</div>
+    <div class="dropdown-menu dropdown-select">
+      <a href="../annarbor/">Ann Arbor</a>
+      <a href="../boston/">Boston</a>
+      <!-- <a href="../chicago/">Chicago</a> -->
+      <a href="../cincinnati/">Cincinnati</a>
+      <a href="../losangeles/">Los Angeles</a>
+      <a href="../newyork/">New York</a>
+      <a href="../sandiego/">San Diego</a>
+      <!-- <a href="../seattle/">Seattle</a> -->
+      <a href="../toronto/">Toronto</a>
+      <a href="../twincities/">Twin Cities</a>
+    </div>
+  </div>
+</div>
+
+
+
+  </li>
+  <li>
+    <div>
+      <a href="../about-history">About &amp; History</a>
+    </div>
+  </li>
+</ul>
+
+      </nav>
+    </header>
+
+    <main>
+      
+
+
+
+
+<header class="ann arbor annarbor city-show"> 
+  <header class="banner">
+    <div class="wrapper">
+      <h2>Ann Arbor</h2>
+      <p class="time-location">
+        <span class="time">Saturday, March 9th 2019, 9:00 am – 6 pm (EST)</span>
+        <span class="location">Tech Brewery - Alfa Jango , 1327 Jones Dr, Lower level, Ann Arbor MI 48105 </span>
+      </p>
+      
+      <a class="action" href="https://annarborbaseballhackday.eventbrite.com/">Register!</a>
+      
+    </div>
+  </header>
+</header>
+
+<div class="wrapper">
+  <section class="schedule">
+    <h2>Schedule</h2>
+    <ul>
+    <li>
+      <time datetime=" pubdate=">9:00 &ndash; 9:30am </time>
+      <h3>Registration, Meet and Greet, and Coffee</h3>
+    </li>
+    <li>
+      <time datetime=" pubdate=">9:30 &ndash; 10:00am </time>
+      <h3>Welcome, Introductions, and Pitch</h3>
+    </li>
+    <li>
+      <time datetime=" pubdate=">10:00 &ndash; 12:30pm </time>
+      <h3>Design and Code</h3>
+    </li>
+    <li>
+      <time datetime=" pubdate=">12:30 &ndash; 1:30pm</time>
+      <h3>Lunch</h3>
+    </li>
+    <li>
+      <time datetime=" pubdate=">1:30 &ndash; 4:00pm </time>
+      <h3>More Design and Code</h3>
+    </li>
+    <li>
+      <time datetime=" pubdate=">4:00 &ndash; 5:00pm </time>
+      <h3>Presentation</h3>
+    </li>
+    <li>
+      <time datetime=" pubdate=">5:00pm</time>
+      <h3>Awards announcements</h3>
+    </li>
+  </ul>
+  </section>
+
+  <section class="sponsors">
+    <header>
+      <h2>Sponsors</h2>
+    </header>
+    <ul class="sponsor-list">
+      <li>
+        <a class="example-sponsor" href="https://www.alfajango.com/">
+          <img alt="Alfa Jango" src="../images/annarbor-sponsors/AlfaJango.png">
+          <h3>Alfa Jango</h3>
+          <small>Venue</small>
+        </a>
+      </li>
+      <!-- <li>
+        <a class="example-sponsor" href="#SponsorURL">
+          <img alt="example-sponsor Logo" src="http://placehold.jp/600x300.png">
+          <h3>Example Sponsor</h3>
+          <small>Hall of Fame, MVP or All-Star sponsor</small>
+        </a>
+      </li> -->
+
+    
+      <li>
+        <a class='mlbam' href='http://mlbam.com'>
+          <img alt='mlbam Logo' src='/images/boston-sponsors/mlb.png'>
+          <h3>MLB</h3>
+          <small>Grand Prizes</small>
+        </a>
+      </li>
+      <li>
+        <a class='baseball-prospectus' href='http://www.baseballprospectus.com'>
+          <img alt='baseball-prospectus Logo' src='/images/chicago-sponsors/baseball-prospectus.png'>
+          <h3>Baseball Prospectus</h3>
+          <small>Prizes</small>
+        </a>
+      </li>
+      <li>
+        <a class='sportradar' href='http://www.sportradar.com/'>
+          <img alt='sportradar logo' src='/images/boston-sponsors/sportradar.png'>
+          <h3>SportRadar</h3>
+          <small>API</small>
+        </a>
+      </li>
+      <li>
+        <a class='ruwt' href=' https://areyouwatchingthis.com/'>
+          <img alt='ruwt logo' src='/images/boston-sponsors/ruwt.png'>
+          <h3>RUWT?!</h3>
+          <small>API</small>
+        </a>
+      </li>
+
+
+    </ul>
+    <a class="action-primary" href="https://docs.google.com/document/d/1lA_9jqN2oqfVSRw3RnjVvqJ8Ik1Khvy6q4MVj15tCpc/edit?usp=sharing">
+      Be a Sponsor
+    </a>
+  </section>
+
+
+  <section class="prizes">
+    <h2>Prizes</h2>
+    <ul>
+      <li>
+        <h3>Ann Arbor Overall Winners</h3>
+        <p>
+          The winning team of the Ann Arbor competition will win
+          <!-- edit prizes -->
+          TBD!
+          for each team member (maximum team size of four).
+        </p>
+      </li>
+      <li>
+        <h3>Baseball Hack Day Grand Prize Winner</h3>
+        <p>
+          In addition, winning teams of all cities will participate in a video chat presentation on Tues. March 12 at 5 PM EST. Winner will recieve <a href='http://www.mlb.tv/'>2019 MLB.TV Premium subscription</a>for each team member (maximum team size of four) and major bragging rights!
+        </p>
+      </li>
+      <li>
+        <h3>Ann Arbor Runner-Ups</h3>
+        <p>
+          The runner-up team of the Ann Arbor competition will win
+          <!-- edit prizes -->
+          TBD!
+          for each team member (maximum team size of four).
+        </p>
+      </li>
+      <!-- add more prizes -->
+      <li>
+        <p>
+          and more!
+          <a href="mailto:daigo@baseballhackday.com">(Want to sponsor? Please email us.)</a>
+        </p>
+      </li>
+    </ul>
+
+  </section>
+  <section class="judges">
+    <h2>Judges</h2>
+    <ul>
+      <li><h3>TBD</h3></li>
+      <!-- <li>
+        <h3>Babe Ruth</h3>
+        <p>
+          Professional Baseball Player
+        </p>
+      </li> -->
+      
+    </ul>
+  </section>
+
+
+  <section class="guidelines">
+    <h2>Come join us, March 9!</h2>
+    <article>
+      <p>Love creating stuff on your computer and LOVE baseball? Come hack with us on March 9, 2019 at Tech Brewery - Alfa Jango </p>
+
+      <p><a href="http://www.baseballhackday.com/">Baseball Hack Day</a> is an annual on-site, in-person hacking event (also known as hackathon, hack fest, code fest, or code party) where area baseball fans come together and create baseball-related projects to compete in a fun, friendly, one-day competition. Come with your laptop computer and your ideas or open mind!</p>
+<p>Born in Boston spring of 2012, Baseball Hack Day is a grass-roots, open-sourced movement, held at the same day at different locations all around the world. The goal of the day is to bring creative tech minds into one room, and see what they can produce within a limited time. The project could be (but is not limited to) a tool, simple web app, mobile app, web site, or data visualization.</p>
+<p>This event is based on the principal of the original <a href="http://hackdaymanifesto.com/">the Hack Day Manifesto</a> and will always be free to attend, thanks to our generous sponsors. We are run by volunteers, pro bono, labor for love, and we’ll never be for-profit. We follow <a href="https://www.contributor-covenant.org/version/1/4/code-of-conduct.html">contributor-covenant-style code of conduct</a>.</p>
+
+
+      <p>New to hack days? Have no fear. This is a hackathon of developers and designers of all levels. See past submissions to get an idea. See our resources in <a href="https://github.com/baseballhackday/data-and-resources/wiki/Resources-and-ideas">github wiki</a>, check out <a href="http://baseballhackday.tumblr.com/">our inspiraton blog on tumblr</a>, and follow us on <a href="http://twitter.com/baseballhackday">Twitter @BaseballHackDay</a></p>
+
+      <p>
+        
+        <a class="action" href="https://annarborbaseballhackday.eventbrite.com/">Register!</a>
+        
+      </p>
+    </article>
+  </section>
+
+
+  <section class="guidelines">
+    <h2>Guidelines &amp; Rules</h2>
+    <article>
+  <p>First and foremost, this event will be a success if everyone has a good time. That is why we have a <a href="https://www.contributor-covenant.org/version/1/4/code-of-conduct.html">Code of Conduct</a>. All attendees, sponsors, partners, volunteers and staff at our hackathon are required to agree with it. We want a safe, fair and fun environment for everybody.</p>
+
+  <p>We are using a hack submission service called <a href="http://devpost.com/">DevPost</a>. In order to win, you need to submit the hacks through it. It helps organizers keep track of the teams and the projects they create.</p>
+
+  <p>Hacks could be (but are not limited to) a tool, application, software, website, or data visualization and may be built using any programming language and platform that you choose. Teams can be of any size, but awards are only given to up to four individuals. Hacks will be judged for 1) Creativity/Originality, 2) Design/Presentation, and 3) Execution/Functionality.</p>
+
+  <p>The majority of your coding must happen during the event. Some work done prior to the event is allowed, but it should be disclosed at your demo. Ideas that are compact and executable in one-day format are encouraged, and we will reward teams that recognize this time constraint.</p>
+
+  <p>When time is up, you will have short show-and-tell and demo time (3 to 5 minutes, depending on how many projects there are). Judges also will come around during the event and you are encouraged to tell them about your projects at that time.</p>
+
+  <p>Prototypes/mockups for demo are OK, but working websites or mobile apps are strongly encouraged.</p>
+</article>
+
+    <article>
+      <!-- <p>Put additional local rules here</p> -->
+    </article>
+  </section>
+
+  <section class="email-signup">
+    <h2>Sign up for updates from Baseball Hack Day</h2>
+<div>
+
+<!-- Begin Mailchimp Signup Form -->
+<link href="..//cdn-images.mailchimp.com/embedcode/classic-10_7.css" rel="stylesheet" type="text/css">
+<style type="text/css">
+  #mc_embed_signup{ font:14px Helvetica,Arial,sans-serif; }
+</style>
+<div id="mc_embed_signup">
+<form action="https://baseballhackday.us6.list-manage.com/subscribe/post?u=bfb4eee5578f85e2a07e7cdf8&amp;id=c18dbfbf5e" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+    <div id="mc_embed_signup_scroll">
+  <h2>Get Baseball Hack Day updates and announcements!</h2>
+<div class="mc-field-group">
+  <label for="mce-EMAIL">Email Address </label>
+  <input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL">
+</div>
+<div class="mc-field-group">
+  <label for="mce-NAME">First Name </label>
+  <input type="text" value="" name="NAME" class="" id="mce-NAME">
+</div>
+<div class="mc-field-group">
+  <label for="mce-MMERGE2">Last Name </label>
+  <input type="text" value="" name="MMERGE2" class="" id="mce-MMERGE2">
+</div>
+  <div id="mce-responses" class="clear">
+    <div class="response" id="mce-error-response" style="display:none"></div>
+    <div class="response" id="mce-success-response" style="display:none"></div>
+  </div>    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+    <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_bfb4eee5578f85e2a07e7cdf8_c18dbfbf5e" tabindex="-1" value=""></div>
+    <div class="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button"></div>
+    </div>
+</form>
+</div>
+<script type='text/javascript' src='//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js'></script><script type='text/javascript'>(function($) {window.fnames = new Array(); window.ftypes = new Array();fnames[0]='EMAIL';ftypes[0]='email';fnames[1]='NAME';ftypes[1]='text';fnames[2]='MMERGE2';ftypes[2]='text';}(jQuery));var $mcj = jQuery.noConflict(true);</script>
+<!--End mc_embed_signup-->
+  </section>
+  
+  <section class='slack-signup'>
+  <a class='action-primary' href='https://baseballhackday-slack.herokuapp.com'>
+    Join Us on Slack
+  </a>
+</section>
+
+</div>
+
+    </main>
+
+    <footer class="main">
+      <nav>
+        <ul class="navigation">
+  <li>
+    <div class="select">
+  <div class="dropdown-container">
+    <div class="dropdown-button">Pick your city</div>
+    <div class="dropdown-menu dropdown-select">
+      <a href="../annarbor/">Ann Arbor</a>
+      <a href="../boston/">Boston</a>
+      <!-- <a href="../chicago/">Chicago</a> -->
+      <a href="../cincinnati/">Cincinnati</a>
+      <a href="../losangeles/">Los Angeles</a>
+      <a href="../newyork/">New York</a>
+      <a href="../sandiego/">San Diego</a>
+      <!-- <a href="../seattle/">Seattle</a> -->
+      <a href="../toronto/">Toronto</a>
+      <a href="../twincities/">Twin Cities</a>
+    </div>
+  </div>
+</div>
+
+
+
+  </li>
+  <li>
+    <div>
+      <a href="../about-history">About &amp; History</a>
+    </div>
+  </li>
+</ul>
+
+      </nav>
+      <nav>
+        <ul>
+          <li><a href="http://twitter.com/baseballhackday">Twitter</a></li>
+          <li><a href="http://github.com/baseballhackday">GitHub</a></li>
+        </ul>
+      </nav>
+      <section>
+        <h3>Organized by</h3>
+        <h4>
+        Timothy Fisher (Ann Arbor)
+<br>Daigo Fujiwara, Matthew Shanley, Nathan Burgess, David Thyresson (Boston)
+<!-- <br>Colin Shevlin, Wil Chandler, Matt Dennewitz, Nick Devlin (Chicago) -->
+<br>Greg Greenlee (Cincinnati)
+<br>Elizabeth Cotton, John Malonson (Los Angeles)
+<br>GameChanger (New York)
+<br>Elizabeth Cotton (San Diego)
+<!-- <br>Adam Engel, Peter Kaminski (Seattle) -->
+<br>Ken Suong, Edward Johnson, Adam Rogers-Green (Toronto)
+<br>Michael Jackson (Twin Cities)
+        </h4>
+        <p>Don't see your city? <a href="https://docs.google.com/document/d/1bwzyhGPWIfZ6w5FyQqUOpu_s8vkUwcrPy2UHvw4QImY/edit?usp=sharing">Start a chapter</a></p>
+      </section>
+      <section>
+        <h3>Site by</h3>
+        <h4>
+          <a href="http://thoughtbot.com">thoughtbot</a> and <a href="https://www.plankdesign.com">Plank</a>
+        </h4>
+      </section>
+    </footer>
+    <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+    <script>window.jQuery || document.write('<script src="/bower_components/jquery/dist/jquery.min.js"><\/script>')</script>
+    <script src="/js/app.js"></script>
+
+    <script>
+        window.ga=function(){ga.q.push(arguments)};ga.q=[];ga.l=+new Date;
+        ga('create','UA-339429-12','auto');ga('send','pageview')
+    </script>
+    <script src="https://www.google-analytics.com/analytics.js" async defer></script>
+  </body>
+</html>
