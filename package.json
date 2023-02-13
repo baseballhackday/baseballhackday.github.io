@@ -2,7 +2,7 @@
   "name": "baseball-hack-day",
   "version": "1.0.0",
   "private": true,
-  "description": "baseball-hack-day",
+  "description": "www.baseballhackday.com is a Community-maintained Baseball Hack Day website. Please contribute!",
   "author": "Daigo Fujiwara",
   "keywords": [
     "gatsby"
@@ -33,6 +33,9 @@
     "styled-components": "^5.3.6"
   },
   "devDependencies": {
+    "eslint": "^8.34.0",
+    "eslint-config-react-app": "^7.0.1",
+    "eslint-plugin-react": "^7.32.2",
     "gh-pages": "^5.0.0"
   }
 }

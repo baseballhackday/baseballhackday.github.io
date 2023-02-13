@@ -1,6 +1,6 @@
-import React from 'react'
+import React from 'react';
 import styled from 'styled-components';
-import 'normalize.css'
+import 'normalize.css';
 
 const PageStyle = styled.main`
   font-family: 'Montserrat';
@@ -65,22 +65,6 @@ const PageStyle = styled.main`
   h1, h2, h3, h4, h5, h6 {
     font-family: 'Hepta Slab';
   }
-  h4 {
-    margin-bottom: 0.75rem;
-  }
-  ul {
-    padding-left: 0;
-    list-style-type: none;
-    li {
-      margin: 0 0 1rem;
-      p, h3 {
-        margin: 0 0 0.5rem;
-      }
-    }
-    &.compact li {
-      margin: 0 0 0.25rem;
-    }
-  }
   h1 {
     font-size: 1.5rem;
     font-size: clamp(1.5rem, 0.833rem + 3.333vw, 2.25rem);
@@ -93,9 +77,13 @@ const PageStyle = styled.main`
     line-height: 1.3;
     margin: 0 auto 1rem;
   }
+  h4 {
+    margin-bottom: 0.75rem;
+  }
   .action, .dark a.action {
     display: inline-block;
     transition: all 0.15s ease-out 0s;
+    border: 1px solid #CDCCBB;
     background-color: #CDCCBB;
     color: #140707;
     display: inline-block;
@@ -118,6 +106,19 @@ const PageStyle = styled.main`
       background-color: #fff;
     }
   }
+  ul {
+    padding-left: 0;
+    list-style-type: none;
+    li {
+      margin: 0 0 1rem;
+      p, h3 {
+        margin: 0 0 0.5rem;
+      }
+    }
+    &.compact li {
+      margin: 0 0 0.25rem;
+    }
+  }
   time {
     font-size: 1.3rem;
     color: #CDCCBB;
@@ -131,6 +132,7 @@ const footerStyle = {
 }
 
 export default function Layout({ children, inlineStyle, theme }) {
+  // theme dark is the one supported
   const colorTheme = theme ? theme : 'normal';
   return (
     <PageStyle style={inlineStyle}>

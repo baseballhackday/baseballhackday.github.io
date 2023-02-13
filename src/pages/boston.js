@@ -1,8 +1,11 @@
-import * as React from 'react'
+import * as React from 'react';
 import styled from 'styled-components';
-import Layout from '../components/layout'
-import logo from '../images/bbhd-logo.svg'
-import bg from '../images/boston2.jpg'
+import Layout from '../components/layout';
+import About from '../components/about';
+import Rules from '../components/rules';
+
+import logo from '../images/bbhd-logo.svg';
+import bg from '../images/boston2.jpg';
 import globe from '../images/sponsors/The-Boston-Globe.png';
 import nu from '../images/sponsors/Northeastern-University.png';
 
@@ -54,31 +57,31 @@ const CityPage = () => {
           <h2>Schedule (tentative)</h2>
           <ul>
             <li>
-              <time datetime="">9:00 am</time>
+              <time>9:00 am</time>
               <p>Registration, Meet and Greet, and Coffee</p>
             </li>
             <li>
-              <time datetime="">9:30 am</time>
+              <time>9:30 am</time>
               <p>Welcome, Introductions, and Pitch</p>
             </li>
             <li>
-              <time datetime="">10:00 am</time>
+              <time>10:00 am</time>
               <p>Design and Code</p>
             </li>
             <li>
-              <time datetime="">12:30 pm</time>
+              <time>12:30 pm</time>
               <p>Lunch (Working lunch)</p>
             </li>
             <li>
-              <time datetime="">4:00 pm</time>
+              <time>4:00 pm</time>
               <p>Stop hacking!</p>
             </li>
             <li>
-              <time datetime="">4:00 &ndash; 5:00pm</time>
+              <time>4:00 &ndash; 5:00pm</time>
               <p>Presentation</p>
             </li>
             <li>
-              <time datetime="">5:00pm</time>
+              <time>5:00pm</time>
               <p>Awards announcements</p>
             </li>
           </ul>
@@ -106,7 +109,7 @@ const CityPage = () => {
           <ul>
             <li>
               <h3 className="tan">Boston Overall Winners</h3>
-              <p>The winning team of the Boston competition will win To be announced! for each team member (maximum team size of four).</p>
+              <p>The winning team of the Boston competition will win something to be announced! for each team member (maximum team size of four).</p>
             </li>
             <li>
               <h3 className="tan">Baseball Hack Day Grand Prize Winner</h3>
@@ -114,7 +117,7 @@ const CityPage = () => {
             </li>
             <li>
               <h3 className="tan">Boston Runner-Ups</h3>
-              <p>The runner-up team of the Boston competition will win To be announced! for each team member (maximum team size of four).</p>
+              <p>The runner-up team of the Boston competition will win something to be announced! for each team member (maximum team size of four).</p>
             </li>
             <li>
               <p>and more! <a href="mailto:daigo@daigofujiwara.com">(Want to sponsor prizes? Please email us.)</a></p>
@@ -137,37 +140,17 @@ const CityPage = () => {
       <section className="about">
         <h2>Come join us, March 11!</h2>
         <p>Love creating stuff on your computer and LOVE baseball? Come hack with us on March 11, 2023 at Northeastern University!</p>
-        <div className="two-col">
-          <p><a href="http://www.baseballhackday.com/">Baseball Hack Day</a> is an annual on-site, in-person hacking event (also known as hackathon, hack fest, code fest, or code party) where area baseball fans come together and create baseball-related projects to compete in a fun, friendly, one-day competition. Come with your laptop computer and your ideas or open mind!</p>
-          
-          <p>Born in Boston spring of 2012, Baseball Hack Day is a grass-roots, open-sourced movement, held at the same day at different locations all around the world. The goal of the day is to bring creative tech minds into one room, and see what they can produce within a limited time. The project could be (but is not limited to) a tool, simple web app, mobile app, web site, or data visualization.</p>
 
-          <p>This event is based on the principal of the original <a href="http://hackdaymanifesto.com/">the Hack Day Manifesto</a> and will always be free to attend, thanks to our generous sponsors. We are run by volunteers, pro bono, labor for love, and we are not-for-profit. We follow <a href="https://hackcodeofconduct.org/">Hack Code of Conduct</a>.</p>
-        </div>
+        <About className="two-col" />
+
         <p><a href="https://www.eventbrite.com/e/2023-boston-baseball-hack-day-tickets-534599520557" className="action large">Register!</a></p>
       </section>
 
       <section className="guidelines">
         <h2>Guidelines &amp; Rules</h2>
-        <div className="two-col">
-          <p>First and foremost, this event will be a success if everyone has a good time. That is why we have a <a href="https://hackcodeofconduct.org/">Code of Conduct</a>. All attendees, sponsors, partners, volunteers and staff at our hackathon are required to agree with it. We want a safe, fair and fun environment for everybody.</p>
 
-          <p>We are using a hack submission service called <a href="http://devpost.com/">DevPost</a>. In order to win, you need to submit the hacks through it. It helps organizers keep track of the teams and the projects they create.</p>
-
-          <p>Hacks could be (but are not limited to) a tool, application, software, website, or data visualization and may be built using any programming language and platform that you choose. Teams can be of any size, but awards are only given to up to four individuals per team. Hacks will be judged for:
-            <ol>
-              <li><strong>Creativity/Originality</strong>,</li>
-              <li><strong>Design/Aesthetics</strong>, and</li>
-              <li><strong>Execution/Functionality</strong>.</li>
-            </ol>
-          </p>
-
-          <p>The majority of your coding must happen during the event. Some work done prior to the event is allowed, but it should be disclosed at your demo. Ideas that are compact and executable in one-day format are encouraged, and we will reward teams that recognize this time constraint.</p>
-
-          <p>When time is up, you will have short show-and-tell and demo time (~3 minutes). Judges also will come around during the event and you are encouraged to tell them about your projects at that time.</p>
-
-          <p>Prototypes/mockups for demo are OK, but working websites or mobile apps are strongly encouraged.</p>
-        </div>
+        <Rules className="two-col" />
+        
       </section>
     </Layout>
   )
