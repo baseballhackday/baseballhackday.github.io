@@ -165,7 +165,7 @@ export default function Layout({ children, inlineStyle }) {
           <li>Edward Johnson (Toronto)</li>
         </ul>
 
-        <p><a href="/">Home</a> | <a href="/boston">Boston</a> | <a href="/">Home</a></p>
+        <p><a href="/">Home</a> | <a href="/boston">Boston</a> | <a href="/about-history">About &amp; History</a></p>
       </footer>
     </PageStyle>
   )

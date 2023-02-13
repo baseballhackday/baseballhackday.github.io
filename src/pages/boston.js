@@ -7,14 +7,15 @@ import globe from '../images/sponsors/The-Boston-Globe.png';
 import nu from '../images/sponsors/Northeastern-University.png';
 
 const logoStyle = {
-  width: "75px",
-  margin: "30px 0"
+  width: "100px",
+  margin: "30px 0 15vh"
 }
 const bgstyle = {
-  backgroundColor: "#BE4343"
+  backgroundColor: "#fff",
+  color: "#000",
 }
 const HeaderStyle = styled.header`
-  margin: 0 -20px;
+  margin: 0 -20px 4em;
   max-width: none;
   background-color: #BE4343;
   background-image: url(${bg});
@@ -22,9 +23,9 @@ const HeaderStyle = styled.header`
   background-position: top center;
   background-repeat: no-repeat;
   background-size: cover;
-  padding-bottom: 15vh;
-  padding-top: 25vh;
-  margin-bottom: 4em;
+  padding-bottom: 10vh;
+  padding-top: 5vh;
+  color: #fff;
   article {
     max-width: 860px;
     margin: 0 auto;
@@ -95,7 +96,7 @@ const CityPage = () => {
               <a className="sponsor" href="#SponsorURL"><img alt="Boston Globe Logo" src={globe} />
               <h3>The Boston Globe</h3><p>Hall of Fame sponsor</p></a>
             </li>
-          </ul><a className="action-primary" href="https://docs.google.com/document/d/1lA_9jqN2oqfVSRw3RnjVvqJ8Ik1Khvy6q4MVj15tCpc/edit?usp=sharing">Be a Sponsor</a>
+          </ul><a className="action" href="https://docs.google.com/document/d/1lA_9jqN2oqfVSRw3RnjVvqJ8Ik1Khvy6q4MVj15tCpc/edit?usp=sharing">Be a Sponsor</a>
         </section>
       </div>
 
@@ -116,7 +117,7 @@ const CityPage = () => {
               <p>The runner-up team of the Boston competition will win TBA! for each team member (maximum team size of four).</p>
             </li>
             <li>
-              <p>and more! <a href="mailto:daigo@daigofujiwara.com">(Want to sponsor? Please email us.)</a></p>
+              <p>and more! <a href="mailto:daigo@daigofujiwara.com">(Want to sponsor prizes? Please email us.)</a></p>
             </li>
           </ul>
         </section>
@@ -153,7 +154,13 @@ const CityPage = () => {
 
           <p>We are using a hack submission service called <a href="http://devpost.com/">DevPost</a>. In order to win, you need to submit the hacks through it. It helps organizers keep track of the teams and the projects they create.</p>
 
-          <p>Hacks could be (but are not limited to) a tool, application, software, website, or data visualization and may be built using any programming language and platform that you choose. Teams can be of any size, but awards are only given to up to four individuals per team. Hacks will be judged for 1) <strong>Creativity/Originality</strong>, 2) <strong>Design/Aesthetics</strong>, and 3) <strong>Execution/Functionality</strong>.</p>
+          <p>Hacks could be (but are not limited to) a tool, application, software, website, or data visualization and may be built using any programming language and platform that you choose. Teams can be of any size, but awards are only given to up to four individuals per team. Hacks will be judged for 
+            <ol>
+            <li><strong>Creativity/Originality</strong>,</li>
+            <li><strong>Design/Aesthetics</strong>, and</li>
+            <li><strong>Execution/Functionality</strong>.</li>
+            </ol>
+          </p>
 
           <p>The majority of your coding must happen during the event. Some work done prior to the event is allowed, but it should be disclosed at your demo. Ideas that are compact and executable in one-day format are encouraged, and we will reward teams that recognize this time constraint.</p>
 
