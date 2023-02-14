@@ -3,7 +3,6 @@ import styled from 'styled-components';
 import Layout from '../components/layout';
 import About from '../components/about';
 import Rules from '../components/rules';
-import { Helmet } from 'react-helmet';
 
 import logo from '../images/bbhd-logo.svg';
 import bg from '../images/boston2.jpg';
@@ -46,24 +45,6 @@ const regurl = 'https://www.eventbrite.com/e/2023-boston-baseball-hack-day-ticke
 const CityPage = () => {
   return (
     <Layout inlineStyle={bgstyle}>
-      <Helmet>
-        <link rel="canonical" href={metaurl} />‍
-        <title>{metatitle}</title>‍
-        <meta name="description" content={metadesc} />
-        <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:site" content="@BaseballHackDay" />
-        <meta name="twitter:creator" content="@BaseballHackDay" />
-        <meta name="twitter:title" content={metatitle} />
-        <meta name="twitter:description" content={metadesc} />
-        <meta name="twitter:image" content={metaimage}/>
-        <meta property="og:title" content={metatitle} />
-        <meta property="og:description" content={metadesc} />
-        <meta property="og:image" content={metaimage}/>
-        <meta property="og:url" content={metaurl} />
-        <meta property="og:site_name" content={metatitle} />
-        <meta property="og:locale" content="en_US" />
-        <meta property="og:type" content="article" />
-      </Helmet>
       <HeaderStyle>
         <article>
           <h1 style={logoStyle}>
@@ -184,4 +165,24 @@ const CityPage = () => {
 
 export default CityPage
 
-export const Head = () => <title>{metatitle}</title>
+export const Head = () => (
+  <>
+    <link rel="canonical" href={metaurl} />‍
+    <title>{metatitle}</title>‍
+    <meta name="description" content={metadesc} />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:site" content="@BaseballHackDay" />
+    <meta name="twitter:creator" content="@BaseballHackDay" />
+    <meta name="twitter:title" content={metatitle} />
+    <meta name="twitter:description" content={metadesc} />
+    <meta name="twitter:image" content={metaimage}/>
+    <meta property="og:title" content={metatitle} />
+    <meta property="og:description" content={metadesc} />
+    <meta property="og:image" content={metaimage}/>
+    <meta property="og:url" content={metaurl} />
+    <meta property="og:site_name" content={metatitle} />
+    <meta property="og:locale" content="en_US" />
+    <meta property="og:type" content="website" />
+    <meta property="fb:app_id" content="313837716146814" />
+  </>
+)

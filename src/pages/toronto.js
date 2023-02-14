@@ -3,7 +3,6 @@ import styled from 'styled-components';
 import Layout from '../components/layout';
 import About from '../components/about';
 import Rules from '../components/rules';
-import { Helmet } from 'react-helmet';
 
 import logo from '../images/bbhd-logo.svg';
 import bg from '../images/toronto.png';
@@ -38,30 +37,12 @@ const HeaderStyle = styled.header`
 const metatitle = 'Toronto Baseball Hack Day 2023 is on March 11';
 const metadesc = 'Developers and designers are wanted for a fun, friendly, one-day, in-person hacking competition to create baseball-related projects.';
 const metaurl = 'https://www.baseballhackday.com/toronto/';
-const metaimage = 'https://www.baseballhackday.com/2023-baseballhackday.jpg';
+const metaimage = 'https://www.baseballhackday.com/2023-toronto.jpg';
 const regurl = 'https://www.eventbrite.ca/e/2023-toronto-baseball-hack-day-tickets-546695901157';
 
 const CityPage = () => {
   return (
     <Layout inlineStyle={bgstyle}>
-      <Helmet>
-        <link rel="canonical" href={metaurl} />‍
-        <title>{metatitle}</title>‍
-        <meta name="description" content={metadesc} />
-        <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:site" content="@BaseballHackDay" />
-        <meta name="twitter:creator" content="@BaseballHackDay" />
-        <meta name="twitter:title" content={metatitle} />
-        <meta name="twitter:description" content={metadesc} />
-        <meta name="twitter:image" content={metaimage}/>
-        <meta property="og:title" content={metatitle} />
-        <meta property="og:description" content={metadesc} />
-        <meta property="og:image" content={metaimage}/>
-        <meta property="og:url" content={metaurl} />
-        <meta property="og:site_name" content={metatitle} />
-        <meta property="og:locale" content="en_US" />
-        <meta property="og:type" content="article" />
-      </Helmet>
       <HeaderStyle>
         <article>
           <h1 style={logoStyle}>
@@ -179,4 +160,25 @@ const CityPage = () => {
 
 export default CityPage
 
-export const Head = () => <title>{metatitle}</title>
+export const Head = () => (
+  <>
+    <link rel="canonical" href={metaurl} />‍
+    <title>{metatitle}</title>‍
+    <meta name="description" content={metadesc} />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:site" content="@BaseballHackDay" />
+    <meta name="twitter:creator" content="@BaseballHackDay" />
+    <meta name="twitter:title" content={metatitle} />
+    <meta name="twitter:description" content={metadesc} />
+    <meta name="twitter:image" content={metaimage}/>
+    <meta property="og:title" content={metatitle} />
+    <meta property="og:description" content={metadesc} />
+    <meta property="og:image" content={metaimage}/>
+    <meta property="og:url" content={metaurl} />
+    <meta property="og:site_name" content={metatitle} />
+    <meta property="og:locale" content="en_CA" />
+    <meta property="og:type" content="website" />
+    <meta property="fb:app_id" content="313837716146814" />
+  </>
+)
+

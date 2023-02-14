@@ -194,7 +194,7 @@ export default function Layout({ children, inlineStyle, theme }) {
           <li>Elizabeth Cotton (San Diego)</li>
         </ul>
 
-        <p className={colorTheme}><a href="/">Home</a> | <a href="/boston">Boston</a> | <a href="/about-history">About &amp; History</a></p>
+        <p className={colorTheme}><a href="/">Home</a> | <a href="/boston">Boston</a> | <a href="/toronto">Toronto</a> | <a href="/about-history">About &amp; History</a></p>
       </footer>
     </PageStyle>
   )

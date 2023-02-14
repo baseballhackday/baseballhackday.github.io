@@ -35,7 +35,7 @@ Following [Gatsby's instruction on GithubPages](https://www.gatsbyjs.com/docs/ho
 npm run deploy
 ```
 
-Needs to be run in order for the update to show up. The build content `public` is copied over to `main` branch.
+The build content `public` is copied over to `main` branch, then pushed.
 
 ## Google fonts
 
@@ -46,13 +46,13 @@ Needs to be run in order for the update to show up. The build content `public` i
 How to update chapter info
 --------------------------
 
-- Create a new branch off of master, for example, I will create a imaginary chapter in Tokyo. `git checkout master` `git checkout -b tokyo-update`
-- You would want to copy `/city-template` into `/tokyo` folder. This will become the url of the page (i.e. baseballhackday.com/tokyo). You want to edit the index.html. Use /boston and /toronto as examples.
-- header styles are managed in `/scss/_city-show.scss`
-- Once the page is built, you want to link it up in `_includes/pick-your-city.html`. Links will appear on every page. Use absolute links, starting with `/`.
-- Now create a pull request against master. Then please ask to merge it. I like doing it though pull request since changes are documented and easier to revert if needed. If you have admin access, please feel free to merge.
+- Create a new branch off of `source`, for example, I will create a imaginary chapter in Tokyo. `git checkout source` `git checkout -b tokyo-update`
+- You would want to copy `src/pages/boston.js` file as `src/pages/tokyo.js`. This will become the url of the page (i.e. baseballhackday.com/tokyo). You want to edit the index.js. Use /boston and /toronto as examples.
+- header styles are managed in styled component, but site styles are in `src/components/layout.js`
+- Once the page is built, you want to link it up in `src/pages/index.js` and footer in `src/components/layout.js`. Links will appear on every page. Use absolute links, starting with `/`.
+- Now create a pull request against `source`. Then slack someone. If you have admin access, please feel free to review and merge.
 
-## 🚀 Learn more
+## 🚀 Learn more about Gatsby
 
 - [Documentation](https://www.gatsbyjs.com/docs/)
 
