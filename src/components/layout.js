@@ -142,7 +142,7 @@ const PageStyle = styled.main`
 const footerStyle = {
   textAlign: "center",
   marginTop: "3rem",
-  fontSize: "0.688rem",
+  fontSize: "0.8rem",
 }
 
 export default function Layout({ children, inlineStyle, theme }) {
