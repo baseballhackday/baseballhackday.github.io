@@ -5,7 +5,7 @@ import 'normalize.css';
 const PageStyle = styled.main`
   font-family: 'Montserrat';
   min-height: 100vh;
-  font-size: 1rem;
+  font-size: 0.9rem;
   line-height: 1.5;
   color: #fff;
   background-blend-mode: multiply;
@@ -18,7 +18,7 @@ const PageStyle = styled.main`
     max-width: 100%;
   }
   & > * {
-    max-width: 800px;
+    max-width: 650px;
     margin: 10px auto;
   }
   .tan {
@@ -67,18 +67,30 @@ const PageStyle = styled.main`
   }
   h1 {
     font-size: 1.5rem;
-    font-size: clamp(1.5rem, 0.833rem + 3.333vw, 2.25rem);
+    font-size: clamp(1.5rem, 0.5rem + 3.33vw, 2.4rem);
+    line-height: 1.3;
+    margin: 0 auto 1rem;
+  }
+  h2 {
+    font-size: 1.2rem;
+    font-size: clamp(1.2rem, 0.6rem + 2vw, 1.6rem);
     line-height: 1.3;
     margin: 0 auto 1rem;
   }
   h3 {
-    font-size: 1rem;
-    font-size: clamp(1rem, 0.556rem + 2.222vw, 1.5rem);
+    font-size: 1.1rem;
+    font-size: clamp(1.1rem, 0.8rem + 1vw, 1.2rem);
     line-height: 1.3;
     margin: 0 auto 1rem;
-  }
+  }  
   h4 {
+    font-size: 1rem;
+    font-size: clamp(1rem, 0.8rem + 0.66vw, 1.1rem);
     margin-bottom: 0.75rem;
+  }
+  h5 {
+    font-size: 1rem;
+    margin-bottom: 0.6rem;
   }
   .action, .dark a.action {
     display: inline-block;
@@ -87,16 +99,17 @@ const PageStyle = styled.main`
     background-color: #CDCCBB;
     color: #140707;
     display: inline-block;
-    font-size: 16px;
+    font-size: 0.9rem;
     margin: 5px;
     text-decoration: none;
     letter-spacing: 1px;
     line-height: 1;
-    padding: 0.8rem 0.75rem;
+    padding: 0.4rem 0.8rem;
     text-transform: uppercase;
     &.large {
+      padding: 0.8rem 0.8rem;
       font-weight: bold;
-      font-size: 24PX;
+      font-size: 1.2rem;
     } 
     @media(min-width:520px) {
       padding: 0.8rem 1.5rem;
@@ -120,7 +133,7 @@ const PageStyle = styled.main`
     }
   }
   time {
-    font-size: 1.3rem;
+    font-size: 1.1rem;
     color: #CDCCBB;
     font-weight: 900;
   }
@@ -128,7 +141,8 @@ const PageStyle = styled.main`
 
 const footerStyle = {
   textAlign: "center",
-  marginTop: "3rem"
+  marginTop: "3rem",
+  fontSize: "0.688rem",
 }
 
 export default function Layout({ children, inlineStyle, theme }) {
@@ -173,7 +187,7 @@ export default function Layout({ children, inlineStyle, theme }) {
         </section>
         <p>Baseball Hack Day - &copy;2012-2023</p>
 
-        <h4>2023 volunteer organizers</h4>
+        <h5>2023 volunteer organizers</h5>
         <ul className="compact">
           <li>Daigo Fujiwara, Matt Carroll, Matthew Shanley, James Smith, Kianosh Pourian (Boston)</li>
           <li>Elizabeth Cotton (San Diego)</li>

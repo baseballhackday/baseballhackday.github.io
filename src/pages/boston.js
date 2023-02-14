@@ -3,6 +3,7 @@ import styled from 'styled-components';
 import Layout from '../components/layout';
 import About from '../components/about';
 import Rules from '../components/rules';
+import { Helmet } from 'react-helmet';
 
 import logo from '../images/bbhd-logo.svg';
 import bg from '../images/boston2.jpg';
@@ -30,14 +31,38 @@ const HeaderStyle = styled.header`
   padding-top: 5vh;
   color: #fff;
   article {
-    max-width: 860px;
+    max-width: 760px;
     margin: 0 auto;
     padding: 20px;
   }
 `;
+
+const metatitle = 'Boston Baseball Hack Day 2023 is on March 11';
+const metadesc = 'Developers and designers are wanted for a fun, friendly, one-day, in-person hacking competition to create baseball-related projects.';
+const metaurl = 'https://www.baseballhackday.com/boston/';
+const metaimage = 'https://www.baseballhackday.com/2023-boston.jpg';
+
 const CityPage = () => {
   return (
     <Layout inlineStyle={bgstyle}>
+      <Helmet>
+        <link rel="canonical" href={metaurl} />‍
+        <title>{metatitle}</title>‍
+        <meta name="description" content={metadesc} />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:site" content="@BaseballHackDay" />
+        <meta name="twitter:creator" content="@BaseballHackDay" />
+        <meta name="twitter:title" content={metatitle} />
+        <meta name="twitter:description" content={metadesc} />
+        <meta name="twitter:image" content={metaimage}/>
+        <meta property="og:title" content={metatitle} />
+        <meta property="og:description" content={metadesc} />
+        <meta property="og:image" content={metaimage}/>
+        <meta property="og:url" content={metaurl} />
+        <meta property="og:site_name" content={metatitle} />
+        <meta property="og:locale" content="en_US" />
+        <meta property="og:type" content="article" />
+      </Helmet>
       <HeaderStyle>
         <article>
           <h1 style={logoStyle}>
@@ -55,7 +80,7 @@ const CityPage = () => {
       <div className="section-group">
         <section className="schedule">
           <h2>Schedule (tentative)</h2>
-          <ul>
+          <ul className="compact">
             <li>
               <time>9:00 am</time>
               <p>Registration, Meet and Greet, and Coffee</p>
@@ -109,7 +134,7 @@ const CityPage = () => {
           <ul>
             <li>
               <h3 className="tan">Boston Overall Winners</h3>
-              <p>The winning team of the Boston competition will win something to be announced! for each team member (maximum team size of four).</p>
+              <p>The winning team of the Boston competition will win something to be announced for each team member (maximum team size of four).</p>
             </li>
             <li>
               <h3 className="tan">Baseball Hack Day Grand Prize Winner</h3>
@@ -117,7 +142,7 @@ const CityPage = () => {
             </li>
             <li>
               <h3 className="tan">Boston Runner-Ups</h3>
-              <p>The runner-up team of the Boston competition will win something to be announced! for each team member (maximum team size of four).</p>
+              <p>The runner-up team of the Boston competition will win something to be announced for each team member (maximum team size of four).</p>
             </li>
             <li>
               <p>and more! <a href="mailto:daigo@daigofujiwara.com">(Want to sponsor prizes? Please email us.)</a></p>
@@ -158,4 +183,4 @@ const CityPage = () => {
 
 export default CityPage
 
-export const Head = () => <title>Baseball Hack Day 2023 Boston is on March 11</title>
+export const Head = () => <title>{metatitle}</title>
