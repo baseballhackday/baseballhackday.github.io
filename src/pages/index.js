@@ -61,6 +61,7 @@ const IndexPage = () => {
         <h3>Select your city:</h3>
         <div>
           <a className="action large" href="/boston">Boston</a>
+          <a className="action large" href="/toronto">Toronto</a>
         </div>
       </section>
 

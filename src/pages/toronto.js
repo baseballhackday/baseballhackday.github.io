@@ -6,9 +6,7 @@ import Rules from '../components/rules';
 import { Helmet } from 'react-helmet';
 
 import logo from '../images/bbhd-logo.svg';
-import bg from '../images/boston2.jpg';
-import globe from '../images/sponsors/The-Boston-Globe.png';
-import nu from '../images/sponsors/Northeastern-University.png';
+import bg from '../images/toronto.png';
 
 const logoStyle = {
   width: "100px",
@@ -21,7 +19,7 @@ const bgstyle = {
 const HeaderStyle = styled.header`
   margin: 0 -20px 4em;
   max-width: none;
-  background-color: #BE4343;
+  background-color: #134A8E;
   background-image: url(${bg});
   background-blend-mode: multiply;
   background-position: top center;
@@ -37,11 +35,11 @@ const HeaderStyle = styled.header`
   }
 `;
 
-const metatitle = 'Boston Baseball Hack Day 2023 is on March 11';
+const metatitle = 'Toronto Baseball Hack Day 2023 is on March 11';
 const metadesc = 'Developers and designers are wanted for a fun, friendly, one-day, in-person hacking competition to create baseball-related projects.';
-const metaurl = 'https://www.baseballhackday.com/boston/';
-const metaimage = 'https://www.baseballhackday.com/2023-boston.jpg';
-const regurl = 'https://www.eventbrite.com/e/2023-boston-baseball-hack-day-tickets-534599520557';
+const metaurl = 'https://www.baseballhackday.com/toronto/';
+const metaimage = 'https://www.baseballhackday.com/2023-baseballhackday.jpg';
+const regurl = 'https://www.eventbrite.ca/e/2023-toronto-baseball-hack-day-tickets-546695901157';
 
 const CityPage = () => {
   return (
@@ -70,17 +68,17 @@ const CityPage = () => {
             <a href="/"><img alt="Baseball Hack Day" src={logo} /></a>
           </h1>
           <div>
-            <h1>Boston</h1>
+            <h1>Toronto</h1>
             <h3 className="tan">Saturday, March 11, 2023</h3>
-            <p>Northeastern University, Holmes Hall<br />
-            41 Leon St., Boston, MA 02115</p>
+            <p>One Eleven<br />
+            325 Front St W 4th Floor, Toronto, ON M5V 2Y1</p>
             <a href={regurl} className="action large">Register now!</a>
           </div>
         </article>
       </HeaderStyle>
       <div className="section-group">
         <section className="schedule">
-          <h2>Schedule</h2>
+          <h2>Schedule (tentative)</h2>
           <ul className="compact">
             <li>
               <time>9:00 am</time>
@@ -117,14 +115,11 @@ const CityPage = () => {
             <h2>Sponsors</h2>
           </header>
           <ul className="sponsor-list">
-            <li>
-              <a className="sponsor" href="https://camd.northeastern.edu/"><img alt="Northeastern University Logo" src={nu} />
-              <h3>Northeastern University</h3><p>Hall of Fame sponsor</p></a>
-            </li>
-            <li>
-              <a className="sponsor" href="https://www.bostonglobe.com/"><img alt="Boston Globe Logo" src={globe} />
-              <h3>The Boston Globe</h3><p>Hall of Fame sponsor</p></a>
-            </li>
+            <li>To be announced</li>
+            {/* <li>
+              <a className="sponsor" href="#SponsorURL"><img alt="Sponsor Logo" src={} />
+              <h3>Sponsor</h3><p>Hall of Fame sponsor</p></a>
+            </li> */}
           </ul><a className="action" href="https://docs.google.com/document/d/1lA_9jqN2oqfVSRw3RnjVvqJ8Ik1Khvy6q4MVj15tCpc/edit?usp=sharing">Be a Sponsor</a>
         </section>
       </div>
@@ -134,19 +129,19 @@ const CityPage = () => {
           <h2>Prizes</h2>
           <ul>
             <li>
-              <h3 className="tan">Boston Overall Winners</h3>
-              <p>The winning team of the Boston competition will win something to be announced for each team member (maximum team size of four).</p>
+              <h3 className="tan">Toronto Overall Winners</h3>
+              <p>The winning team of the Toronto competition will win something to be announced for each team member (maximum team size of four).</p>
             </li>
             <li>
               <h3 className="tan">Baseball Hack Day Grand Prize Winner</h3>
-              <p>To be announced!</p>
+              <p>To be announced</p>
             </li>
             {/* <li>
-              <h3 className="tan">Boston Runner-Ups</h3>
-              <p>The runner-up team of the Boston competition will win something to be announced for each team member (maximum team size of four).</p>
+              <h3 className="tan">Toronto Runner-Ups</h3>
+              <p>The runner-up team of the Toronto competition will win something to be announced for each team member (maximum team size of four).</p>
             </li> */}
             <li>
-              <p>and more! <a href="mailto:daigo@daigofujiwara.com">(Want to sponsor prizes? Please email us.)</a></p>
+              <p>and more! <a href="mailto:baseball.hackday.toronto@gmail.com">(Want to sponsor prizes? Please email us.)</a></p>
             </li>
           </ul>
         </section>
@@ -165,7 +160,7 @@ const CityPage = () => {
 
       <section className="about">
         <h2>Come join us, March 11!</h2>
-        <p>Love creating stuff on your computer and LOVE baseball? Come hack with us on March 11, 2023 at Northeastern University!</p>
+        <p>Love creating stuff on your computer and LOVE baseball? Come hack with us on March 11, 2023 at One Eleven!</p>
 
         <About className="two-col" />
 

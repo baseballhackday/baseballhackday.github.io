@@ -190,8 +190,8 @@ export default function Layout({ children, inlineStyle, theme }) {
         <h5>2023 volunteer organizers</h5>
         <ul className="compact">
           <li>Daigo Fujiwara, Matt Carroll, Matthew Shanley, James Smith, Kianosh Pourian (Boston)</li>
-          <li>Elizabeth Cotton (San Diego)</li>
           <li>Edward Johnson (Toronto)</li>
+          <li>Elizabeth Cotton (San Diego)</li>
         </ul>
 
         <p className={colorTheme}><a href="/">Home</a> | <a href="/boston">Boston</a> | <a href="/about-history">About &amp; History</a></p>
