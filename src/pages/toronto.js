@@ -7,6 +7,8 @@ import Rules from '../components/rules';
 import logo from '../images/bbhd-logo.svg';
 import bg from '../images/toronto.png';
 import bp from '../images/sponsors/baseball-prospectus.svg';
+import bisons from '../images/sponsors/Buffalo-Bisons.jpg';
+import bm from '../images/sponsors/buttonmachine.webp';
 
 const logoStyle = {
   width: "100px",
@@ -98,9 +100,31 @@ const CityPage = () => {
           </header>
           <ul className="sponsor-list">
             <li>
-              <a className="sponsor" href="https://www.baseballprospectus.com/"><img alt="Baseball Prospectus Logo" src={bp} />
-              <h5>Baseball Prospectus</h5><p>Winning Prizes</p></a>
+              <a className="sponsor" href="https://www.baseballprospectus.com/">
+                <img alt="Baseball Prospectus Logo" src={bp} />
+                <h5>Baseball Prospectus</h5><p>Prizes</p>
+              </a>
             </li>
+            
+            <li>
+              <a className="sponsor" href="TheButtonMachine">
+                <img alt="Logo" src={bm} />
+                <h5>TheButtonMachine</h5><p>Prizes</p>
+              </a>
+            </li>
+            <li>
+              <a className="sponsor" href="https://www.milb.com/buffalo">
+                <img alt="Logo" src={bisons} />
+                <h5>Buffalo Bisons</h5><p>Prizes</p>
+              </a>
+            </li>
+            <li>
+              <a className="sponsor" href="https://oneeleven.com/">
+                {/* <img alt="Logo" src={} /> */}
+                <h5>OneEleven</h5><p>Venue</p>
+              </a>
+            </li>
+
           </ul><a className="action" href="https://docs.google.com/document/d/1lA_9jqN2oqfVSRw3RnjVvqJ8Ik1Khvy6q4MVj15tCpc/edit?usp=sharing">Be a Sponsor</a>
         </section>
       </div>
@@ -110,19 +134,16 @@ const CityPage = () => {
           <h2>Prizes</h2>
           <ul>
             <li>
-              <h3 className="tan">Toronto Overall Winners</h3>
+              <h3 className="tan">Toronto Winners</h3>
               <p>The winning team of the Boston competition will win <a href="https://www.baseballprospectus.com/">a one-year subscription of Baseball Prospectus Premium</a> for each team member (maximum team size of four).</p>
+              <p>The teams of the Toronto competition will also win prize packs from TheButtonMachine, tickets from the Buffalo Bisons, participation prizes and more!</p>
             </li>
             <li>
               <h3 className="tan">Baseball Hack Day Grand Prize Winner</h3>
               <p>To be announced</p>
             </li>
-            {/* <li>
-              <h3 className="tan">Toronto Runner-Ups</h3>
-              <p>The runner-up team of the Toronto competition will win something to be announced for each team member (maximum team size of four).</p>
-            </li> */}
             <li>
-              <p>and more! <a href="mailto:baseball.hackday.toronto@gmail.com">(Want to sponsor prizes? Please email us.)</a></p>
+              <p><a href="mailto:baseball.hackday.toronto@gmail.com">(Want to sponsor prizes? Please email us.)</a></p>
             </li>
           </ul>
         </section>
