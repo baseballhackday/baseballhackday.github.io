@@ -8,6 +8,9 @@ import logo from '../images/bbhd-logo.svg';
 import bg from '../images/boston2.jpg';
 import globe from '../images/sponsors/The-Boston-Globe.png';
 import nu from '../images/sponsors/Northeastern-University.png';
+import br from '../images/sponsors/baseball-reference.svg';
+import bp from '../images/sponsors/baseball-prospectus.svg';
+import oreilly from '../images/sponsors/oreilly.svg';
 
 const logoStyle = {
   width: "100px",
@@ -100,13 +103,26 @@ const CityPage = () => {
           <ul className="sponsor-list">
             <li>
               <a className="sponsor" href="https://camd.northeastern.edu/"><img alt="Northeastern University Logo" src={nu} />
-              <h3>Northeastern University</h3><p>Hall of Fame sponsor</p></a>
+              <h5>Northeastern University</h5><p>Hall of Fame sponsor</p></a>
             </li>
             <li>
               <a className="sponsor" href="https://www.bostonglobe.com/"><img alt="Boston Globe Logo" src={globe} />
-              <h3>The Boston Globe</h3><p>Hall of Fame sponsor</p></a>
+              <h5>The Boston Globe</h5><p>Hall of Fame sponsor</p></a>
             </li>
-          </ul><a className="action" href="https://docs.google.com/document/d/1lA_9jqN2oqfVSRw3RnjVvqJ8Ik1Khvy6q4MVj15tCpc/edit?usp=sharing">Be a Sponsor</a>
+            <li>
+              <a className="sponsor" href="https://www.baseball-reference.com/"><img alt="Baseball-Reference.com Logo" src={br} />
+              <h5>Baseball Reference</h5><p>Hall of Fame sponsor</p></a>
+            </li>
+            <li>
+              <a className="sponsor" href="https://www.baseballprospectus.com/"><img alt="Baseball Prospectus Logo" src={bp} />
+              <h5>Baseball Prospectus</h5><p>Winning Prizes</p></a>
+            </li>
+            <li>
+              <a className="sponsor" href="https://www.oreilly.com/"><img alt="O'Reilly Logo" src={oreilly} />
+              <h5>O'Reilly</h5><p>Prizes</p></a>
+            </li>
+          </ul>
+          <a className="action" href="https://docs.google.com/document/d/1lA_9jqN2oqfVSRw3RnjVvqJ8Ik1Khvy6q4MVj15tCpc/edit?usp=sharing">Be a Sponsor</a>
         </section>
       </div>
 
@@ -115,17 +131,17 @@ const CityPage = () => {
           <h2>Prizes</h2>
           <ul>
             <li>
-              <h3 className="tan">Boston Overall Winners</h3>
-              <p>The winning team of the Boston competition will win something to be announced for each team member (maximum team size of four).</p>
+              <h3 className="tan">Boston Winners</h3>
+              <p>The winning team of the Boston competition will win <a href="https://www.baseballprospectus.com/">a one-year subscription of Baseball Prospectus Premium</a> for each team member (maximum team size of four).</p>
             </li>
             <li>
-              <h3 className="tan">Baseball Hack Day Grand Prize Winner</h3>
+              <h3 className="tan">Baseball Hack Day Grand Prize</h3>
               <p>To be announced!</p>
             </li>
-            {/* <li>
+            <li>
               <h3 className="tan">Boston Runner-Ups</h3>
-              <p>The runner-up team of the Boston competition will win something to be announced for each team member (maximum team size of four).</p>
-            </li> */}
+              <p>O'Reilly Media is providing some books as prizes.</p>
+            </li>
             <li>
               <p>and more! <a href="mailto:daigo@daigofujiwara.com">(Want to sponsor prizes? Please email us.)</a></p>
             </li>

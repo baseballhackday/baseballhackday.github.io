@@ -6,6 +6,7 @@ module.exports = {
     title: `Baseball Hack Day`,
     siteUrl: `https://www.baseballhackday.com/`
   },
+  trailingSlash: `always`,
   plugins: [
     "gatsby-plugin-styled-components",
     "gatsby-plugin-image",

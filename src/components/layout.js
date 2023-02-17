@@ -90,7 +90,7 @@ const PageStyle = styled.main`
   }
   h5 {
     font-size: 1rem;
-    margin-bottom: 0.6rem;
+    margin: 0 auto 3px;
   }
   .action, .dark a.action {
     display: inline-block;

@@ -6,6 +6,7 @@ import Rules from '../components/rules';
 
 import logo from '../images/bbhd-logo.svg';
 import bg from '../images/toronto.png';
+import bp from '../images/sponsors/baseball-prospectus.svg';
 
 const logoStyle = {
   width: "100px",
@@ -96,11 +97,10 @@ const CityPage = () => {
             <h2>Sponsors</h2>
           </header>
           <ul className="sponsor-list">
-            <li>To be announced</li>
-            {/* <li>
-              <a className="sponsor" href="#SponsorURL"><img alt="Sponsor Logo" src={} />
-              <h3>Sponsor</h3><p>Hall of Fame sponsor</p></a>
-            </li> */}
+            <li>
+              <a className="sponsor" href="https://www.baseballprospectus.com/"><img alt="Baseball Prospectus Logo" src={bp} />
+              <h5>Baseball Prospectus</h5><p>Winning Prizes</p></a>
+            </li>
           </ul><a className="action" href="https://docs.google.com/document/d/1lA_9jqN2oqfVSRw3RnjVvqJ8Ik1Khvy6q4MVj15tCpc/edit?usp=sharing">Be a Sponsor</a>
         </section>
       </div>
@@ -111,7 +111,7 @@ const CityPage = () => {
           <ul>
             <li>
               <h3 className="tan">Toronto Overall Winners</h3>
-              <p>The winning team of the Toronto competition will win something to be announced for each team member (maximum team size of four).</p>
+              <p>The winning team of the Boston competition will win <a href="https://www.baseballprospectus.com/">a one-year subscription of Baseball Prospectus Premium</a> for each team member (maximum team size of four).</p>
             </li>
             <li>
               <h3 className="tan">Baseball Hack Day Grand Prize Winner</h3>
