@@ -68,7 +68,7 @@ const CityPage = () => {
           <ul className="compact">
             <li>
               <time>9:00 am</time>
-              <p>Registration, Meet and Greet, and Coffee</p>
+              <p>Registration, Meet and Greet, Coffee and light breakfast</p>
             </li>
             <li>
               <time>9:30 am</time>
@@ -76,7 +76,7 @@ const CityPage = () => {
             </li>
             <li>
               <time>10:00 am</time>
-              <p>Design and Code</p>
+              <p>Start hacking! Design and Code</p>
             </li>
             <li>
               <time>12:30 pm</time>
@@ -87,12 +87,12 @@ const CityPage = () => {
               <p>Stop hacking!</p>
             </li>
             <li>
-              <time>4:00 pm</time>
+              <time>4:15 pm</time>
               <p>Presentation</p>
             </li>
             <li>
-              <time>6:00 pm</time>
-              <p>Winner announcements</p>
+              <time>5:30 pm - 6:00 pm</time>
+              <p>Winner announced</p>
             </li>
           </ul>
         </section>
@@ -103,19 +103,19 @@ const CityPage = () => {
           <ul className="sponsor-list">
             <li>
               <a className="sponsor" href="https://camd.northeastern.edu/"><img alt="Northeastern University Logo" src={nu} />
-              <h5>Northeastern University</h5><p>Hall of Fame sponsor</p></a>
+              <h5>Northeastern University&rsquo;s College of Arts, Media and Design</h5><p>Hall of Fame sponsor</p></a>
             </li>
             <li>
               <a className="sponsor" href="https://www.bostonglobe.com/"><img alt="Boston Globe Logo" src={globe} />
-              <h5>The Boston Globe</h5><p>Hall of Fame sponsor</p></a>
+              <h5>Boston Globe Media Partners Engineering </h5><p>Hall of Fame sponsor</p></a>
             </li>
             <li>
               <a className="sponsor" href="https://www.baseball-reference.com/"><img alt="Baseball-Reference.com Logo" src={br} />
-              <h5>Baseball Reference</h5><p>Hall of Fame sponsor</p></a>
+              <h5>Sports Reference</h5><p>Hall of Fame sponsor</p></a>
             </li>
             <li>
               <a className="sponsor" href="https://www.baseballprospectus.com/"><img alt="Baseball Prospectus Logo" src={bp} />
-              <h5>Baseball Prospectus</h5><p>Winning Prizes</p></a>
+              <h5>Baseball Prospectus</h5><p>Prizes</p></a>
             </li>
             <li>
               <a className="sponsor" href="https://www.oreilly.com/"><img alt="O'Reilly Logo" src={oreilly} />
@@ -151,11 +151,15 @@ const CityPage = () => {
         <section className="judges">
           <h2>Judges</h2>
           <ul>
+            <li>
+              <h3 className="tan">Aidan Jackson-Evans</h3>
+              <p>Customer Success Coordinator, Sports Reference</p>
+            </li>
+            <li>
+              <h3 className="tan">Matthew Carroll</h3>
+              <p>Professor of the Practice, Journalism, Northeastern University</p>
+            </li>
             <li>To be announced!</li>
-            {/* <li>
-              <h3 className="tan">Name</h3>
-              <p>Position</p>
-            </li> */}
           </ul>
         </section>
       </div>

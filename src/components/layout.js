@@ -89,7 +89,7 @@ const PageStyle = styled.main`
     margin-bottom: 0.75rem;
   }
   h5 {
-    font-size: 1rem;
+    font-size: 0.85rem;
     margin: 0 auto 3px;
   }
   .action, .dark a.action {

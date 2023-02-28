@@ -62,7 +62,7 @@ const CityPage = () => {
       </HeaderStyle>
       <div className="section-group">
         <section className="schedule">
-          <h2>Schedule (tentative)</h2>
+          <h2>Schedule</h2>
           <ul className="compact">
             <li>
               <time>9:00 am</time>
@@ -77,19 +77,19 @@ const CityPage = () => {
               <p>Design and Code</p>
             </li>
             <li>
-              <time>12:30 pm</time>
-              <p>Lunch (Working lunch)</p>
+              <time>12:00 pm</time>
+              <p>Lunch (working)</p>
             </li>
             <li>
               <time>4:00 pm</time>
-              <p>Stop hacking!</p>
+              <p>Stop hacking</p>
             </li>
             <li>
-              <time>4:00 pm</time>
-              <p>Presentation</p>
+              <time>4:30 pm</time>
+              <p>Presentations and Judging</p>
             </li>
             <li>
-              <time>6:00 pm</time>
+              <time>5:30 pm</time>
               <p>Winner announcements</p>
             </li>
           </ul>
