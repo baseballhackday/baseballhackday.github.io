@@ -144,7 +144,7 @@ const CityPage = () => {
             <li>
               <h3 className="tan">Toronto Winners</h3>
               <p>The winning team of the Boston competition will win <a href="https://www.baseballprospectus.com/">a one-year subscription of Baseball Prospectus Premium</a> for each team member (maximum team size of four).</p>
-              <p>The teams of the Toronto competition will also win prize packs from TheButtonMachine, tickets from the Buffalo Bisons, participation prizes and more!</p>
+              <p>The teams of the Toronto competition will also win prize packs from TheButtonMachine, tickets from the Buffalo Bisons, 24x20 inch Gold-Stamped poster featuring 20 designs by MLB licensed artist Lauren Taylor, and participation prizes!</p>
             </li>
             <li>
               <h3 className="tan">Baseball Hack Day Grand Prize Winner</h3>
