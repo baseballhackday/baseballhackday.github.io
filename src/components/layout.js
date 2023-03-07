@@ -122,6 +122,7 @@ const PageStyle = styled.main`
   ul {
     padding-left: 0;
     list-style-type: none;
+    break-inside: avoid;
     li {
       margin: 0 0 1rem;
       p, h3 {
@@ -130,6 +131,11 @@ const PageStyle = styled.main`
     }
     &.compact li {
       margin: 0 0 0.25rem;
+    }
+    &.bullet {
+      padding-left: 2rem;
+      list-style-type: square;
+
     }
   }
   time {

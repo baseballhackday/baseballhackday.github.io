@@ -9,6 +9,8 @@ import bg from '../images/toronto.png';
 import bp from '../images/sponsors/baseball-prospectus.svg';
 import bisons from '../images/sponsors/Buffalo-Bisons.jpg';
 import bm from '../images/sponsors/buttonmachine.webp';
+import sm from '../images/sponsors/sharpestminds.png';
+
 
 const logoStyle = {
   width: "100px",
@@ -99,13 +101,19 @@ const CityPage = () => {
             <h2>Sponsors</h2>
           </header>
           <ul className="sponsor-list">
-            <li>
-              <a className="sponsor" href="https://www.baseballprospectus.com/">
-                <img alt="Baseball Prospectus Logo" src={bp} />
-                <h5>Baseball Prospectus</h5><p>Prizes</p>
+
+          <li>
+              <a className="sponsor" href="https://www.sharpestminds.com/">
+                <img alt="Sharpest Minds Logo" src={sm} />
+                <h5>Sharpest Minds</h5><p>MVP Sponsor</p>
               </a>
             </li>
-            
+            <li>
+              <a className="sponsor" href="https://oneeleven.com/">
+                {/* <img alt="Logo" src={} /> */}
+                <h5>OneEleven</h5><p>Venue</p>
+              </a>
+            </li>
             <li>
               <a className="sponsor" href="TheButtonMachine">
                 <img alt="Logo" src={bm} />
@@ -118,13 +126,13 @@ const CityPage = () => {
                 <h5>Buffalo Bisons</h5><p>Prizes</p>
               </a>
             </li>
+
             <li>
-              <a className="sponsor" href="https://oneeleven.com/">
-                {/* <img alt="Logo" src={} /> */}
-                <h5>OneEleven</h5><p>Venue</p>
+              <a className="sponsor" href="https://www.baseballprospectus.com/">
+                <img alt="Baseball Prospectus Logo" src={bp} />
+                <h5>Baseball Prospectus</h5><p>Prizes</p>
               </a>
             </li>
-
           </ul><a className="action" href="https://docs.google.com/document/d/1lA_9jqN2oqfVSRw3RnjVvqJ8Ik1Khvy6q4MVj15tCpc/edit?usp=sharing">Be a Sponsor</a>
         </section>
       </div>
