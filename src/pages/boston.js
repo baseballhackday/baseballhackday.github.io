@@ -151,6 +151,10 @@ const CityPage = () => {
         <section className="judges">
           <h2>Judges</h2>
           <ul>
+          <li>
+              <h3 className="tan">Alex Speier</h3>
+              <p>Red Sox Beat Reporter, The Boston Globe</p>
+            </li>
             <li>
               <h3 className="tan">Aidan Jackson-Evans</h3>
               <p>Customer Success Coordinator, Sports Reference</p>
@@ -159,7 +163,6 @@ const CityPage = () => {
               <h3 className="tan">Matthew Carroll</h3>
               <p>Professor of the Practice, Journalism, Northeastern University</p>
             </li>
-            <li>To be announced!</li>
           </ul>
         </section>
       </div>
