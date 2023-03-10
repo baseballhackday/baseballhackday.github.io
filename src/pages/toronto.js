@@ -10,6 +10,7 @@ import bp from '../images/sponsors/baseball-prospectus.svg';
 import bisons from '../images/sponsors/Buffalo-Bisons.jpg';
 import bm from '../images/sponsors/buttonmachine.webp';
 import sm from '../images/sponsors/sharpestminds.png';
+import mls from '../images/sponsors/mlops.jpg';
 
 
 const logoStyle = {
@@ -103,37 +104,43 @@ const CityPage = () => {
           <ul className="sponsor-list">
 
           <li>
-              <a className="sponsor" href="https://www.sharpestminds.com/">
-                <img alt="Sharpest Minds Logo" src={sm} />
-                <h5>Sharpest Minds</h5><p>MVP Sponsor</p>
-              </a>
-            </li>
-            <li>
-              <a className="sponsor" href="https://oneeleven.com/">
-                {/* <img alt="Logo" src={} /> */}
-                <h5>OneEleven</h5><p>Venue</p>
-              </a>
-            </li>
-            <li>
-              <a className="sponsor" href="TheButtonMachine">
-                <img alt="Logo" src={bm} />
-                <h5>TheButtonMachine</h5><p>Prizes</p>
-              </a>
-            </li>
-            <li>
-              <a className="sponsor" href="https://www.milb.com/buffalo">
-                <img alt="Logo" src={bisons} />
-                <h5>Buffalo Bisons</h5><p>Prizes</p>
-              </a>
-            </li>
+            <a className="sponsor" href="https://www.sharpestminds.com/">
+              <img alt="Sharpest Minds Logo" src={sm} />
+              <h5>Sharpest Minds</h5><p>Hall Of Fame sponsor</p>
+            </a>
+          </li>
+          <li>
+            <a className="sponsor" href="https://mlopsworld.com/">
+              <img alt="MLSOpsWorld Logo" src={mls} />
+              <h5>MLSOpsWorld</h5><p>Hall Of Fame sponsor</p>
+            </a>
+          </li>
+          <li>
+            <a className="sponsor" href="https://oneeleven.com/">
+              {/* <img alt="Logo" src={} /> */}
+              <h5>OneEleven</h5><p>Venue</p>
+            </a>
+          </li>
+          <li>
+            <a className="sponsor" href="https://thebuttonmachine.com/">
+              <img alt="Logo" src={bm} />
+              <h5>TheButtonMachine</h5><p>Prizes</p>
+            </a>
+          </li>
+          <li>
+            <a className="sponsor" href="https://www.milb.com/buffalo">
+              <img alt="Logo" src={bisons} />
+              <h5>Buffalo Bisons</h5><p>Prizes</p>
+            </a>
+          </li>
 
-            <li>
-              <a className="sponsor" href="https://www.baseballprospectus.com/">
-                <img alt="Baseball Prospectus Logo" src={bp} />
-                <h5>Baseball Prospectus</h5><p>Prizes</p>
-              </a>
-            </li>
-          </ul><a className="action" href="https://docs.google.com/document/d/1lA_9jqN2oqfVSRw3RnjVvqJ8Ik1Khvy6q4MVj15tCpc/edit?usp=sharing">Be a Sponsor</a>
+          <li>
+            <a className="sponsor" href="https://www.baseballprospectus.com/">
+              <img alt="Baseball Prospectus Logo" src={bp} />
+              <h5>Baseball Prospectus</h5><p>Prizes</p>
+            </a>
+          </li>
+        </ul><a className="action" href="https://docs.google.com/document/d/1lA_9jqN2oqfVSRw3RnjVvqJ8Ik1Khvy6q4MVj15tCpc/edit?usp=sharing">Be a Sponsor</a>
         </section>
       </div>
 
@@ -143,15 +150,15 @@ const CityPage = () => {
           <ul>
             <li>
               <h3 className="tan">Toronto Winners</h3>
-              <p>The winning team of the Boston competition will win <a href="https://www.baseballprospectus.com/">a one-year subscription of Baseball Prospectus Premium</a> for each team member (maximum team size of four).</p>
-              <p>The teams of the Toronto competition will also win prize packs from TheButtonMachine, tickets from the Buffalo Bisons, participation prizes and more!</p>
+              <p>The winning team of the Toronto competition will win <a href="https://www.baseballprospectus.com/">a one-year subscription of Baseball Prospectus Premium</a> for each team member (maximum team size of four).</p>
+              <p>The teams of the Toronto competition will also win prize packs from The Button Machine, tickets from the Buffalo Bisons, 24x20 inch Gold-Stamped poster featuring 20 designs by MLB licensed artist DJ Skee, and surprise participation prizes!</p>
             </li>
-            <li>
+            {/* <li>
               <h3 className="tan">Baseball Hack Day Grand Prize Winner</h3>
               <p>To be announced</p>
-            </li>
+            </li> */}
             <li>
-              <p><a href="mailto:baseball.hackday.toronto@gmail.com">(Want to sponsor prizes? Please email us.)</a></p>
+              <p><a href="mailto:baseball.hackday.toronto@gmail.com">(Want to sponsor our grand prize? Please email us.)</a></p>
             </li>
           </ul>
         </section>
@@ -160,10 +167,14 @@ const CityPage = () => {
           <h2>Judges</h2>
           <ul>
             <li>To be announced!</li>
-            {/* <li>
-              <h3 className="tan">Name</h3>
-              <p>Position</p>
-            </li> */}
+            <li>
+              <h3 className="tan">Pete Saunders</h3>
+              <p>Director, Baseball Systems at Toronto Blue Jays</p>
+            </li>
+            <li>
+              <h3 className="tan">Maria Kamali</h3>
+              <p>AI/ML leader and Data Scientist</p>
+            </li>
           </ul>
         </section>
       </div>

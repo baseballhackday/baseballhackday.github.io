@@ -134,10 +134,10 @@ const CityPage = () => {
               <h3 className="tan">Boston Winners</h3>
               <p>The winning team of the Boston competition will win <a href="https://www.baseballprospectus.com/">a one-year subscription of Baseball Prospectus Premium</a> for each team member (maximum team size of four).</p>
             </li>
-            <li>
+            {/* <li>
               <h3 className="tan">Baseball Hack Day Grand Prize</h3>
               <p>To be announced!</p>
-            </li>
+            </li> */}
             <li>
               <h3 className="tan">Boston Runner-Ups</h3>
               <p>O'Reilly Media is providing some books as prizes.</p>
