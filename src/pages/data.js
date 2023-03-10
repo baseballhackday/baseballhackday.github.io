@@ -70,14 +70,14 @@ const DataPage = () => {
         </p>
         <ul className="bullet compact">
           <li><a href="https://www.baseball-reference.com/leagues/majors/2022-standard-batting.shtml">SOURCE</a></li>
-          <li><a href={`${dataUrlPrefix}/Baseball-Reference/2022Batting.csv`}>CSV</a></li>
-          <li><a href={`${dataUrlPrefix}/Baseball-Reference/2022Batting.json`}>JSON</a></li>
+          <li><a href={`${dataUrlPrefix}/Baseball-Reference/2022Batting.csv`}>2022 Batting data CSV</a></li>
+          <li><a href={`${dataUrlPrefix}/Baseball-Reference/2022Batting.json`}>2022 Batting data JSON</a></li>
         </ul>
         <p>2022 Pitching data for all players</p>
         <ul className="bullet compact">
           <li><a href="https://www.baseball-reference.com/leagues/majors/2022-standard-pitching.shtml">SOURCE</a></li>
-          <li><a href={`${dataUrlPrefix}/Baseball-Reference/2022Pitching.csv`}>CSV</a></li>
-          <li><a href={`${dataUrlPrefix}/Baseball-Reference/2022Pitching.json`}>JSON</a></li>
+          <li><a href={`${dataUrlPrefix}/Baseball-Reference/2022Pitching.csv`}>2022 Pitching data CSV</a></li>
+          <li><a href={`${dataUrlPrefix}/Baseball-Reference/2022Pitching.json`}>2022 Pitching data JSON</a></li>
         </ul>
 
         <h3>2022 pitch information from <a href="https://baseballsavant.mlb.com/">Baseball Savant</a></h3>
@@ -101,15 +101,15 @@ const DataPage = () => {
         <p>2022 Batting</p>
         <ul className="bullet compact">
           <li><a href="https://baseballsavant.mlb.com/leaderboard/custom?year=2022&type=batter&filter=&sort=4&sortDir=desc&min=q&selections=xba,xslg,xwoba,xobp,xiso,exit_velocity_avg,launch_angle_avg,barrel_batted_rate,&chart=false&x=xba&y=xba&r=no&chartType=beeswarm">SOURCE</a></li>
-          <li><a href={`${dataUrlPrefix}/Baseball-Savant/savant_2022Batters.csv`}>CSV</a></li>
-          <li><a href={`${dataUrlPrefix}/Baseball-Savant/savant_2022Batters.json`}>JSON</a></li>
+          <li><a href={`${dataUrlPrefix}/Baseball-Savant/savant_2022Batters.csv`}>2022 Batting CSV</a></li>
+          <li><a href={`${dataUrlPrefix}/Baseball-Savant/savant_2022Batters.json`}>2022 Batting JSON</a></li>
         </ul>
 
         <p>2022 Pitching</p>
         <ul className="bullet compact">
           <li><a href="https://baseballsavant.mlb.com/leaderboard/custom?year=2022&type=pitcher&filter=&sort=1&sortDir=desc&min=q&selections=xba,xslg,xwoba,xobp,xiso,exit_velocity_avg,launch_angle_avg,sweet_spot_percent,barrel_batted_rate,&chart=false&x=xba&y=xba&r=no&chartType=beeswarm">SOURCE</a></li>
-          <li><a href={`${dataUrlPrefix}/Baseball-Savant/savant_2022Pitchers.csv`}>CSV</a></li>
-          <li><a href={`${dataUrlPrefix}/Baseball-Savant/savant_2022Pitchers.json`}>JSON</a></li>
+          <li><a href={`${dataUrlPrefix}/Baseball-Savant/savant_2022Pitchers.csv`}>2022 Pitching CSV</a></li>
+          <li><a href={`${dataUrlPrefix}/Baseball-Savant/savant_2022Pitchers.json`}>2022 Pitching JSON</a></li>
         </ul>
 
       </section>
