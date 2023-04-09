@@ -139,7 +139,7 @@ const CityPage = () => {
               <p>To be announced!</p>
             </li> */}
             <li>
-              <h3 className="tan">Boston Runner-Ups</h3>
+              <h3 className="tan">Prize raffles</h3>
               <p>O'Reilly Media is providing some books as prizes.</p>
             </li>
             <li>

@@ -29,8 +29,8 @@ const metaimage = 'https://www.baseballhackday.com/2023-baseballhackday.jpg';
 const IndexPage = () => {
   return (
     <Layout inlineStyle={bgstyle} theme="dark">
-      <h3><strong>We. Are. Back.</strong><br/>Join us!</h3>
-      <h1>Sat. March 11, 2023</h1>
+      <h3><strong>Thank you</strong><br />for attending!</h3>
+      <h1>See you in March 2024!</h1>
 
       <h1 className="logo" style={logoStyle}>
         <img src={logo} alt="Baseball Hack Day logo" />
@@ -39,6 +39,9 @@ const IndexPage = () => {
       <h2 className="tan">Fun, friendly, one-day coding competition for baseball fans.</h2>
 
       <section style={selectStyle}>
+        <p>
+          <a className="action large mbl" href="https://baseball-hack-day-2023.devpost.com/project-gallery">See 2023 submissions</a>
+        </p>
         <h3>Select your city:</h3>
         <div>
           <a className="action large" href="/boston">Boston</a>

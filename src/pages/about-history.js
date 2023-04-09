@@ -54,7 +54,7 @@ const AboutPage = () => {
 
         <aside>
           <h2>Forum &amp; Resources</h2>
-          <p>New to hack days? No need to fear. There'll be people of all skill levels and skill sets participating. What do they make? See submissions from past years: <a href="https://baseball-hack-day-2019.devpost.com/submissions">2019</a>, <a href="https://baseballhackday-2018.devpost.com/submissions">2018</a>, <a href="https://baseballhackday-2017.devpost.com/submissions">2017</a>, <a href="http://2016baseballhackday.challengepost.com/submissions">2016</a>, <a href="http://2015baseballhackday.challengepost.com/submissions">2015</a>, <a href="http://baseballhackday.challengepost.com/submissions">2014</a></p>
+          <p>New to hack days? No need to fear. There'll be people of all skill levels and skill sets participating. What do they make? See submissions from past years: <a href="https://baseball-hack-day-2023.devpost.com/project-gallery">2023</a>, <a href="https://baseball-hack-day-2019.devpost.com/submissions">2019</a>, <a href="https://baseballhackday-2018.devpost.com/submissions">2018</a>, <a href="https://baseballhackday-2017.devpost.com/submissions">2017</a>, <a href="http://2016baseballhackday.challengepost.com/submissions">2016</a>, <a href="http://2015baseballhackday.challengepost.com/submissions">2015</a>, <a href="http://baseballhackday.challengepost.com/submissions">2014</a></p>
           <ul>
             <li>
               <a className="action" href="https://baseballhackday-slack.herokuapp.com">Join Us on Slack</a>
@@ -85,6 +85,11 @@ const AboutPage = () => {
           <h2>Past Winners</h2>
           <article>
             <ul>
+              <li>
+                <strong>2023 winners:</strong> <a href="https://devpost.com/software/mlb-time-tracker">MLB Time Tracker</a> by Justin Nowell, <a href="https://devpost.com/software/batterup">BatterUp</a> by Remy Hunter, Parmita Gurung, and Benjamin Tan, and <a href="https://devpost.com/software/who-s-on-first">Who's on First?</a> by Sajeev Balakrishnan, Oswaldo Ustariz, and Arash Dehghan
+                <br />
+                <a href="https://baseball-hack-day-2023.devpost.com/project-gallery">See all submissions from 2023 Baseball Hack Day</a>
+              </li>
               <li>
                 <strong>2019 winner:</strong> <a href="https://devpost.com/software/crackarjack">crack-AR-jack: an augmented reality app </a> by Ed Arenberg
                 <br />
