@@ -47,6 +47,7 @@ const IndexPage = () => {
           <a className="action large" href="/boston">Boston</a>
           <a className="action large" href="/toronto">Toronto</a>
         </div>
+        <p className="dark">Do you want to be notified about the 2024 event? Please <a href="http://eepurl.com/tNLSz">sign up for our email list</a>.</p>
       </section>
 
       <About className="hero-text dark" />
